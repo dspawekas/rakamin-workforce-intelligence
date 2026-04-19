@@ -1,0 +1,554 @@
+source,ext_id,name,job_title,branch,skills,perf_score,join_date
+Workable,WK-5109,K. Perdana,BM,medan,,4.3,2018-03-22
+Workable,WK-5156,K. Hidayat,BM,Bali,P&L Management|KPI Monitoring|Team Leadership,3.5,2020-02-22
+SAP,SAP-1188,Priya.Santoso,Finance Off.,jogjakarta,,3.1,19/11/2020
+SAP,SAP-1020,Wahyu Haryono,Med. Adv.,DPS,,3.4,14/12/2020
+Workable,WK-5059,N.Riyadi,CS,Medan Kota,Ticketing|CRM|SLA Management,4.2,2023-08-10
+Moodle,LMS-9071,Vincent.Santoso,regulatory affairs officer,jakarta,,,04-15-2017
+SAP,SAP-1115,Priya RIYADI,Med Advisor,SMG,Clinical Knowledge|KOL Management|Pharmacovigilance|Regulatory Affairs,2.6,23/10/2017
+SAP,SAP-1089,M. Yulianto,Technical Support,jakarta,,2.6,22/05/2022
+Moodle,LMS-9103,E. Riyadi,WH Staff,Medan,Stock Opname,,12-01-2018
+SAP,SAP-1052,kiki maulana,RAO,Jogja,Audit Support|Submission Management|GCP|BPOM Regulation,3.3,29/10/2016
+Moodle,LMS-9084,Umi.Rahayu,Sales Officer,Bandung Kota,Salesforce|B2B Sales,,05-25-2017
+Moodle,LMS-9063,F. Kartono,Layanan Pelanggan,Jakarta Pusat,,,02-02-2018
+SAP,SAP-1159,Nuri USMAN,HR Spec,Yogya,Labor Law|Recruitment|Employee Relations,3.4,09/11/2022
+Workable,WK-5140,Agus.Maulana,Mkt. Spec,Jogja,,4.6,2019-03-28
+Workable,WK-5185,Agus.Wijaya,Logistics Coord,Surabaya Timur,Vendor Management|SAP WM,4.7,2017-10-21
+Workable,WK-5005,Made PRANOTO,WH Staff,PLB,Safety Compliance|FIFO Method|Forklift Operation|Barcode Scanning,4.6,2021-07-17
+SAP,SAP-1096,V.Suprapto,Gudang,Bali Island,Forklift Operation|Safety Compliance|Inventory Control|FIFO Method|Barcode Scanning,4.4,17/01/2016
+Moodle,LMS-9101,J.Mahendra,Teknisi IT,Yogya,,,07-23-2019
+Workable,WK-5152,E. Santosa,Technical Support,SMG,Windows Server|Active Directory|Troubleshooting|Cybersecurity Basics,3.3,2020-05-30
+Moodle,LMS-9147,Chandra RIYADI,Cust. Service,Jogja,,,04-09-2022
+SAP,SAP-1174,Juwita Santoso,CS,Medan Kota,Ticketing|CRM,3.5,19/05/2022
+SAP,SAP-1010,Zahra.Lestari,SALES REP,JKT,CRM|Salesforce|Territory Management|Account Management|B2B Sales,2.9,02/10/2019
+SAP,SAP-1017,Naomi.Gunawan,HR Spec,Bandung,Employee Relations|Onboarding|Recruitment|Performance Management|Labor Law,4.7,21/03/2018
+Moodle,LMS-9120,K.Hidayat,Kepala Cabang,Denpasar,KPI Monitoring|Strategic Planning,,02-22-2020
+Moodle,LMS-9116,E. Santosa,Tech Support,Semarang,Windows Server|Helpdesk,,06-09-2020
+Moodle,LMS-9082,K. Perdana,Manager Cabang,Mdn,,,03-22-2018
+Workable,WK-5190,L. Rachman,Kepala Cabang,makassar,Budgeting|Team Leadership|Stakeholder Management|KPI Monitoring,2.7,2020-03-04
+SAP,SAP-1036,Zahra.Tambunan,Regulatory Off.,DPS,BPOM Regulation|GCP|Audit Support|Labeling Compliance,2.5,20/09/2017
+SAP,SAP-1048,Rani.Firmansyah,Keuangan,Mks,,4.8,30/04/2023
+SAP,SAP-1187,L. Iskandar,Mkt. Spec,Balikpapan Kota,Content Creation|Digital Marketing|Google Analytics,4.8,08/09/2016
+SAP,SAP-1163,Yuni.Suprapto,RAO,SMG,Submission Management|Labeling Compliance|BPOM Regulation|GCP,3.1,13/10/2021
+Workable,WK-5145,Wahyu.Lestari,Customer Svc,Jkt,,3.9,2017-01-19
+SAP,SAP-1180,D.Osman,Medis Advisor,Jakarta Pusat,,2.6,06/08/2018
+SAP,SAP-1023,Yuni.Hakim,Regulatory Off.,Bandung Kota,GCP|Labeling Compliance,3.3,12/09/2020
+Workable,WK-5188,Priya.Santoso,Staf Keuangan,jogjakarta,,3.4,2020-11-23
+Moodle,LMS-9013,Wahyu.Haryono,Med. Adv.,Bali Island,,,01-17-2021
+Moodle,LMS-9056,monica pranoto,CS,MDN,,,02-01-2023
+Moodle,LMS-9059,O.Lukman,Logistic,Surabaya Timur,Warehouse Management,,11-05-2016
+SAP,SAP-1120,B.Lukman,Logistic,Plg,,3.6,15/01/2018
+Moodle,LMS-9109,Gita Pratama,Regulatory Off.,makassar,,,06-25-2018
+SAP,SAP-1021,T. Kurniawan,Apoteker Asisten,SBY,,3.9,21/12/2017
+Workable,WK-5073,Ulfa.Wibowo,HR Officer,DPS,Onboarding|Recruitment,2.9,2018-02-17
+Moodle,LMS-9027,U.Kartono,Staff Gudang,Jkt,,,12-14-2017
+SAP,SAP-1005,made pranoto,WH Staff,Plg,Barcode Scanning|Inventory Control,3.8,27/06/2021
+SAP,SAP-1185,agus wijaya,Logistics Coord,Surabaya Timur,Warehouse Management|Supply Chain|Route Optimization|Procurement|SAP WM,4.2,15/11/2017
+Workable,WK-5044,H.Panjaitan,Pharmacy Tech,SMG,,3.1,2021-11-17
+Workable,WK-5028,fajar wahyudi,customer service,Medan Kota,Cross-selling|Ticketing|CRM,4.2,2016-08-14
+SAP,SAP-1143,Gita Pratama,Staf Regulasi,Ujung Pandang,,5.0,28/04/2018
+Workable,WK-5094,Vincent Santoso,regulatory affairs officer,JAKARTA,,2.8,2017-03-06
+Workable,WK-5187,L. Iskandar,Marketing Spec,Balikpapan Kota,Digital Marketing|SEO/SEM,2.9,2016-10-15
+SAP,SAP-1189,P. Kurniawan,Advisor Medis,Bpn,Medical Writing|Pharmacovigilance|Regulatory Affairs|KOL Management,3.0,20/11/2020
+SAP,SAP-1071,Budi Gunawan,BM,Balikpapan Kota,,4.5,25/06/2019
+SAP,SAP-1169,Bagas Nugroho,Cust. Service,SBY,,3.6,15/01/2023
+Moodle,LMS-9139,C. Wibowo,WH Staf,JKT,Safety Compliance|Stock Opname,,08-16-2016
+Moodle,LMS-9061,haris lukman,Manager Cabang,Jogja,Strategic Planning,,05-21-2020
+Moodle,LMS-9019,Lukman SANTOSO,Koordinator Logistik,bandung,SAP WM|Route Optimization,,04-09-2020
+Moodle,LMS-9055,Naomi.Perdana,regulatory affairs officer,Jkt,Audit Support|Labeling Compliance,,11-19-2021
+Moodle,LMS-9127,Wulan Firmansyah,Mkt. Spec,Medan,Social Media,,09-20-2020
+Workable,WK-5004,wulan mahendra,Staf Keuangan,Plg,Cost Analysis,2.8,2022-01-15
+SAP,SAP-1043,C.Saputra,CS,Makassar,,3.9,11/10/2019
+Moodle,LMS-9021,F.Wahyudi,CS,medan,Communication|Complaint Handling,,08-14-2016
+SAP,SAP-1123,galih riyadi,Logistik,BDG,Warehouse Management|Procurement|SAP WM,2.8,25/08/2023
+Moodle,LMS-9001,irma susanto,HR Spec,Surabaya Timur,Onboarding,,08-01-2018
+Moodle,LMS-9110,Hani SUPRAPTO,Pharma Technician,PLB,Patient Counseling|BPOM Compliance,,12-05-2018
+Workable,WK-5151,V.Santoso,Sales 2,Bandung Kota,Pipeline Management|B2B Sales|Negotiation,2.7,2023-03-21
+Moodle,LMS-9047,citra osman,Finance Off.,bali,,,02-21-2016
+Workable,WK-5086,Sari Wibowo,CustServ,Jakarta,,3.2,2020-05-12
+Moodle,LMS-9049,S.Tambunan,WH Staf,Bali Island,,,08-05-2018
+SAP,SAP-1116,Z. Suryadi,Reg Affairs,BPN,,3.2,06/08/2018
+Moodle,LMS-9004,Wulan.Mahendra,Fin Officer,Palembang,SAP Finance,,01-15-2022
+SAP,SAP-1108,Murti.Kurniawan,RAO,Jkt,,4.7,06/02/2020
+Workable,WK-5030,Juwita HARTONO,Medis Advisor,YOG,,4.4,2020-07-13
+SAP,SAP-1087,Haris Perdana,branch manager,jakarta,Budgeting|Strategic Planning|P&L Management|Team Leadership,4.1,16/12/2017
+SAP,SAP-1179,Citra WIBOWO,Gudang,Jakarta,Safety Compliance|Inventory Control|Stock Opname,3.2,16/08/2016
+SAP,SAP-1130,Prita.Handoko,Marketing,Denpasar,Digital Marketing|Campaign Management|SEO/SEM|Google Analytics|Social Media,4.1,07/06/2017
+Moodle,LMS-9073,Dita MAHENDRA,IT Support,BDG,,,12-23-2021
+SAP,SAP-1042,Hendra NASUTION,RA Officer,Medan,,3.7,05/06/2018
+SAP,SAP-1124,nuri halim,RAO,Denpasar,Audit Support|GCP|Labeling Compliance|BPOM Regulation,3.5,10/05/2022
+Moodle,LMS-9112,Jefri SANTOSO,warehouse staff,Mks,,,05-05-2022
+Workable,WK-5158,Ferry.Basuki,Regulatory Off.,YOG,,3.1,2018-05-03
+SAP,SAP-1152,E. Santosa,IT Support,SMG,Active Directory|Cybersecurity Basics|Helpdesk|Windows Server,4.9,29/06/2020
+Moodle,LMS-9028,D.Perdana,pharm tech,Jakarta,Patient Counseling,,07-26-2019
+Workable,WK-5176,Arif RAHAYU,Sales 2,semarang,,4.4,2017-10-31
+SAP,SAP-1072,umi haryono,Spesialis Marketing,Mdn,Digital Marketing|Social Media|Campaign Management|SEO/SEM,4.1,16/11/2017
+SAP,SAP-1082,Chandra EFFENDI,Teknisi IT,Medan,,2.7,05/08/2022
+Moodle,LMS-9069,T.Handoko,Medis Advisor,Plg,Regulatory Affairs|KOL Management,,11-02-2016
+Workable,WK-5135,Johan Mahendra,Tech Support,jogjakarta,,3.6,2019-07-23
+Moodle,LMS-9017,L.Usman,RA Officer,Sby,,,03-06-2023
+Moodle,LMS-9000,F. Riyadi,Layanan Pelanggan,Jakarta Pusat,Communication,,03-18-2018
+Workable,WK-5112,Umi RAHAYU,Sales Officer,Bdg,Negotiation,5.0,2017-05-29
+Workable,WK-5084,Nuri Saputra,pharm tech,Semarang,Patient Counseling|BPOM Compliance|SAP Pharma|Inventory Management,3.6,2020-06-20
+Workable,WK-5098,Murti EFFENDI,Keuangan,Bandung Kota,Cost Analysis|Financial Reporting|Tax Compliance|SAP Finance,3.4,2016-02-19
+SAP,SAP-1147,Dewi.Wahyudi,Branch Mgr,Medan Kota,,2.5,23/06/2017
+SAP,SAP-1195,eko firmansyah,Regulatory Off.,makassar,,2.5,02/10/2018
+SAP,SAP-1175,W.Kartono,logistics coordinator,BDG,Procurement|SAP WM,4.9,14/03/2018
+Workable,WK-5022,eko rahayu,CS,medan,,4.0,2016-04-05
+Workable,WK-5066,Yuni Effendi,CustServ,Plbg,,5.0,2018-09-28
+Workable,WK-5081,Haris LUKMAN,branch manager,YOG,Strategic Planning|Stakeholder Management|Budgeting,4.1,2020-02-21
+Workable,WK-5008,doni mahendra,HRD,YOG,Performance Management|Employee Relations|HRIS|Payroll,2.9,2018-05-20
+Workable,WK-5144,Hani SUPRAPTO,Pharmacy Tech,palembang,GMP Standards|SAP Pharma|Inventory Management,3.0,2018-11-30
+Moodle,LMS-9125,Umi SANTOSA,RA Officer,Jakarta,,,04-27-2022
+Workable,WK-5029,Niko Utomo,HR Spec,Plg,,4.8,2020-12-19
+SAP,SAP-1065,Bagas Kurniawan,Pharmacy Tech,Yogya,,4.9,28/06/2023
+Moodle,LMS-9081,Murti KURNIAWAN,Reg Affairs,JAKARTA,,,01-28-2020
+SAP,SAP-1068,Gita Osman,BM,semarang,,2.5,01/07/2023
+Moodle,LMS-9118,H. Firmansyah,Sales Exec,YOG,,,11-18-2019
+Moodle,LMS-9114,Ika Iskandar,branch manager,Jkt,,,01-20-2018
+Workable,WK-5091,Ferry EFFENDI,Spesialis Marketing,Bali Island,,3.0,2021-05-05
+Workable,WK-5124,N. Halim,Staf Regulasi,bali,GCP,3.2,2022-05-10
+SAP,SAP-1025,Made.Purnomo,Gudang,Sby,,2.8,22/06/2019
+Workable,WK-5108,M. Kurniawan,Regulatory Off.,Jakarta Pusat,,3.4,2020-02-04
+Workable,WK-5033,V. Cahyono,Staff Gudang,PLB,,4.8,2020-07-30
+Moodle,LMS-9087,Karina.Cahyono,Koordinator Logistik,Plg,SAP WM,,11-08-2022
+Workable,WK-5014,fitri junaedi,Senior Sales,Sby,Negotiation,3.8,2022-04-04
+Workable,WK-5051,I. Riyadi,Mktg Specialist,Palembang,Social Media|Digital Marketing,3.8,2019-04-28
+SAP,SAP-1083,ferry kartono,Cust. Service,Jkt,,4.9,01/02/2018
+Moodle,LMS-9008,umi putra,BM,Bali,Budgeting|P&L Management,,02-26-2017
+SAP,SAP-1024,Lestari Usman,RA Officer,SBY,,3.8,09/03/2023
+SAP,SAP-1181,udin cahyono,Staf Keuangan,Yogya,,4.2,21/10/2016
+Workable,WK-5047,Kiki FIRMANSYAH,HR Spec,Yogya,Performance Management|Labor Law,2.7,2019-07-12
+Moodle,LMS-9128,Elsa GUNAWAN,Regulatory Off.,Mdn,,,05-15-2022
+Moodle,LMS-9080,Rendi HANDOKO,BM,BDG,Stakeholder Management|Strategic Planning|Team Leadership,,01-22-2019
+SAP,SAP-1016,A.Hartono,Pharmacy Tech,Jakarta Pusat,Inventory Management|GMP Standards|BPOM Compliance,4.9,27/11/2016
+Moodle,LMS-9042,Y. Setiawan,Staff Gudang,BPN,,,11-17-2018
+SAP,SAP-1037,dian perdana,Pharmacy Tech,Jakarta Pusat,GMP Standards|SAP Pharma|BPOM Compliance|Drug Dispensing|Inventory Management,4.6,31/07/2019
+SAP,SAP-1059,Nanda.Riyadi,CustServ,Medan Kota,CRM|Cross-selling|Complaint Handling,2.5,10/08/2023
+SAP,SAP-1003,J.Bachtiar,RA Officer,YOG,Dossier Preparation|BPOM Regulation,4.0,20/02/2020
+SAP,SAP-1045,made susanto,branch manager,Mdn,Stakeholder Management|Team Leadership,3.8,30/05/2016
+SAP,SAP-1178,R.Gunawan,Medis Advisor,Bandung,Regulatory Affairs|Medical Writing|Clinical Trials|Pharmacovigilance|Clinical Knowledge,4.5,02/12/2018
+SAP,SAP-1092,triana handoko,Med Advisor,Plbg,Pharmacovigilance|Medical Writing|Clinical Trials|KOL Management,2.8,02/11/2016
+Moodle,LMS-9015,Eko.Rahayu,CustServ,Medan Kota,,,04-05-2016
+SAP,SAP-1101,hafiz pratama,Marketing Spec,Denpasar,SEO/SEM|Google Analytics|Social Media|Digital Marketing,3.5,02/06/2020
+SAP,SAP-1177,Yanuar RIYADI,Logistik,Medan,Warehouse Management|Vendor Management|Procurement|SAP WM,3.9,04/07/2017
+Moodle,LMS-9072,Vero Suprapto,WH Staf,Bali,FIFO Method|Barcode Scanning|Safety Compliance,,02-15-2016
+Moodle,LMS-9078,oscar handoko,Logistics Coord,medan,Vendor Management|Procurement|SAP WM,,12-03-2020
+Workable,WK-5092,Triana.Handoko,medical advisor,PLB,Pharmacovigilance|Clinical Trials|Medical Writing,4.4,2016-11-02
+Moodle,LMS-9014,Teguh KURNIAWAN,Pharmacy Tech,Sby,,,11-12-2017
+Workable,WK-5181,U.Cahyono,Finance Off.,Yogya,,3.6,2016-11-16
+Moodle,LMS-9039,Kiki Tambunan,Gudang,Semarang,Inventory Control,,01-16-2019
+SAP,SAP-1111,R.Hartono,HRD,Smg,HRIS|Performance Management|Labor Law,3.4,29/11/2016
+Moodle,LMS-9102,Vero Kurniawan,Mkt. Spec,Palembang,Google Analytics|Campaign Management,,09-01-2019
+Workable,WK-5178,Rama GUNAWAN,medical advisor,Bdg,Medical Writing|Clinical Knowledge|Pharmacovigilance|KOL Management,3.1,2018-12-14
+Workable,WK-5121,putri purnomo,Branch Mgr,Sby,,3.0,2021-07-26
+Workable,WK-5141,Fajar Tambunan,Keuangan,jogjakarta,,3.1,2021-11-08
+Workable,WK-5003,juwita bachtiar,Regulatory Off.,Jogja,Audit Support|GCP|BPOM Regulation|Dossier Preparation,4.7,2020-04-18
+Moodle,LMS-9097,Gina Saputra,SALES REP,Bdg,Cold Calling|Negotiation|Territory Management,,03-24-2016
+Workable,WK-5127,K.Panjaitan,Technical Support,Bali,,4.9,2018-12-01
+Workable,WK-5011,Lestari Suryadi,Marketing Spec,Bandung Kota,Campaign Management|Social Media|SEO/SEM,3.8,2021-11-26
+Moodle,LMS-9100,Shinta.Usman,Advisor Medis,YOG,Clinical Knowledge|Pharmacovigilance,,11-17-2016
+SAP,SAP-1051,imam riyadi,marketing specialist,Plg,Social Media|Digital Marketing|SEO/SEM,4.8,28/04/2019
+SAP,SAP-1085,Zahra ISKANDAR,Advisor Medis,SMG,KOL Management|Clinical Trials|Medical Writing|Clinical Knowledge|Regulatory Affairs,5.0,30/01/2021
+SAP,SAP-1039,Rizky Panjaitan,Senior Sales,Mks,B2B Sales|Negotiation,4.7,31/01/2018
+Workable,WK-5147,D. Wahyudi,Branch Mgr,medan,,4.3,2017-04-30
+Moodle,LMS-9035,Rani.Firmansyah,FinOff,MKS,,,04-30-2023
+Workable,WK-5179,C.Wibowo,Warehouse,JAKARTA,Forklift Operation,3.8,2016-07-26
+Moodle,LMS-9058,C.Haryono,Human Resource,MDN,Recruitment|HRIS,,03-25-2016
+Workable,WK-5023,Y. Hakim,Regulatory Off.,Bandung Kota,BPOM Regulation|Audit Support|Submission Management|Dossier Preparation,3.0,2020-09-12
+Moodle,LMS-9111,Wahyu Lestari,Layanan Pelanggan,jakarta,,,04-18-2017
+Workable,WK-5117,K. Cahyono,logistics coordinator,PLB,Supply Chain|Warehouse Management|Route Optimization,4.1,2022-11-08
+Workable,WK-5101,Hafiz PRATAMA,marketing specialist,Bali Island,Google Analytics|Digital Marketing|SEO/SEM|Campaign Management,2.5,2020-06-15
+Workable,WK-5182,C.Wijaya,medical advisor,Mdn,Pharmacovigilance|Clinical Knowledge|KOL Management,3.1,2020-01-09
+SAP,SAP-1008,D. Mahendra,hr specialist,Jogja,Recruitment|Labor Law,3.7,14/05/2018
+Workable,WK-5036,Z. Tambunan,Reg Affairs,Denpasar,Dossier Preparation|Labeling Compliance|Submission Management|GCP,4.4,2017-08-19
+SAP,SAP-1176,arif rahayu,Sales Exec,SMG,,3.9,14/10/2017
+Moodle,LMS-9011,J.Yulianto,Reg Affairs,MDN,Labeling Compliance|GCP,,08-21-2016
+Workable,WK-5165,Kartika Halim,Staf Keuangan,Smg.,SAP Finance,3.5,2018-09-23
+Workable,WK-5010,Z.Lestari,Sales Staf,Jakarta,Salesforce|Pipeline Management|Territory Management,4.4,2019-10-26
+SAP,SAP-1191,Chandra RIYADI,Cust. Service,jogjakarta,,4.9,20/01/2022
+Workable,WK-5001,I.Susanto,HRD,Surabaya,Recruitment|HRIS|Performance Management|Labor Law,2.6,2018-08-01
+SAP,SAP-1112,Umi Rahayu,Sales Officer,Bandung,Territory Management|Salesforce|Account Management|B2B Sales,3.0,29/05/2017
+SAP,SAP-1153,Lina Suharto,Staf Keuangan,Smg,,4.5,09/11/2017
+Workable,WK-5114,Made Kusuma,Tech Support,SMG,Networking|Windows Server|Active Directory,3.1,2021-10-01
+SAP,SAP-1103,ulfa firmansyah,IT Supp,Surabaya,,4.7,24/03/2022
+SAP,SAP-1084,Nuri Saputra,Pharmacy Tech,SMG,GMP Standards|Drug Dispensing|Inventory Management|Patient Counseling|SAP Pharma,4.1,27/06/2020
+Workable,WK-5103,U. Firmansyah,IT Supp,Sby,,3.9,2022-04-15
+SAP,SAP-1193,Yanuar.Rahayu,Human Resource,palembang,,3.0,11/12/2018
+SAP,SAP-1136,vero kurniawan,Mkt. Spec,palembang,Social Media|Content Creation|Digital Marketing|Google Analytics,3.5,01/09/2019
+SAP,SAP-1049,rama nugroho,Sales Officer,SMG,Territory Management|Negotiation|Account Management|Salesforce|CRM,2.7,09/07/2019
+Moodle,LMS-9133,H.Kurniawan,Logistics Coord,SMG,Route Optimization|Vendor Management|Warehouse Management,,04-14-2019
+SAP,SAP-1029,Niko UTOMO,HR Spec,PLB,,3.3,15/01/2021
+Workable,WK-5138,Karina.Firmansyah,Staff Gudang,Yogya,Forklift Operation|Safety Compliance|Inventory Control,3.9,2022-02-22
+Workable,WK-5131,Siti KARTONO,marketing specialist,bali,,4.9,2022-03-27
+Moodle,LMS-9041,Valdi Mulyono,Customer Svc,Medan,,,06-09-2021
+SAP,SAP-1102,E.Pratama,HR Spec,BDG,Recruitment|Performance Management,3.6,03/11/2019
+Moodle,LMS-9005,made pranoto,WH Staf,Plg,Barcode Scanning|Safety Compliance,,03-29-2021
+Moodle,LMS-9076,H. Pratama,Marketing Spec,Bali,SEO/SEM,,06-15-2020
+Moodle,LMS-9002,I.Setiawan,pharm tech,Jkt,,,12-20-2016
+SAP,SAP-1067,Sigit TAMBUNAN,WH Staf,Bali,,3.4,26/08/2018
+Workable,WK-5132,O. Kartono,Staf Regulasi,Bdg,Submission Management,2.5,2017-05-21
+Moodle,LMS-9121,Teguh.Handoko,Human Resource,Smg,,,08-10-2018
+Moodle,LMS-9034,Kiki Firmansyah,hr specialist,YOG,Performance Management|Onboarding|Labor Law,,04-17-2019
+SAP,SAP-1062,B. Riyadi,Human Resource,JAKARTA,Onboarding|Performance Management,3.6,11/10/2019
+Workable,WK-5166,Wulan.Firmansyah,Spesialis Marketing,Medan,Campaign Management,3.3,2020-11-06
+Workable,WK-5024,L.Usman,Regulatory Off.,Sby,,3.2,2023-02-01
+SAP,SAP-1161,Panji Haryono,CS,Balikpapan Kota,,2.5,14/10/2018
+Workable,WK-5046,Benny.Bachtiar,Customer Svc,Jakarta Pusat,Cross-selling|SLA Management,4.7,2020-06-20
+SAP,SAP-1186,Erwin FIRMANSYAH,Pharmacy Tech,PLB,,4.8,08/11/2019
+Moodle,LMS-9006,Hafiz Utomo,Branch Mgr,Sby,Strategic Planning|Budgeting|P&L Management,,03-11-2020
+Moodle,LMS-9096,Surya Budiman,HR Officer,Yogya,,,07-05-2016
+Workable,WK-5175,W.Kartono,Koordinator Logistik,Bdg,Vendor Management|Supply Chain,3.8,2018-03-14
+Workable,WK-5061,Triana Suryadi,Regulatory Off.,surabaya,Audit Support,4.2,2020-12-07
+Workable,WK-5034,R.Nugroho,Layanan Pelanggan,Bali Island,CRM|Complaint Handling,4.5,2017-05-01
+Workable,WK-5146,jefri santoso,WH Staf,Makassar,,3.6,2022-05-05
+SAP,SAP-1098,Murti EFFENDI,Staf Keuangan,Bdg,SAP Finance|Cost Analysis|Accounting|Tax Compliance,2.6,19/02/2016
+SAP,SAP-1138,Karina.Firmansyah,Gudang,Yogya,FIFO Method|Barcode Scanning,4.8,07/12/2021
+Workable,WK-5062,B.Riyadi,Personalia,Jkt,Payroll|Recruitment|Employee Relations,4.0,2019-10-11
+SAP,SAP-1064,T. Osman,Med Advisor,Jakarta Pusat,,3.6,24/04/2019
+SAP,SAP-1173,Andri.Junaedi,Mgr Branch,Jakarta Pusat,Strategic Planning|KPI Monitoring|Team Leadership|Budgeting,4.3,14/07/2023
+SAP,SAP-1030,Juwita.Hartono,Medis Advisor,Yogya,,4.0,13/07/2020
+Moodle,LMS-9122,P. Haryono,Cust. Service,Balikpapan,,,10-14-2018
+SAP,SAP-1165,Kartika HALIM,FinOff,Semarang,SAP Finance|Financial Reporting|Cost Analysis|Accounting,3.2,12/09/2018
+Moodle,LMS-9031,H. Nasution,Staf Regulasi,medan,,,07-05-2018
+Workable,WK-5105,Ika Rachman,Personalia,Yogya,,2.8,2020-08-23
+SAP,SAP-1104,oscar handoko,Koordinator Logistik,Medan,Procurement|SAP WM|Warehouse Management|Supply Chain|Vendor Management,4.1,03/12/2020
+SAP,SAP-1018,J. Yulianto,RAO,Medan,GCP|Audit Support|BPOM Regulation,2.7,25/07/2016
+SAP,SAP-1027,vero setiawan,Gudang,jogjakarta,,3.6,13/11/2021
+Moodle,LMS-9135,J.Santoso,customer service,MDN,Communication|SLA Management,,06-21-2022
+Workable,WK-5143,Gita PRATAMA,regulatory affairs officer,makassar,,3.6,2018-08-16
+SAP,SAP-1094,vincent santoso,Regulatory Off.,JKT,,4.2,20/01/2017
+SAP,SAP-1151,V.Santoso,sales rep,bandung,B2B Sales|CRM|Account Management|Cold Calling|Negotiation,4.7,21/03/2023
+SAP,SAP-1145,wahyu lestari,Cust. Service,Jakarta Pusat,,2.6,19/01/2017
+Moodle,LMS-9018,made purnomo,WH Staff,Surabaya Timur,,,06-22-2019
+Workable,WK-5148,Andri EFFENDI,Reg Affairs,JKT,Submission Management|GCP|BPOM Regulation,3.9,2019-05-15
+Moodle,LMS-9115,Gina MAULANA,Warehouse,makassar,,,10-29-2020
+Moodle,LMS-9131,D. Kusuma,IT Support,Surabaya Timur,Windows Server,,11-12-2020
+Workable,WK-5195,eko firmansyah,Staf Regulasi,Mks,,4.9,2018-12-29
+Moodle,LMS-9140,D.Osman,Med. Adv.,jakarta,,,07-04-2018
+Moodle,LMS-9026,Rizky Nugroho,Cust. Service,Denpasar,SLA Management|CRM,,04-27-2017
+Workable,WK-5119,W. Effendi,Pharmacy Tech,Denpasar,SAP Pharma|GMP Standards|Inventory Management|Patient Counseling,3.1,2020-11-03
+Workable,WK-5058,S.Pranoto,Layanan Pelanggan,SMG,Cross-selling,4.7,2017-10-14
+Workable,WK-5142,Galih SUSANTO,Logistik,Smg.,Warehouse Management|Supply Chain|SAP WM,4.2,2021-11-16
+SAP,SAP-1140,A. Maulana,Mkt. Spec,YOG,,3.9,28/03/2019
+Workable,WK-5032,I. Setiawan,CS,Ujung Pandang,Cross-selling,3.3,2022-09-22
+Moodle,LMS-9045,N.Riyadi,Layanan Pelanggan,Medan Kota,Communication,,07-13-2023
+Workable,WK-5070,T.Hartono,finance officer,DPS,,3.6,2018-01-20
+SAP,SAP-1158,Ferry BASUKI,RA Officer,Yogyakarta,,2.9,03/05/2018
+Moodle,LMS-9037,Erwin Maulana,Customer Svc,MKS,SLA Management|Cross-selling|Communication,,07-24-2023
+Workable,WK-5083,ferry kartono,CS,JKT,,4.1,2018-03-05
+Workable,WK-5040,U. Suharto,Pharm. Tech,Mks,,4.1,2021-08-15
+Moodle,LMS-9107,F. Tambunan,Finance Off.,Jogja,,,09-29-2021
+Workable,WK-5053,Kiki Tambunan,Gudang,semarang,Inventory Control,4.6,2018-11-22
+Workable,WK-5067,Sigit TAMBUNAN,Staff Gudang,Denpasar,,3.2,2018-05-11
+SAP,SAP-1199,Kiki KURNIAWAN,Medis Advisor,Jkt,,3.0,26/12/2020
+Moodle,LMS-9108,Galih SUSANTO,Logistik,SMG,Route Optimization|Vendor Management|Warehouse Management,,11-15-2021
+Workable,WK-5052,Kiki MAULANA,RAO,jogjakarta,Submission Management|Dossier Preparation,4.4,2016-10-21
+Workable,WK-5189,P. Kurniawan,Med Advisor,Balikpapan Kota,Regulatory Affairs|Pharmacovigilance|Clinical Knowledge|Clinical Trials,2.8,2020-11-20
+SAP,SAP-1197,laila lukman,Manager Cabang,Medan Kota,KPI Monitoring|P&L Management,4.4,14/01/2023
+Workable,WK-5096,Vero SUPRAPTO,WH Staff,Bali,Forklift Operation|Barcode Scanning|FIFO Method,2.9,2016-01-17
+SAP,SAP-1054,joko santosa,RAO,Plbg,GCP|Labeling Compliance|Audit Support|Dossier Preparation,4.2,15/04/2019
+Moodle,LMS-9022,juwita hartono,Advisor Medis,Jogja,,,10-05-2020
+SAP,SAP-1040,umi suharto,Pharma Technician,Makassar,,3.1,19/05/2021
+SAP,SAP-1155,jefri setiawan,Staff Gudang,jakarta,Safety Compliance|Inventory Control|Barcode Scanning,2.8,16/04/2021
+Workable,WK-5153,lina suharto,Fin Officer,Smg.,,2.6,2017-11-09
+Moodle,LMS-9032,Claudia SAPUTRA,CS,Mks,,,10-11-2019
+SAP,SAP-1148,Andri.Effendi,Reg Affairs,Jakarta,Labeling Compliance|GCP|Dossier Preparation,2.9,15/05/2019
+Moodle,LMS-9066,Sari.Wibowo,Layanan Pelanggan,Jkt,,,05-12-2020
+SAP,SAP-1097,dita mahendra,Tech Support,Bandung,,2.6,28/02/2022
+SAP,SAP-1081,H.Lukman,Kepala Cabang,jogjakarta,Team Leadership|P&L Management|Budgeting|KPI Monitoring,4.6,21/02/2020
+Workable,WK-5077,J. Putra,Logistik,Palembang,Warehouse Management|Supply Chain,3.1,2019-03-20
+SAP,SAP-1019,Z. Setiawan,Staf Regulasi,Bali Island,,3.2,03/06/2018
+Moodle,LMS-9086,Zulfa SURYADI,RAO,Balikpapan,,,08-06-2018
+SAP,SAP-1077,Johan.Putra,Log. Coord,palembang,Vendor Management|Route Optimization|Warehouse Management,4.2,23/03/2019
+SAP,SAP-1119,W.Effendi,Apoteker Asisten,Denpasar,SAP Pharma|Drug Dispensing|BPOM Compliance|GMP Standards|Patient Counseling,3.1,21/11/2020
+Moodle,LMS-9092,G. Riyadi,logistics coordinator,BDG,Route Optimization|Procurement,,08-18-2023
+Moodle,LMS-9145,Lukman Iskandar,Mktg Specialist,Balikpapan,Campaign Management|Google Analytics,,10-15-2016
+Workable,WK-5090,C. Susanto,sales rep,BPN,,4.9,2021-05-16
+SAP,SAP-1074,Kevin Haryono,Med Advisor,Bdg,,3.9,04/10/2020
+SAP,SAP-1160,Citra Susanto,SALES REP,jogjakarta,,3.1,13/07/2017
+Workable,WK-5184,yoga purnomo,Kepala Cabang,Jkt,,4.4,2016-08-25
+SAP,SAP-1133,Shinta USMAN,Medis Advisor,jogjakarta,Clinical Trials|KOL Management|Clinical Knowledge|Regulatory Affairs,3.4,23/10/2016
+SAP,SAP-1075,N.Perdana,regulatory affairs officer,JKT,Audit Support|BPOM Regulation,4.0,15/12/2021
+Workable,WK-5074,kevin haryono,Medical Rep,Bandung Kota,,3.1,2020-09-03
+Workable,WK-5072,Umi HARYONO,Marketing,medan,Digital Marketing|Social Media|Campaign Management,4.7,2017-11-09
+SAP,SAP-1031,S. Osman,BM,SMG,Budgeting|Strategic Planning|P&L Management,3.5,04/05/2021
+Moodle,LMS-9151,Laila Lukman,Kepala Cabang,Mdn,KPI Monitoring,,12-20-2022
+Workable,WK-5075,Naomi Perdana,Reg Affairs,JAKARTA,Audit Support,4.5,2021-12-15
+SAP,SAP-1056,Y.Setiawan,Warehouse,Balikpapan Kota,,4.6,01/01/2019
+Workable,WK-5191,Chandra.Riyadi,CustServ,Yogyakarta,,3.5,2022-03-20
+Workable,WK-5186,Erwin Firmansyah,Apt. Asst,Plbg,,3.6,2019-11-08
+Workable,WK-5031,sari osman,Manager Cabang,Semarang,KPI Monitoring|Team Leadership|Strategic Planning|Stakeholder Management,2.8,2021-05-14
+SAP,SAP-1022,E.Rahayu,CustServ,MDN,,4.4,05/04/2016
+Moodle,LMS-9044,Sigit Pranoto,Layanan Pelanggan,semarang,CRM|Complaint Handling,,10-04-2017
+SAP,SAP-1172,Hendra.Kurniawan,Logistic,semarang,Route Optimization|Procurement|SAP WM,5.0,13/04/2019
+Moodle,LMS-9023,sari osman,Branch Mgr,Semarang,P&L Management|Team Leadership|Budgeting,,05-04-2021
+Workable,WK-5041,N. Santoso,Pharmacy Tech,Bdg,SAP Pharma,4.6,2022-07-26
+SAP,SAP-1002,I. Setiawan,Pharm. Tech,Jkt,,2.5,11/01/2017
+Moodle,LMS-9106,Agus MAULANA,Marketing,Jogja,,,02-12-2019
+SAP,SAP-1196,Tika PRANOTO,regulatory affairs officer,jakarta,,2.9,23/02/2017
+Workable,WK-5035,udin kartono,warehouse staff,Jakarta,,3.2,2017-12-14
+Workable,WK-5193,Yanuar Rahayu,Human Resource,Palembang,,3.6,2019-01-24
+Moodle,LMS-9025,V.Cahyono,Warehouse,Palembang,,,07-30-2020
+Moodle,LMS-9149,W.Halim,Kepala Cabang,Smg,KPI Monitoring|P&L Management,,09-20-2016
+Workable,WK-5080,Gina.Kusuma,Staf Keuangan,JAKARTA,Reconciliation|Tax Compliance|Cost Analysis|SAP Finance,3.0,2016-06-13
+SAP,SAP-1183,Surya RIYADI,Warehouse,Medan,,2.5,30/09/2018
+Workable,WK-5065,B.Kurniawan,Pharmacy Tech,YOG,,4.1,2023-07-01
+SAP,SAP-1164,U.Santosa,Staf Regulasi,Jakarta Pusat,,2.8,19/03/2022
+SAP,SAP-1105,ika rachman,Personalia,YOG,,4.2,06/09/2020
+Moodle,LMS-9077,U.Firmansyah,it support,Sby,,,03-24-2022
+Moodle,LMS-9104,Karina.Firmansyah,Staff Gudang,Yogya,Safety Compliance|FIFO Method|Inventory Control,,02-23-2022
+SAP,SAP-1184,Y. Purnomo,BM,JKT,,3.0,30/10/2016
+Workable,WK-5064,Triana Osman,Advisor Medis,jakarta,,4.4,2019-04-24
+Moodle,LMS-9053,Umi Haryono,Mktg Specialist,MDN,Content Creation|Digital Marketing|Campaign Management,,10-09-2017
+SAP,SAP-1154,H.Firmansyah,Sales 2,Jogja,,4.5,30/10/2019
+SAP,SAP-1091,Ferry EFFENDI,Marketing,DPS,,4.0,26/05/2021
+SAP,SAP-1167,Elsa GUNAWAN,RAO,Mdn,,4.3,18/04/2022
+SAP,SAP-1057,J.Kartono,Med. Adv.,Bali,,3.2,03/08/2020
+SAP,SAP-1190,L.Rachman,Mgr Branch,MKS,Budgeting|P&L Management|Strategic Planning|Stakeholder Management,4.5,23/02/2020
+SAP,SAP-1034,rizky nugroho,Cust. Service,Bali,Ticketing|Complaint Handling,3.6,11/04/2017
+SAP,SAP-1053,kiki tambunan,Staff Gudang,SMG,Safety Compliance|Forklift Operation|Stock Opname|Inventory Control,4.4,15/11/2018
+Workable,WK-5000,Fajar.Riyadi,CS,jakarta,SLA Management|Cross-selling,2.9,2018-03-10
+Moodle,LMS-9043,Jefri KARTONO,Medical Rep,Denpasar,,,06-04-2020
+SAP,SAP-1150,Gina Maulana,Gudang,Ujung Pandang,,3.5,29/10/2020
+SAP,SAP-1144,hani suprapto,Pharma Technician,Plbg,Inventory Management|BPOM Compliance|GMP Standards|SAP Pharma,3.6,27/11/2018
+Moodle,LMS-9088,W. Nasution,Advisor Medis,Jogja,,,08-04-2016
+Workable,WK-5157,T.Handoko,hr specialist,Smg,,3.2,2018-07-26
+Moodle,LMS-9007,V. Yulianto,Finance Off.,balikpapan,,,06-28-2023
+Workable,WK-5045,M.Susanto,Mgr Branch,Medan Kota,Strategic Planning|Stakeholder Management|Budgeting,3.0,2016-05-07
+SAP,SAP-1106,G.Wahyudi,Med Advisor,JAKARTA,KOL Management|Clinical Knowledge|Pharmacovigilance|Clinical Trials|Medical Writing,2.8,28/03/2017
+SAP,SAP-1134,Fitri.Osman,Staf Regulasi,Bandung Kota,Audit Support|BPOM Regulation|GCP|Submission Management,2.6,12/12/2017
+SAP,SAP-1044,H.Panjaitan,Pharm. Tech,Smg,,4.4,24/02/2022
+SAP,SAP-1073,Ulfa WIBOWO,Human Resource,DPS,Employee Relations|Labor Law|Onboarding|Performance Management|Payroll,3.8,20/04/2018
+Workable,WK-5123,Galih Riyadi,Koordinator Logistik,BDG,Warehouse Management|Route Optimization|SAP WM,5.0,2023-11-03
+Workable,WK-5020,Wahyu HARYONO,medical advisor,DPS,,3.6,2020-12-14
+Moodle,LMS-9016,Yuni HAKIM,Regulatory Off.,Bandung,Dossier Preparation|GCP|Audit Support,,09-12-2020
+Workable,WK-5164,U. Santosa,regulatory affairs officer,Jakarta Pusat,,3.1,2022-01-03
+SAP,SAP-1080,G. Kusuma,FinOff,Jakarta Pusat,Reconciliation|Cost Analysis,4.0,02/08/2016
+Moodle,LMS-9138,Y. Riyadi,logistics coordinator,Mdn,Procurement|Warehouse Management,,10-05-2017
+SAP,SAP-1118,W.Nasution,Advisor Medis,Yogya,,4.3,04/08/2016
+SAP,SAP-1009,V.Yulianto,finance officer,Bpn,,2.7,29/05/2023
+Workable,WK-5026,Lukman.Santoso,Log. Coord,Bandung,Supply Chain,2.5,2020-04-09
+Moodle,LMS-9089,Widi Effendi,Pharma Technician,DPS,SAP Pharma,,11-21-2020
+Workable,WK-5048,R.Firmansyah,Keuangan,MKS,,3.5,2023-04-30
+SAP,SAP-1110,Chandra Susanto,logistics coordinator,Smg.,Supply Chain|SAP WM|Route Optimization,4.1,21/01/2020
+SAP,SAP-1061,triana suryadi,RAO,SBY,GCP|Submission Management,4.1,07/12/2020
+Moodle,LMS-9067,A.Iskandar,marketing specialist,PLB,Google Analytics|Social Media|SEO/SEM,,03-22-2018
+Workable,WK-5173,A. Junaedi,Manager Cabang,Jakarta Pusat,Strategic Planning,4.6,2023-08-14
+Workable,WK-5017,N.Gunawan,HR Officer,bandung,Performance Management|Onboarding,2.9,2018-03-22
+Workable,WK-5099,Gina.Mulyono,SALES REP,Smg,Cold Calling,3.2,2020-09-22
+SAP,SAP-1170,dewi kusuma,Teknisi IT,surabaya,Active Directory|Networking|Troubleshooting,4.3,23/11/2020
+Workable,WK-5150,Gina MAULANA,Gudang,MKS,,2.7,2020-12-09
+Workable,WK-5097,D. Mahendra,Tech Support,BDG,,3.1,2021-09-24
+Moodle,LMS-9051,T.Hartono,finance officer,DPS,,,04-09-2018
+SAP,SAP-1033,vina cahyono,Warehouse,PLB,,4.1,31/07/2020
+SAP,SAP-1194,Wulan.Halim,Mgr Branch,SMG,Strategic Planning|Stakeholder Management|KPI Monitoring,3.3,20/09/2016
+SAP,SAP-1060,umi cahyono,medical advisor,PLB,,3.3,18/01/2023
+Workable,WK-5113,Toni PURNOMO,Teknisi IT,MDN,Helpdesk|Active Directory|Cybersecurity Basics|Troubleshooting,4.3,2022-02-11
+Moodle,LMS-9148,Priya Iskandar,Manager Cabang,YOG,KPI Monitoring,,10-02-2019
+SAP,SAP-1132,Oscar.Kartono,Regulatory Off.,Bandung,GCP|Audit Support|Labeling Compliance,4.8,21/05/2017
+SAP,SAP-1047,Kiki.Firmansyah,HR Officer,Yogya,Payroll|Performance Management|Labor Law,3.8,29/06/2019
+SAP,SAP-1131,S. Kartono,marketing specialist,Bali Island,,4.6,27/03/2022
+Workable,WK-5198,L. Halim,Koordinator Logistik,Jakarta,,4.2,2018-05-20
+SAP,SAP-1099,G.Mulyono,Sales Exec,Smg.,Account Management|Cold Calling|Territory Management|Salesforce|B2B Sales,3.3,22/08/2020
+Workable,WK-5095,Vero BASUKI,Marketing Spec,JKT,SEO/SEM|Social Media|Digital Marketing|Google Analytics,2.5,2016-10-22
+Moodle,LMS-9065,Z.Iskandar,Advisor Medis,Smg,Clinical Knowledge,,03-02-2021
+Moodle,LMS-9046,Umi CAHYONO,Medical Rep,Plg,,,12-09-2022
+Workable,WK-5136,Vero KURNIAWAN,Mktg Specialist,PLB,Content Creation,2.8,2019-09-01
+Workable,WK-5093,Yoga Halim,WH Staf,JKT,Barcode Scanning|FIFO Method|Forklift Operation|Stock Opname,3.0,2020-11-30
+SAP,SAP-1107,Rendi Handoko,Branch Mgr,BDG,Team Leadership|Budgeting|Strategic Planning|P&L Management|KPI Monitoring,2.9,22/02/2019
+Moodle,LMS-9064,Nuri SAPUTRA,Pharm. Tech,SMG,SAP Pharma|Drug Dispensing,,05-13-2020
+Moodle,LMS-9009,Budi.Usman,Branch Mgr,Mks,P&L Management|KPI Monitoring|Strategic Planning,,05-03-2018
+Workable,WK-5069,Fajar.Santoso,Personalia,Surabaya Timur,Recruitment,3.2,2017-03-13
+Moodle,LMS-9117,Lina.Suharto,FinOff,Semarang,,,11-09-2017
+Moodle,LMS-9152,Lukman HALIM,Logistik,Jakarta Pusat,,,05-21-2018
+SAP,SAP-1125,K. Bachtiar,Manager Cabang,Semarang,,3.2,03/10/2022
+Workable,WK-5163,Yuni Suprapto,RAO,Smg,Dossier Preparation|Submission Management|Labeling Compliance|GCP,4.2,2021-10-13
+SAP,SAP-1015,B.Usman,Manager Cabang,Ujung Pandang,Budgeting|KPI Monitoring,4.8,23/01/2018
+Workable,WK-5038,Shinta Firmansyah,Koordinator Logistik,Yogya,,3.3,2018-11-21
+Workable,WK-5155,Jefri SETIAWAN,WH Staf,JKT,FIFO Method|Forklift Operation,3.0,2021-05-13
+Workable,WK-5172,hendra kurniawan,Log. Coord,Smg,SAP WM,4.1,2019-04-14
+SAP,SAP-1100,Kevin HANDOKO,Fin Officer,Plbg,Financial Reporting|SAP Finance|Reconciliation|Tax Compliance|Accounting,4.2,11/07/2017
+Workable,WK-5009,vina yulianto,FinOff,Balikpapan Kota,,2.6,2023-06-17
+SAP,SAP-1000,Fajar Riyadi,CS,JAKARTA,CRM|Cross-selling,4.7,30/03/2018
+Workable,WK-5060,U. Cahyono,Med Advisor,palembang,,4.8,2022-12-09
+Workable,WK-5169,B.Nugroho,CS,Sby,,3.4,2023-01-15
+Workable,WK-5111,R. Hartono,HR Spec,SMG,Labor Law|Employee Relations|Recruitment|Onboarding,4.9,2016-11-09
+Moodle,LMS-9012,Z.Setiawan,regulatory affairs officer,DPS,,,07-21-2018
+Moodle,LMS-9062,C. Effendi,IT Support,Medan Kota,,,08-05-2022
+Moodle,LMS-9054,Ulfa WIBOWO,Personalia,Denpasar,Employee Relations|Performance Management|Onboarding,,04-20-2018
+SAP,SAP-1076,Monica.Pranoto,Layanan Pelanggan,Medan,,3.0,04/04/2023
+Workable,WK-5125,K.Bachtiar,Kepala Cabang,SMG,,3.9,2022-10-26
+SAP,SAP-1126,L.Handoko,Sales Exec,Jkt,,4.9,12/11/2017
+Workable,WK-5012,U. Putra,BM,Bali,KPI Monitoring|Stakeholder Management|Strategic Planning|P&L Management,3.7,2016-12-25
+SAP,SAP-1050,erwin maulana,Customer Svc,makassar,Ticketing|Communication|Cross-selling|SLA Management|Complaint Handling,3.0,21/08/2023
+Workable,WK-5085,Zahra ISKANDAR,Advisor Medis,Semarang,Clinical Trials|Medical Writing|Clinical Knowledge,3.6,2021-03-02
+SAP,SAP-1121,Putri Purnomo,Mgr Branch,SBY,,2.8,21/07/2021
+Workable,WK-5183,surya riyadi,Staff Gudang,Medan Kota,,4.5,2018-09-30
+SAP,SAP-1004,W. Mahendra,Staf Keuangan,Plbg,Tax Compliance|Cost Analysis|SAP Finance,3.2,23/02/2022
+Workable,WK-5088,Arif ISKANDAR,marketing specialist,palembang,Google Analytics|Digital Marketing,4.1,2018-04-30
+SAP,SAP-1006,Citra Tambunan,pharm tech,Medan Kota,,4.7,16/11/2022
+SAP,SAP-1171,I. Mulyono,Mktg Specialist,Mks,,2.5,15/02/2018
+SAP,SAP-1007,H. Utomo,BM,surabaya,Stakeholder Management|Budgeting|Team Leadership,4.5,05/03/2020
+Moodle,LMS-9105,V.Rachman,Technical Support,Jakarta,Cybersecurity Basics|Helpdesk,,07-25-2023
+Workable,WK-5129,Gina Saputra,Sales Officer,Bandung Kota,Pipeline Management|Territory Management|CRM|Negotiation,4.5,2016-03-03
+Workable,WK-5118,wahyu nasution,medical advisor,Yogya,,3.6,2016-07-25
+SAP,SAP-1162,Zahra MAHENDRA,Pharma Technician,JAKARTA,GMP Standards|Patient Counseling,3.7,03/02/2019
+Workable,WK-5079,Oki LUKMAN,Logistik,Sby,Supply Chain|SAP WM,2.8,2017-01-18
+Moodle,LMS-9074,G.Mulyono,Sales Exec,Smg,Account Management|B2B Sales|Territory Management,,07-01-2020
+Moodle,LMS-9036,Rama Nugroho,Sales Exec,Semarang,Territory Management|Account Management,,07-09-2019
+SAP,SAP-1141,Fajar TAMBUNAN,FinOff,YOG,,2.9,29/09/2021
+Moodle,LMS-9124,Yuni.Suprapto,RAO,Smg,Audit Support|Dossier Preparation,,10-13-2021
+Workable,WK-5078,C.Haryono,HRD,medan,Performance Management,4.2,2016-03-25
+SAP,SAP-1014,F.Junaedi,Sales Officer,SBY,Salesforce|Pipeline Management|Cold Calling|CRM,4.1,04/04/2022
+SAP,SAP-1088,A.Iskandar,Mktg Specialist,Plg,Google Analytics|SEO/SEM|Social Media,4.3,30/04/2018
+SAP,SAP-1066,Y.Effendi,CustServ,Palembang,,4.7,30/09/2018
+Moodle,LMS-9024,I.Setiawan,Layanan Pelanggan,MKS,Complaint Handling|CRM,,09-22-2022
+Moodle,LMS-9130,bagas nugroho,CS,Sby,,,01-15-2023
+Workable,WK-5007,Hafiz.Utomo,Branch Mgr,Surabaya,Budgeting|P&L Management|Team Leadership|KPI Monitoring,3.5,2020-04-01
+Workable,WK-5137,Eko.Riyadi,Staff Gudang,MDN,Stock Opname,3.8,2019-01-13
+SAP,SAP-1113,toni purnomo,it support,Medan Kota,Active Directory|Windows Server|Networking,3.2,11/02/2022
+Moodle,LMS-9040,J.Santosa,RA Officer,Plg,Submission Management|Dossier Preparation|Audit Support,,04-15-2019
+Moodle,LMS-9050,F. Santoso,HRD,Surabaya Timur,Employee Relations|Performance Management,,04-05-2017
+SAP,SAP-1032,Ika Setiawan,CustServ,Ujung Pandang,Ticketing|Cross-selling|SLA Management|Communication|Complaint Handling,4.5,22/09/2022
+Workable,WK-5037,Dian PERDANA,Pharmacy Tech,JKT,Patient Counseling|Inventory Management|BPOM Compliance|SAP Pharma,4.5,2019-08-02
+Moodle,LMS-9033,Haris PANJAITAN,Pharma Technician,Smg.,,,03-02-2022
+Moodle,LMS-9137,arif rahayu,sales rep,Semarang,,,10-14-2017
+Moodle,LMS-9075,kevin handoko,Staf Keuangan,Plbg,Cost Analysis,,07-11-2017
+Moodle,LMS-9068,Ferry Effendi,Mktg Specialist,Bali,,,05-05-2021
+Moodle,LMS-9095,kiki panjaitan,Tech Support,Bali,,,11-10-2018
+Workable,WK-5055,Valdi MULYONO,Customer Svc,medan,,2.8,2021-05-08
+Workable,WK-5128,Surya BUDIMAN,HR Spec,Jogja,,4.0,2016-07-05
+SAP,SAP-1109,K. Perdana,branch manager,Mdn,,4.2,28/03/2018
+Moodle,LMS-9142,Y.Purnomo,branch manager,Jakarta,,,08-29-2016
+Workable,WK-5192,Priya.Iskandar,branch manager,jogjakarta,Budgeting|Strategic Planning|KPI Monitoring,4.0,2019-09-09
+Workable,WK-5159,Nuri Usman,HR Officer,Yogyakarta,Employee Relations|Onboarding|Performance Management,4.6,2022-11-09
+SAP,SAP-1001,I.Susanto,HRD,Surabaya,Onboarding|Payroll,3.8,01/08/2018
+Workable,WK-5120,bagas lukman,Koordinator Logistik,Plg,,3.4,2018-01-05
+Moodle,LMS-9119,Jefri Setiawan,WH Staff,Jkt,FIFO Method,,04-15-2021
+SAP,SAP-1135,Johan MAHENDRA,Teknisi IT,YOG,,3.0,23/07/2019
+Moodle,LMS-9099,O. Kartono,Staf Regulasi,bandung,Labeling Compliance|GCP|Submission Management,,05-21-2017
+Workable,WK-5043,C. Saputra,Customer Svc,makassar,,3.6,2019-10-11
+Workable,WK-5134,Fitri OSMAN,Regulatory Off.,Bandung Kota,BPOM Regulation|Audit Support,2.9,2017-11-02
+Workable,WK-5174,juwita santoso,customer service,Mdn,Complaint Handling|Communication,2.6,2022-06-22
+Moodle,LMS-9093,Nuri HALIM,regulatory affairs officer,DPS,GCP,,05-06-2022
+SAP,SAP-1192,Priya.Iskandar,Branch Mgr,Jogja,P&L Management|Stakeholder Management|Team Leadership|Strategic Planning|KPI Monitoring,3.7,26/10/2019
+Workable,WK-5015,B.Usman,Mgr Branch,Mks,Strategic Planning|P&L Management|Budgeting,2.9,2018-04-14
+SAP,SAP-1142,Galih SUSANTO,Logistik,Smg,Warehouse Management|Vendor Management|Supply Chain,3.0,16/11/2021
+SAP,SAP-1041,Nanda SANTOSO,pharm tech,Bandung Kota,GMP Standards|SAP Pharma|Drug Dispensing,4.9,15/06/2022
+SAP,SAP-1117,Karina CAHYONO,Logistics Coord,Palembang,Vendor Management|Warehouse Management|Route Optimization|Supply Chain,3.6,08/11/2022
+Moodle,LMS-9144,Erwin.Firmansyah,Apoteker Asisten,Plbg,,,11-25-2019
+Moodle,LMS-9132,I. Mulyono,Marketing Spec,MKS,,,03-10-2018
+SAP,SAP-1093,yoga halim,Gudang,jakarta,Inventory Control|Barcode Scanning|Stock Opname|FIFO Method,4.7,26/02/2021
+Workable,WK-5171,ika mulyono,Mkt. Spec,Makassar,,4.4,2018-01-23
+Moodle,LMS-9048,T. Osman,Medical Rep,jakarta,,,04-24-2019
+Moodle,LMS-9052,Budi GUNAWAN,Mgr Branch,BPN,,,06-25-2019
+Moodle,LMS-9038,K. Maulana,Regulatory Off.,jogjakarta,Audit Support,,01-07-2017
+SAP,SAP-1055,V. Mulyono,Layanan Pelanggan,medan,,3.8,08/05/2021
+Workable,WK-5199,kiki kurniawan,Advisor Medis,Jakarta,,3.3,2020-10-16
+Workable,WK-5107,R. Handoko,Kepala Cabang,Bandung,Team Leadership,2.9,2019-01-22
+Workable,WK-5139,Vina RACHMAN,Teknisi IT,JAKARTA,Windows Server|Troubleshooting|Cybersecurity Basics,3.8,2023-07-25
+Workable,WK-5130,Prita.Handoko,marketing specialist,Denpasar,Social Media|Content Creation|Google Analytics,4.0,2017-06-27
+Workable,WK-5082,Chandra Effendi,Tech Support,Medan Kota,,4.5,2022-08-05
+Moodle,LMS-9141,Surya Riyadi,Staff Gudang,MDN,,,09-30-2018
+SAP,SAP-1012,Umi PUTRA,Kepala Cabang,bali,P&L Management|Stakeholder Management|Strategic Planning|KPI Monitoring|Budgeting,3.3,25/12/2016
+SAP,SAP-1129,G. Saputra,SALES REP,Bdg,Negotiation|Account Management|B2B Sales|Territory Management|Salesforce,3.9,01/03/2016
+Workable,WK-5068,gita osman,Manager Cabang,Semarang,,4.1,2023-05-07
+Workable,WK-5018,J.Yulianto,regulatory affairs officer,MDN,Dossier Preparation|Audit Support,3.0,2016-07-29
+Moodle,LMS-9070,yoga halim,WH Staf,JKT,Safety Compliance,,02-26-2021
+Workable,WK-5162,Zahra MAHENDRA,Apoteker Asisten,Jakarta Pusat,Drug Dispensing,3.5,2018-10-12
+SAP,SAP-1198,Lukman HALIM,Logistic,Jakarta Pusat,,3.2,20/05/2018
+SAP,SAP-1078,Citra.Haryono,Human Resource,Medan Kota,HRIS|Onboarding|Payroll|Performance Management,3.2,25/03/2016
+Workable,WK-5087,Haris.Perdana,branch manager,Jakarta Pusat,P&L Management|Team Leadership|Budgeting,3.4,2017-11-26
+SAP,SAP-1157,Teguh HANDOKO,hr specialist,semarang,,3.7,02/08/2018
+Workable,WK-5104,Oscar Handoko,Logistic,Medan Kota,Procurement|Route Optimization|Supply Chain|SAP WM,3.1,2020-12-03
+Workable,WK-5133,Shinta Usman,Medis Advisor,YOG,KOL Management,3.6,2016-10-23
+SAP,SAP-1086,S. Wibowo,CS,Jakarta Pusat,,2.7,12/05/2020
+Workable,WK-5054,Joko Santosa,RAO,Plbg,BPOM Regulation,4.2,2019-05-13
+SAP,SAP-1035,udin kartono,Warehouse,JKT,,4.3,22/12/2017
+SAP,SAP-1028,Fajar Wahyudi,CustServ,Mdn,Cross-selling|Ticketing|Communication|SLA Management,4.3,14/08/2016
+Workable,WK-5154,Hafiz.Firmansyah,Sales Staf,Yogyakarta,,4.7,2019-11-02
+Workable,WK-5056,Y. Setiawan,warehouse staff,Balikpapan,,4.8,2018-11-17
+Workable,WK-5170,D. Kusuma,Technical Support,SBY,Cybersecurity Basics|Windows Server|Helpdesk,4.8,2020-10-21
+SAP,SAP-1026,lukman santoso,Log. Coord,BDG,Route Optimization|Warehouse Management,4.5,20/04/2020
+Moodle,LMS-9060,gina kusuma,Staf Keuangan,Jkt,Accounting|Cost Analysis|Reconciliation,,08-26-2016
+Workable,WK-5050,Erwin.Maulana,CustServ,MKS,Complaint Handling,3.4,2023-07-24
+Workable,WK-5039,Rizky PANJAITAN,sales rep,makassar,Salesforce|Cold Calling|Pipeline Management|B2B Sales,3.9,2018-01-31
+SAP,SAP-1090,C.Susanto,Sales 2,Balikpapan Kota,,3.9,30/04/2021
+SAP,SAP-1128,S.Budiman,HR Officer,YOG,,4.8,05/07/2016
+Moodle,LMS-9030,Nanda Santoso,Apoteker Asisten,bandung,SAP Pharma,,07-26-2022
+SAP,SAP-1139,V. Rachman,Teknisi IT,jakarta,Troubleshooting|Active Directory|Helpdesk|Cybersecurity Basics,3.4,25/07/2023
+Moodle,LMS-9079,Galih WAHYUDI,Med Advisor,jakarta,Regulatory Affairs,,04-24-2017
+Workable,WK-5019,Zulfa SETIAWAN,RA Officer,Bali,,4.3,2018-08-07
+SAP,SAP-1079,Oki Lukman,Koordinator Logistik,Surabaya Timur,Vendor Management|Warehouse Management,2.6,05/11/2016
+Workable,WK-5106,galih wahyudi,Medical Rep,Jkt,Medical Writing|Pharmacovigilance|Clinical Trials,3.7,2017-04-24
+Moodle,LMS-9113,Andri EFFENDI,RA Officer,JAKARTA,Audit Support|BPOM Regulation|Submission Management,,03-30-2019
+Moodle,LMS-9123,zahra mahendra,Pharm. Tech,JKT,SAP Pharma|Patient Counseling,,11-16-2018
+Workable,WK-5160,C. Susanto,Sales Staf,YOG,,5.0,2017-07-05
+SAP,SAP-1046,benny bachtiar,customer service,Jakarta,SLA Management|Communication,4.4,05/07/2020
+Moodle,LMS-9098,Siti.Kartono,marketing specialist,Bali Island,,,03-27-2022
+SAP,SAP-1127,Kiki Panjaitan,it support,bali,,2.6,24/10/2018
+SAP,SAP-1069,F.Santoso,HRD,SBY,Employee Relations|Recruitment|Onboarding|Labor Law|Payroll,4.4,05/04/2017
+Moodle,LMS-9083,C.Susanto,Koordinator Logistik,Smg,Procurement|Vendor Management|SAP WM,,12-15-2019
+Workable,WK-5167,Elsa Gunawan,Reg Affairs,MDN,,2.8,2022-06-07
+Workable,WK-5016,A.Hartono,Pharma Technician,Jakarta Pusat,SAP Pharma|Patient Counseling,4.1,2016-11-27
+Workable,WK-5149,Ika ISKANDAR,Manager Cabang,jakarta,,3.2,2018-03-31
+Workable,WK-5161,Panji Haryono,Customer Svc,balikpapan,,4.0,2018-11-26
+Workable,WK-5042,Hendra NASUTION,Regulatory Off.,MDN,,3.9,2018-05-21
+Moodle,LMS-9003,J. Bachtiar,Regulatory Off.,jogjakarta,Audit Support|GCP|Submission Management,,04-17-2020
+Moodle,LMS-9146,priya santoso,FinOff,Yogya,,,12-07-2020
+Workable,WK-5168,Juwita MULYONO,warehouse staff,Makassar,Forklift Operation|Stock Opname,2.6,2022-05-01
+SAP,SAP-1095,V.Basuki,Marketing Spec,jakarta,Campaign Management|Social Media|Digital Marketing|SEO/SEM|Google Analytics,4.1,13/11/2016
+SAP,SAP-1013,panji mulyono,Mktg Specialist,BPN,Digital Marketing|Campaign Management|SEO/SEM,3.1,07/07/2020
+Workable,WK-5002,imam setiawan,Pharm. Tech,Jakarta Pusat,,4.4,2016-12-07
+Moodle,LMS-9136,W.Kartono,Logistics Coord,BDG,SAP WM,,03-14-2018
+Workable,WK-5021,teguh kurniawan,Pharm. Tech,Sby,,3.3,2017-12-21
+Moodle,LMS-9129,Juwita Mulyono,warehouse staff,Mks,Stock Opname,,05-01-2022
+Workable,WK-5110,C. Susanto,Log. Coord,SMG,Vendor Management|Warehouse Management|Supply Chain|SAP WM,5.0,2019-11-16
+Workable,WK-5177,Yanuar Riyadi,Log. Coord,Medan,Warehouse Management,4.8,2017-08-05
+Moodle,LMS-9090,P. Purnomo,Branch Mgr,SBY,,,07-26-2021
+SAP,SAP-1122,P. Gunawan,Marketing Spec,Mks,SEO/SEM|Campaign Management|Content Creation|Google Analytics,3.3,21/02/2016
+SAP,SAP-1011,L. Suryadi,Marketing,Bdg,Digital Marketing|Content Creation|Campaign Management,2.8,20/12/2021
+Moodle,LMS-9010,Naomi Gunawan,hr specialist,Bandung,Employee Relations|Recruitment,,03-22-2018
+Workable,WK-5063,C.Osman,Finance Off.,Denpasar,,4.1,2016-01-18
+Workable,WK-5071,B. Gunawan,Mgr Branch,BPN,,4.6,2019-07-01
+SAP,SAP-1156,Karina HIDAYAT,Manager Cabang,Bali,P&L Management|Budgeting|Team Leadership,3.7,22/02/2020
+SAP,SAP-1058,S. Pranoto,customer service,SMG,Cross-selling|Communication|Ticketing|SLA Management,3.9,04/11/2017
+SAP,SAP-1114,made kusuma,IT Support,SMG,Active Directory|Helpdesk|Windows Server|Networking|Cybersecurity Basics,2.5,01/10/2021
+Workable,WK-5006,Citra TAMBUNAN,Apoteker Asisten,Medan,,4.2,2022-11-16
+Workable,WK-5100,Kevin HANDOKO,FinOff,PLB,Tax Compliance|Reconciliation|Cost Analysis|Financial Reporting,4.7,2017-07-11
+SAP,SAP-1149,I.Iskandar,Kepala Cabang,Jakarta Pusat,,3.7,20/01/2018
+SAP,SAP-1063,C. Osman,finance officer,DPS,,3.3,18/01/2016
+Workable,WK-5197,Laila.Lukman,Mgr Branch,Medan Kota,KPI Monitoring|Budgeting,3.1,2022-12-20
+Moodle,LMS-9020,vero setiawan,WH Staf,Yogyakarta,,,11-13-2021
+SAP,SAP-1168,Juwita.Mulyono,WH Staff,Mks,Safety Compliance|Stock Opname|Forklift Operation,4.6,01/05/2022
+Moodle,LMS-9057,J.Putra,Logistik,Palembang,SAP WM,,03-23-2019
+Moodle,LMS-9091,P. Gunawan,Spesialis Marketing,makassar,Digital Marketing|SEO/SEM,,02-21-2016
+Moodle,LMS-9094,Lestari.Handoko,Sales Staf,Jkt,,,11-12-2017
+SAP,SAP-1137,Eko Riyadi,Gudang,MDN,Barcode Scanning|Forklift Operation|FIFO Method,4.3,13/01/2019
+Workable,WK-5089,Murti YULIANTO,Teknisi IT,JAKARTA,,4.6,2022-04-28
+SAP,SAP-1166,W.Firmansyah,Marketing,Medan,Campaign Management|Google Analytics|SEO/SEM|Content Creation,3.7,20/09/2020
+Moodle,LMS-9126,K. Halim,Keuangan,Semarang,Financial Reporting|Accounting|Tax Compliance,,09-12-2018
+SAP,SAP-1038,S. Firmansyah,Logistic,Jogja,,3.4,21/11/2018
+Workable,WK-5027,vero setiawan,Gudang,Jogja,,2.6,2021-10-08
+Moodle,LMS-9143,Agus Wijaya,logistics coordinator,SBY,SAP WM|Route Optimization|Warehouse Management,,12-21-2017
+Workable,WK-5115,P.Riyadi,medical advisor,Smg.,Regulatory Affairs|Pharmacovigilance|Clinical Knowledge|KOL Management,2.9,2017-12-24
+Workable,WK-5194,wulan halim,Mgr Branch,SMG,Budgeting|Stakeholder Management|KPI Monitoring,2.9,2016-09-20
+Workable,WK-5126,Lestari.Handoko,Sr. Sales,Jakarta Pusat,,4.5,2017-11-12
+Workable,WK-5102,E. Pratama,Human Resource,Bdg,HRIS,3.9,2019-11-03
+SAP,SAP-1070,Teguh.Hartono,FinOff,bali,,3.7,09/04/2018
+Workable,WK-5013,Panji MULYONO,Marketing,balikpapan,Content Creation,4.5,2020-07-30
+SAP,SAP-1182,Claudia Wijaya,Med. Adv.,Mdn,Medical Writing|KOL Management,3.5,09/01/2020
+Workable,WK-5122,P. Gunawan,Marketing,Makassar,Google Analytics|Social Media,3.4,2016-02-21
+Workable,WK-5076,Monica.Pranoto,customer service,MDN,,5.0,2023-01-31
+Moodle,LMS-9134,Andri.Junaedi,Mgr Branch,JKT,Stakeholder Management|P&L Management,,07-18-2023
+Workable,WK-5180,Dewi.Osman,Med Advisor,jakarta,,3.1,2018-08-06
+SAP,SAP-1146,jefri santoso,Gudang,Ujung Pandang,,4.8,05/05/2022
+Workable,WK-5049,Rama.Nugroho,Sales Officer,SMG,Negotiation|Pipeline Management|Cold Calling,4.8,2019-05-26
+Workable,WK-5196,tika pranoto,Regulatory Off.,JAKARTA,,4.6,2017-02-13
+Moodle,LMS-9029,Umi SUHARTO,Apoteker Asisten,Ujung Pandang,,,08-15-2021
+Workable,WK-5116,Z. Suryadi,RAO,Balikpapan Kota,,4.5,2018-08-06
+Workable,WK-5057,J.Kartono,Medical Rep,Bali,,4.2,2020-09-16
+Moodle,LMS-9085,M.Kusuma,IT Supp,Smg,Active Directory,,11-04-2021
+Moodle,LMS-9150,Eko FIRMANSYAH,Regulatory Off.,Makassar,,,02-10-2019
+Workable,WK-5025,Made Purnomo,warehouse staff,SBY,,3.7,2019-06-26
