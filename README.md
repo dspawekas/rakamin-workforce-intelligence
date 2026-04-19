@@ -62,7 +62,7 @@ A working prototype demonstrating how a data reconciliation and AI enrichment la
 
 Built as a single HTML file with zero backend dependencies.
 
-| Layer | Teknologi |
+| Layer | Technology |
 |---|---|
 | **Structure** | HTML5 (Semantic) |
 | **Styling** | Vanilla CSS (Custom Design System, Dark Mode, Glassmorphism) |
