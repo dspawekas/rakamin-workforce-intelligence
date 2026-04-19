@@ -1,0 +1,5532 @@
+[
+  {
+    "source": "Workable",
+    "ext_id": "WK-5109",
+    "name": "K. Perdana",
+    "job_title": "BM",
+    "branch": "medan",
+    "skills": "",
+    "perf_score": 4.3,
+    "join_date": "2018-03-22"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5156",
+    "name": "K. Hidayat",
+    "job_title": "BM",
+    "branch": "Bali",
+    "skills": "P&L Management|KPI Monitoring|Team Leadership",
+    "perf_score": 3.5,
+    "join_date": "2020-02-22"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1188",
+    "name": "Priya.Santoso",
+    "job_title": "Finance Off.",
+    "branch": "jogjakarta",
+    "skills": "",
+    "perf_score": 3.1,
+    "join_date": "19/11/2020"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1020",
+    "name": "Wahyu Haryono",
+    "job_title": "Med. Adv.",
+    "branch": "DPS",
+    "skills": "",
+    "perf_score": 3.4,
+    "join_date": "14/12/2020"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5059",
+    "name": "N.Riyadi",
+    "job_title": "CS",
+    "branch": "Medan Kota",
+    "skills": "Ticketing|CRM|SLA Management",
+    "perf_score": 4.2,
+    "join_date": "2023-08-10"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9071",
+    "name": "Vincent.Santoso",
+    "job_title": "regulatory affairs officer",
+    "branch": "jakarta",
+    "skills": "",
+    "perf_score": "",
+    "join_date": "04-15-2017"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1115",
+    "name": "Priya RIYADI",
+    "job_title": "Med Advisor",
+    "branch": "SMG",
+    "skills": "Clinical Knowledge|KOL Management|Pharmacovigilance|Regulatory Affairs",
+    "perf_score": 2.6,
+    "join_date": "23/10/2017"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1089",
+    "name": "M. Yulianto",
+    "job_title": "Technical Support",
+    "branch": "jakarta",
+    "skills": "",
+    "perf_score": 2.6,
+    "join_date": "22/05/2022"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9103",
+    "name": "E. Riyadi",
+    "job_title": "WH Staff",
+    "branch": "Medan",
+    "skills": "Stock Opname",
+    "perf_score": "",
+    "join_date": "12-01-2018"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1052",
+    "name": "kiki maulana",
+    "job_title": "RAO",
+    "branch": "Jogja",
+    "skills": "Audit Support|Submission Management|GCP|BPOM Regulation",
+    "perf_score": 3.3,
+    "join_date": "29/10/2016"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9084",
+    "name": "Umi.Rahayu",
+    "job_title": "Sales Officer",
+    "branch": "Bandung Kota",
+    "skills": "Salesforce|B2B Sales",
+    "perf_score": "",
+    "join_date": "05-25-2017"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9063",
+    "name": "F. Kartono",
+    "job_title": "Layanan Pelanggan",
+    "branch": "Jakarta Pusat",
+    "skills": "",
+    "perf_score": "",
+    "join_date": "02-02-2018"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1159",
+    "name": "Nuri USMAN",
+    "job_title": "HR Spec",
+    "branch": "Yogya",
+    "skills": "Labor Law|Recruitment|Employee Relations",
+    "perf_score": 3.4,
+    "join_date": "09/11/2022"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5140",
+    "name": "Agus.Maulana",
+    "job_title": "Mkt. Spec",
+    "branch": "Jogja",
+    "skills": "",
+    "perf_score": 4.6,
+    "join_date": "2019-03-28"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5185",
+    "name": "Agus.Wijaya",
+    "job_title": "Logistics Coord",
+    "branch": "Surabaya Timur",
+    "skills": "Vendor Management|SAP WM",
+    "perf_score": 4.7,
+    "join_date": "2017-10-21"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5005",
+    "name": "Made PRANOTO",
+    "job_title": "WH Staff",
+    "branch": "PLB",
+    "skills": "Safety Compliance|FIFO Method|Forklift Operation|Barcode Scanning",
+    "perf_score": 4.6,
+    "join_date": "2021-07-17"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1096",
+    "name": "V.Suprapto",
+    "job_title": "Gudang",
+    "branch": "Bali Island",
+    "skills": "Forklift Operation|Safety Compliance|Inventory Control|FIFO Method|Barcode Scanning",
+    "perf_score": 4.4,
+    "join_date": "17/01/2016"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9101",
+    "name": "J.Mahendra",
+    "job_title": "Teknisi IT",
+    "branch": "Yogya",
+    "skills": "",
+    "perf_score": "",
+    "join_date": "07-23-2019"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5152",
+    "name": "E. Santosa",
+    "job_title": "Technical Support",
+    "branch": "SMG",
+    "skills": "Windows Server|Active Directory|Troubleshooting|Cybersecurity Basics",
+    "perf_score": 3.3,
+    "join_date": "2020-05-30"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9147",
+    "name": "Chandra RIYADI",
+    "job_title": "Cust. Service",
+    "branch": "Jogja",
+    "skills": "",
+    "perf_score": "",
+    "join_date": "04-09-2022"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1174",
+    "name": "Juwita Santoso",
+    "job_title": "CS",
+    "branch": "Medan Kota",
+    "skills": "Ticketing|CRM",
+    "perf_score": 3.5,
+    "join_date": "19/05/2022"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1010",
+    "name": "Zahra.Lestari",
+    "job_title": "SALES REP",
+    "branch": "JKT",
+    "skills": "CRM|Salesforce|Territory Management|Account Management|B2B Sales",
+    "perf_score": 2.9,
+    "join_date": "02/10/2019"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1017",
+    "name": "Naomi.Gunawan",
+    "job_title": "HR Spec",
+    "branch": "Bandung",
+    "skills": "Employee Relations|Onboarding|Recruitment|Performance Management|Labor Law",
+    "perf_score": 4.7,
+    "join_date": "21/03/2018"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9120",
+    "name": "K.Hidayat",
+    "job_title": "Kepala Cabang",
+    "branch": "Denpasar",
+    "skills": "KPI Monitoring|Strategic Planning",
+    "perf_score": "",
+    "join_date": "02-22-2020"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9116",
+    "name": "E. Santosa",
+    "job_title": "Tech Support",
+    "branch": "Semarang",
+    "skills": "Windows Server|Helpdesk",
+    "perf_score": "",
+    "join_date": "06-09-2020"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9082",
+    "name": "K. Perdana",
+    "job_title": "Manager Cabang",
+    "branch": "Mdn",
+    "skills": "",
+    "perf_score": "",
+    "join_date": "03-22-2018"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5190",
+    "name": "L. Rachman",
+    "job_title": "Kepala Cabang",
+    "branch": "makassar",
+    "skills": "Budgeting|Team Leadership|Stakeholder Management|KPI Monitoring",
+    "perf_score": 2.7,
+    "join_date": "2020-03-04"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1036",
+    "name": "Zahra.Tambunan",
+    "job_title": "Regulatory Off.",
+    "branch": "DPS",
+    "skills": "BPOM Regulation|GCP|Audit Support|Labeling Compliance",
+    "perf_score": 2.5,
+    "join_date": "20/09/2017"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1048",
+    "name": "Rani.Firmansyah",
+    "job_title": "Keuangan",
+    "branch": "Mks",
+    "skills": "",
+    "perf_score": 4.8,
+    "join_date": "30/04/2023"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1187",
+    "name": "L. Iskandar",
+    "job_title": "Mkt. Spec",
+    "branch": "Balikpapan Kota",
+    "skills": "Content Creation|Digital Marketing|Google Analytics",
+    "perf_score": 4.8,
+    "join_date": "08/09/2016"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1163",
+    "name": "Yuni.Suprapto",
+    "job_title": "RAO",
+    "branch": "SMG",
+    "skills": "Submission Management|Labeling Compliance|BPOM Regulation|GCP",
+    "perf_score": 3.1,
+    "join_date": "13/10/2021"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5145",
+    "name": "Wahyu.Lestari",
+    "job_title": "Customer Svc",
+    "branch": "Jkt",
+    "skills": "",
+    "perf_score": 3.9,
+    "join_date": "2017-01-19"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1180",
+    "name": "D.Osman",
+    "job_title": "Medis Advisor",
+    "branch": "Jakarta Pusat",
+    "skills": "",
+    "perf_score": 2.6,
+    "join_date": "06/08/2018"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1023",
+    "name": "Yuni.Hakim",
+    "job_title": "Regulatory Off.",
+    "branch": "Bandung Kota",
+    "skills": "GCP|Labeling Compliance",
+    "perf_score": 3.3,
+    "join_date": "12/09/2020"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5188",
+    "name": "Priya.Santoso",
+    "job_title": "Staf Keuangan",
+    "branch": "jogjakarta",
+    "skills": "",
+    "perf_score": 3.4,
+    "join_date": "2020-11-23"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9013",
+    "name": "Wahyu.Haryono",
+    "job_title": "Med. Adv.",
+    "branch": "Bali Island",
+    "skills": "",
+    "perf_score": "",
+    "join_date": "01-17-2021"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9056",
+    "name": "monica pranoto",
+    "job_title": "CS",
+    "branch": "MDN",
+    "skills": "",
+    "perf_score": "",
+    "join_date": "02-01-2023"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9059",
+    "name": "O.Lukman",
+    "job_title": "Logistic",
+    "branch": "Surabaya Timur",
+    "skills": "Warehouse Management",
+    "perf_score": "",
+    "join_date": "11-05-2016"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1120",
+    "name": "B.Lukman",
+    "job_title": "Logistic",
+    "branch": "Plg",
+    "skills": "",
+    "perf_score": 3.6,
+    "join_date": "15/01/2018"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9109",
+    "name": "Gita Pratama",
+    "job_title": "Regulatory Off.",
+    "branch": "makassar",
+    "skills": "",
+    "perf_score": "",
+    "join_date": "06-25-2018"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1021",
+    "name": "T. Kurniawan",
+    "job_title": "Apoteker Asisten",
+    "branch": "SBY",
+    "skills": "",
+    "perf_score": 3.9,
+    "join_date": "21/12/2017"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5073",
+    "name": "Ulfa.Wibowo",
+    "job_title": "HR Officer",
+    "branch": "DPS",
+    "skills": "Onboarding|Recruitment",
+    "perf_score": 2.9,
+    "join_date": "2018-02-17"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9027",
+    "name": "U.Kartono",
+    "job_title": "Staff Gudang",
+    "branch": "Jkt",
+    "skills": "",
+    "perf_score": "",
+    "join_date": "12-14-2017"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1005",
+    "name": "made pranoto",
+    "job_title": "WH Staff",
+    "branch": "Plg",
+    "skills": "Barcode Scanning|Inventory Control",
+    "perf_score": 3.8,
+    "join_date": "27/06/2021"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1185",
+    "name": "agus wijaya",
+    "job_title": "Logistics Coord",
+    "branch": "Surabaya Timur",
+    "skills": "Warehouse Management|Supply Chain|Route Optimization|Procurement|SAP WM",
+    "perf_score": 4.2,
+    "join_date": "15/11/2017"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5044",
+    "name": "H.Panjaitan",
+    "job_title": "Pharmacy Tech",
+    "branch": "SMG",
+    "skills": "",
+    "perf_score": 3.1,
+    "join_date": "2021-11-17"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5028",
+    "name": "fajar wahyudi",
+    "job_title": "customer service",
+    "branch": "Medan Kota",
+    "skills": "Cross-selling|Ticketing|CRM",
+    "perf_score": 4.2,
+    "join_date": "2016-08-14"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1143",
+    "name": "Gita Pratama",
+    "job_title": "Staf Regulasi",
+    "branch": "Ujung Pandang",
+    "skills": "",
+    "perf_score": 5.0,
+    "join_date": "28/04/2018"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5094",
+    "name": "Vincent Santoso",
+    "job_title": "regulatory affairs officer",
+    "branch": "JAKARTA",
+    "skills": "",
+    "perf_score": 2.8,
+    "join_date": "2017-03-06"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5187",
+    "name": "L. Iskandar",
+    "job_title": "Marketing Spec",
+    "branch": "Balikpapan Kota",
+    "skills": "Digital Marketing|SEO/SEM",
+    "perf_score": 2.9,
+    "join_date": "2016-10-15"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1189",
+    "name": "P. Kurniawan",
+    "job_title": "Advisor Medis",
+    "branch": "Bpn",
+    "skills": "Medical Writing|Pharmacovigilance|Regulatory Affairs|KOL Management",
+    "perf_score": 3.0,
+    "join_date": "20/11/2020"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1071",
+    "name": "Budi Gunawan",
+    "job_title": "BM",
+    "branch": "Balikpapan Kota",
+    "skills": "",
+    "perf_score": 4.5,
+    "join_date": "25/06/2019"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1169",
+    "name": "Bagas Nugroho",
+    "job_title": "Cust. Service",
+    "branch": "SBY",
+    "skills": "",
+    "perf_score": 3.6,
+    "join_date": "15/01/2023"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9139",
+    "name": "C. Wibowo",
+    "job_title": "WH Staf",
+    "branch": "JKT",
+    "skills": "Safety Compliance|Stock Opname",
+    "perf_score": "",
+    "join_date": "08-16-2016"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9061",
+    "name": "haris lukman",
+    "job_title": "Manager Cabang",
+    "branch": "Jogja",
+    "skills": "Strategic Planning",
+    "perf_score": "",
+    "join_date": "05-21-2020"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9019",
+    "name": "Lukman SANTOSO",
+    "job_title": "Koordinator Logistik",
+    "branch": "bandung",
+    "skills": "SAP WM|Route Optimization",
+    "perf_score": "",
+    "join_date": "04-09-2020"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9055",
+    "name": "Naomi.Perdana",
+    "job_title": "regulatory affairs officer",
+    "branch": "Jkt",
+    "skills": "Audit Support|Labeling Compliance",
+    "perf_score": "",
+    "join_date": "11-19-2021"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9127",
+    "name": "Wulan Firmansyah",
+    "job_title": "Mkt. Spec",
+    "branch": "Medan",
+    "skills": "Social Media",
+    "perf_score": "",
+    "join_date": "09-20-2020"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5004",
+    "name": "wulan mahendra",
+    "job_title": "Staf Keuangan",
+    "branch": "Plg",
+    "skills": "Cost Analysis",
+    "perf_score": 2.8,
+    "join_date": "2022-01-15"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1043",
+    "name": "C.Saputra",
+    "job_title": "CS",
+    "branch": "Makassar",
+    "skills": "",
+    "perf_score": 3.9,
+    "join_date": "11/10/2019"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9021",
+    "name": "F.Wahyudi",
+    "job_title": "CS",
+    "branch": "medan",
+    "skills": "Communication|Complaint Handling",
+    "perf_score": "",
+    "join_date": "08-14-2016"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1123",
+    "name": "galih riyadi",
+    "job_title": "Logistik",
+    "branch": "BDG",
+    "skills": "Warehouse Management|Procurement|SAP WM",
+    "perf_score": 2.8,
+    "join_date": "25/08/2023"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9001",
+    "name": "irma susanto",
+    "job_title": "HR Spec",
+    "branch": "Surabaya Timur",
+    "skills": "Onboarding",
+    "perf_score": "",
+    "join_date": "08-01-2018"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9110",
+    "name": "Hani SUPRAPTO",
+    "job_title": "Pharma Technician",
+    "branch": "PLB",
+    "skills": "Patient Counseling|BPOM Compliance",
+    "perf_score": "",
+    "join_date": "12-05-2018"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5151",
+    "name": "V.Santoso",
+    "job_title": "Sales 2",
+    "branch": "Bandung Kota",
+    "skills": "Pipeline Management|B2B Sales|Negotiation",
+    "perf_score": 2.7,
+    "join_date": "2023-03-21"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9047",
+    "name": "citra osman",
+    "job_title": "Finance Off.",
+    "branch": "bali",
+    "skills": "",
+    "perf_score": "",
+    "join_date": "02-21-2016"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5086",
+    "name": "Sari Wibowo",
+    "job_title": "CustServ",
+    "branch": "Jakarta",
+    "skills": "",
+    "perf_score": 3.2,
+    "join_date": "2020-05-12"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9049",
+    "name": "S.Tambunan",
+    "job_title": "WH Staf",
+    "branch": "Bali Island",
+    "skills": "",
+    "perf_score": "",
+    "join_date": "08-05-2018"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1116",
+    "name": "Z. Suryadi",
+    "job_title": "Reg Affairs",
+    "branch": "BPN",
+    "skills": "",
+    "perf_score": 3.2,
+    "join_date": "06/08/2018"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9004",
+    "name": "Wulan.Mahendra",
+    "job_title": "Fin Officer",
+    "branch": "Palembang",
+    "skills": "SAP Finance",
+    "perf_score": "",
+    "join_date": "01-15-2022"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1108",
+    "name": "Murti.Kurniawan",
+    "job_title": "RAO",
+    "branch": "Jkt",
+    "skills": "",
+    "perf_score": 4.7,
+    "join_date": "06/02/2020"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5030",
+    "name": "Juwita HARTONO",
+    "job_title": "Medis Advisor",
+    "branch": "YOG",
+    "skills": "",
+    "perf_score": 4.4,
+    "join_date": "2020-07-13"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1087",
+    "name": "Haris Perdana",
+    "job_title": "branch manager",
+    "branch": "jakarta",
+    "skills": "Budgeting|Strategic Planning|P&L Management|Team Leadership",
+    "perf_score": 4.1,
+    "join_date": "16/12/2017"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1179",
+    "name": "Citra WIBOWO",
+    "job_title": "Gudang",
+    "branch": "Jakarta",
+    "skills": "Safety Compliance|Inventory Control|Stock Opname",
+    "perf_score": 3.2,
+    "join_date": "16/08/2016"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1130",
+    "name": "Prita.Handoko",
+    "job_title": "Marketing",
+    "branch": "Denpasar",
+    "skills": "Digital Marketing|Campaign Management|SEO/SEM|Google Analytics|Social Media",
+    "perf_score": 4.1,
+    "join_date": "07/06/2017"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9073",
+    "name": "Dita MAHENDRA",
+    "job_title": "IT Support",
+    "branch": "BDG",
+    "skills": "",
+    "perf_score": "",
+    "join_date": "12-23-2021"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1042",
+    "name": "Hendra NASUTION",
+    "job_title": "RA Officer",
+    "branch": "Medan",
+    "skills": "",
+    "perf_score": 3.7,
+    "join_date": "05/06/2018"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1124",
+    "name": "nuri halim",
+    "job_title": "RAO",
+    "branch": "Denpasar",
+    "skills": "Audit Support|GCP|Labeling Compliance|BPOM Regulation",
+    "perf_score": 3.5,
+    "join_date": "10/05/2022"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9112",
+    "name": "Jefri SANTOSO",
+    "job_title": "warehouse staff",
+    "branch": "Mks",
+    "skills": "",
+    "perf_score": "",
+    "join_date": "05-05-2022"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5158",
+    "name": "Ferry.Basuki",
+    "job_title": "Regulatory Off.",
+    "branch": "YOG",
+    "skills": "",
+    "perf_score": 3.1,
+    "join_date": "2018-05-03"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1152",
+    "name": "E. Santosa",
+    "job_title": "IT Support",
+    "branch": "SMG",
+    "skills": "Active Directory|Cybersecurity Basics|Helpdesk|Windows Server",
+    "perf_score": 4.9,
+    "join_date": "29/06/2020"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9028",
+    "name": "D.Perdana",
+    "job_title": "pharm tech",
+    "branch": "Jakarta",
+    "skills": "Patient Counseling",
+    "perf_score": "",
+    "join_date": "07-26-2019"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5176",
+    "name": "Arif RAHAYU",
+    "job_title": "Sales 2",
+    "branch": "semarang",
+    "skills": "",
+    "perf_score": 4.4,
+    "join_date": "2017-10-31"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1072",
+    "name": "umi haryono",
+    "job_title": "Spesialis Marketing",
+    "branch": "Mdn",
+    "skills": "Digital Marketing|Social Media|Campaign Management|SEO/SEM",
+    "perf_score": 4.1,
+    "join_date": "16/11/2017"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1082",
+    "name": "Chandra EFFENDI",
+    "job_title": "Teknisi IT",
+    "branch": "Medan",
+    "skills": "",
+    "perf_score": 2.7,
+    "join_date": "05/08/2022"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9069",
+    "name": "T.Handoko",
+    "job_title": "Medis Advisor",
+    "branch": "Plg",
+    "skills": "Regulatory Affairs|KOL Management",
+    "perf_score": "",
+    "join_date": "11-02-2016"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5135",
+    "name": "Johan Mahendra",
+    "job_title": "Tech Support",
+    "branch": "jogjakarta",
+    "skills": "",
+    "perf_score": 3.6,
+    "join_date": "2019-07-23"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9017",
+    "name": "L.Usman",
+    "job_title": "RA Officer",
+    "branch": "Sby",
+    "skills": "",
+    "perf_score": "",
+    "join_date": "03-06-2023"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9000",
+    "name": "F. Riyadi",
+    "job_title": "Layanan Pelanggan",
+    "branch": "Jakarta Pusat",
+    "skills": "Communication",
+    "perf_score": "",
+    "join_date": "03-18-2018"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5112",
+    "name": "Umi RAHAYU",
+    "job_title": "Sales Officer",
+    "branch": "Bdg",
+    "skills": "Negotiation",
+    "perf_score": 5.0,
+    "join_date": "2017-05-29"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5084",
+    "name": "Nuri Saputra",
+    "job_title": "pharm tech",
+    "branch": "Semarang",
+    "skills": "Patient Counseling|BPOM Compliance|SAP Pharma|Inventory Management",
+    "perf_score": 3.6,
+    "join_date": "2020-06-20"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5098",
+    "name": "Murti EFFENDI",
+    "job_title": "Keuangan",
+    "branch": "Bandung Kota",
+    "skills": "Cost Analysis|Financial Reporting|Tax Compliance|SAP Finance",
+    "perf_score": 3.4,
+    "join_date": "2016-02-19"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1147",
+    "name": "Dewi.Wahyudi",
+    "job_title": "Branch Mgr",
+    "branch": "Medan Kota",
+    "skills": "",
+    "perf_score": 2.5,
+    "join_date": "23/06/2017"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1195",
+    "name": "eko firmansyah",
+    "job_title": "Regulatory Off.",
+    "branch": "makassar",
+    "skills": "",
+    "perf_score": 2.5,
+    "join_date": "02/10/2018"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1175",
+    "name": "W.Kartono",
+    "job_title": "logistics coordinator",
+    "branch": "BDG",
+    "skills": "Procurement|SAP WM",
+    "perf_score": 4.9,
+    "join_date": "14/03/2018"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5022",
+    "name": "eko rahayu",
+    "job_title": "CS",
+    "branch": "medan",
+    "skills": "",
+    "perf_score": 4.0,
+    "join_date": "2016-04-05"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5066",
+    "name": "Yuni Effendi",
+    "job_title": "CustServ",
+    "branch": "Plbg",
+    "skills": "",
+    "perf_score": 5.0,
+    "join_date": "2018-09-28"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5081",
+    "name": "Haris LUKMAN",
+    "job_title": "branch manager",
+    "branch": "YOG",
+    "skills": "Strategic Planning|Stakeholder Management|Budgeting",
+    "perf_score": 4.1,
+    "join_date": "2020-02-21"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5008",
+    "name": "doni mahendra",
+    "job_title": "HRD",
+    "branch": "YOG",
+    "skills": "Performance Management|Employee Relations|HRIS|Payroll",
+    "perf_score": 2.9,
+    "join_date": "2018-05-20"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5144",
+    "name": "Hani SUPRAPTO",
+    "job_title": "Pharmacy Tech",
+    "branch": "palembang",
+    "skills": "GMP Standards|SAP Pharma|Inventory Management",
+    "perf_score": 3.0,
+    "join_date": "2018-11-30"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9125",
+    "name": "Umi SANTOSA",
+    "job_title": "RA Officer",
+    "branch": "Jakarta",
+    "skills": "",
+    "perf_score": "",
+    "join_date": "04-27-2022"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5029",
+    "name": "Niko Utomo",
+    "job_title": "HR Spec",
+    "branch": "Plg",
+    "skills": "",
+    "perf_score": 4.8,
+    "join_date": "2020-12-19"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1065",
+    "name": "Bagas Kurniawan",
+    "job_title": "Pharmacy Tech",
+    "branch": "Yogya",
+    "skills": "",
+    "perf_score": 4.9,
+    "join_date": "28/06/2023"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9081",
+    "name": "Murti KURNIAWAN",
+    "job_title": "Reg Affairs",
+    "branch": "JAKARTA",
+    "skills": "",
+    "perf_score": "",
+    "join_date": "01-28-2020"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1068",
+    "name": "Gita Osman",
+    "job_title": "BM",
+    "branch": "semarang",
+    "skills": "",
+    "perf_score": 2.5,
+    "join_date": "01/07/2023"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9118",
+    "name": "H. Firmansyah",
+    "job_title": "Sales Exec",
+    "branch": "YOG",
+    "skills": "",
+    "perf_score": "",
+    "join_date": "11-18-2019"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9114",
+    "name": "Ika Iskandar",
+    "job_title": "branch manager",
+    "branch": "Jkt",
+    "skills": "",
+    "perf_score": "",
+    "join_date": "01-20-2018"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5091",
+    "name": "Ferry EFFENDI",
+    "job_title": "Spesialis Marketing",
+    "branch": "Bali Island",
+    "skills": "",
+    "perf_score": 3.0,
+    "join_date": "2021-05-05"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5124",
+    "name": "N. Halim",
+    "job_title": "Staf Regulasi",
+    "branch": "bali",
+    "skills": "GCP",
+    "perf_score": 3.2,
+    "join_date": "2022-05-10"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1025",
+    "name": "Made.Purnomo",
+    "job_title": "Gudang",
+    "branch": "Sby",
+    "skills": "",
+    "perf_score": 2.8,
+    "join_date": "22/06/2019"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5108",
+    "name": "M. Kurniawan",
+    "job_title": "Regulatory Off.",
+    "branch": "Jakarta Pusat",
+    "skills": "",
+    "perf_score": 3.4,
+    "join_date": "2020-02-04"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5033",
+    "name": "V. Cahyono",
+    "job_title": "Staff Gudang",
+    "branch": "PLB",
+    "skills": "",
+    "perf_score": 4.8,
+    "join_date": "2020-07-30"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9087",
+    "name": "Karina.Cahyono",
+    "job_title": "Koordinator Logistik",
+    "branch": "Plg",
+    "skills": "SAP WM",
+    "perf_score": "",
+    "join_date": "11-08-2022"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5014",
+    "name": "fitri junaedi",
+    "job_title": "Senior Sales",
+    "branch": "Sby",
+    "skills": "Negotiation",
+    "perf_score": 3.8,
+    "join_date": "2022-04-04"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5051",
+    "name": "I. Riyadi",
+    "job_title": "Mktg Specialist",
+    "branch": "Palembang",
+    "skills": "Social Media|Digital Marketing",
+    "perf_score": 3.8,
+    "join_date": "2019-04-28"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1083",
+    "name": "ferry kartono",
+    "job_title": "Cust. Service",
+    "branch": "Jkt",
+    "skills": "",
+    "perf_score": 4.9,
+    "join_date": "01/02/2018"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9008",
+    "name": "umi putra",
+    "job_title": "BM",
+    "branch": "Bali",
+    "skills": "Budgeting|P&L Management",
+    "perf_score": "",
+    "join_date": "02-26-2017"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1024",
+    "name": "Lestari Usman",
+    "job_title": "RA Officer",
+    "branch": "SBY",
+    "skills": "",
+    "perf_score": 3.8,
+    "join_date": "09/03/2023"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1181",
+    "name": "udin cahyono",
+    "job_title": "Staf Keuangan",
+    "branch": "Yogya",
+    "skills": "",
+    "perf_score": 4.2,
+    "join_date": "21/10/2016"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5047",
+    "name": "Kiki FIRMANSYAH",
+    "job_title": "HR Spec",
+    "branch": "Yogya",
+    "skills": "Performance Management|Labor Law",
+    "perf_score": 2.7,
+    "join_date": "2019-07-12"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9128",
+    "name": "Elsa GUNAWAN",
+    "job_title": "Regulatory Off.",
+    "branch": "Mdn",
+    "skills": "",
+    "perf_score": "",
+    "join_date": "05-15-2022"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9080",
+    "name": "Rendi HANDOKO",
+    "job_title": "BM",
+    "branch": "BDG",
+    "skills": "Stakeholder Management|Strategic Planning|Team Leadership",
+    "perf_score": "",
+    "join_date": "01-22-2019"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1016",
+    "name": "A.Hartono",
+    "job_title": "Pharmacy Tech",
+    "branch": "Jakarta Pusat",
+    "skills": "Inventory Management|GMP Standards|BPOM Compliance",
+    "perf_score": 4.9,
+    "join_date": "27/11/2016"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9042",
+    "name": "Y. Setiawan",
+    "job_title": "Staff Gudang",
+    "branch": "BPN",
+    "skills": "",
+    "perf_score": "",
+    "join_date": "11-17-2018"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1037",
+    "name": "dian perdana",
+    "job_title": "Pharmacy Tech",
+    "branch": "Jakarta Pusat",
+    "skills": "GMP Standards|SAP Pharma|BPOM Compliance|Drug Dispensing|Inventory Management",
+    "perf_score": 4.6,
+    "join_date": "31/07/2019"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1059",
+    "name": "Nanda.Riyadi",
+    "job_title": "CustServ",
+    "branch": "Medan Kota",
+    "skills": "CRM|Cross-selling|Complaint Handling",
+    "perf_score": 2.5,
+    "join_date": "10/08/2023"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1003",
+    "name": "J.Bachtiar",
+    "job_title": "RA Officer",
+    "branch": "YOG",
+    "skills": "Dossier Preparation|BPOM Regulation",
+    "perf_score": 4.0,
+    "join_date": "20/02/2020"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1045",
+    "name": "made susanto",
+    "job_title": "branch manager",
+    "branch": "Mdn",
+    "skills": "Stakeholder Management|Team Leadership",
+    "perf_score": 3.8,
+    "join_date": "30/05/2016"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1178",
+    "name": "R.Gunawan",
+    "job_title": "Medis Advisor",
+    "branch": "Bandung",
+    "skills": "Regulatory Affairs|Medical Writing|Clinical Trials|Pharmacovigilance|Clinical Knowledge",
+    "perf_score": 4.5,
+    "join_date": "02/12/2018"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1092",
+    "name": "triana handoko",
+    "job_title": "Med Advisor",
+    "branch": "Plbg",
+    "skills": "Pharmacovigilance|Medical Writing|Clinical Trials|KOL Management",
+    "perf_score": 2.8,
+    "join_date": "02/11/2016"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9015",
+    "name": "Eko.Rahayu",
+    "job_title": "CustServ",
+    "branch": "Medan Kota",
+    "skills": "",
+    "perf_score": "",
+    "join_date": "04-05-2016"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1101",
+    "name": "hafiz pratama",
+    "job_title": "Marketing Spec",
+    "branch": "Denpasar",
+    "skills": "SEO/SEM|Google Analytics|Social Media|Digital Marketing",
+    "perf_score": 3.5,
+    "join_date": "02/06/2020"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1177",
+    "name": "Yanuar RIYADI",
+    "job_title": "Logistik",
+    "branch": "Medan",
+    "skills": "Warehouse Management|Vendor Management|Procurement|SAP WM",
+    "perf_score": 3.9,
+    "join_date": "04/07/2017"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9072",
+    "name": "Vero Suprapto",
+    "job_title": "WH Staf",
+    "branch": "Bali",
+    "skills": "FIFO Method|Barcode Scanning|Safety Compliance",
+    "perf_score": "",
+    "join_date": "02-15-2016"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9078",
+    "name": "oscar handoko",
+    "job_title": "Logistics Coord",
+    "branch": "medan",
+    "skills": "Vendor Management|Procurement|SAP WM",
+    "perf_score": "",
+    "join_date": "12-03-2020"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5092",
+    "name": "Triana.Handoko",
+    "job_title": "medical advisor",
+    "branch": "PLB",
+    "skills": "Pharmacovigilance|Clinical Trials|Medical Writing",
+    "perf_score": 4.4,
+    "join_date": "2016-11-02"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9014",
+    "name": "Teguh KURNIAWAN",
+    "job_title": "Pharmacy Tech",
+    "branch": "Sby",
+    "skills": "",
+    "perf_score": "",
+    "join_date": "11-12-2017"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5181",
+    "name": "U.Cahyono",
+    "job_title": "Finance Off.",
+    "branch": "Yogya",
+    "skills": "",
+    "perf_score": 3.6,
+    "join_date": "2016-11-16"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9039",
+    "name": "Kiki Tambunan",
+    "job_title": "Gudang",
+    "branch": "Semarang",
+    "skills": "Inventory Control",
+    "perf_score": "",
+    "join_date": "01-16-2019"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1111",
+    "name": "R.Hartono",
+    "job_title": "HRD",
+    "branch": "Smg",
+    "skills": "HRIS|Performance Management|Labor Law",
+    "perf_score": 3.4,
+    "join_date": "29/11/2016"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9102",
+    "name": "Vero Kurniawan",
+    "job_title": "Mkt. Spec",
+    "branch": "Palembang",
+    "skills": "Google Analytics|Campaign Management",
+    "perf_score": "",
+    "join_date": "09-01-2019"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5178",
+    "name": "Rama GUNAWAN",
+    "job_title": "medical advisor",
+    "branch": "Bdg",
+    "skills": "Medical Writing|Clinical Knowledge|Pharmacovigilance|KOL Management",
+    "perf_score": 3.1,
+    "join_date": "2018-12-14"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5121",
+    "name": "putri purnomo",
+    "job_title": "Branch Mgr",
+    "branch": "Sby",
+    "skills": "",
+    "perf_score": 3.0,
+    "join_date": "2021-07-26"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5141",
+    "name": "Fajar Tambunan",
+    "job_title": "Keuangan",
+    "branch": "jogjakarta",
+    "skills": "",
+    "perf_score": 3.1,
+    "join_date": "2021-11-08"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5003",
+    "name": "juwita bachtiar",
+    "job_title": "Regulatory Off.",
+    "branch": "Jogja",
+    "skills": "Audit Support|GCP|BPOM Regulation|Dossier Preparation",
+    "perf_score": 4.7,
+    "join_date": "2020-04-18"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9097",
+    "name": "Gina Saputra",
+    "job_title": "SALES REP",
+    "branch": "Bdg",
+    "skills": "Cold Calling|Negotiation|Territory Management",
+    "perf_score": "",
+    "join_date": "03-24-2016"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5127",
+    "name": "K.Panjaitan",
+    "job_title": "Technical Support",
+    "branch": "Bali",
+    "skills": "",
+    "perf_score": 4.9,
+    "join_date": "2018-12-01"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5011",
+    "name": "Lestari Suryadi",
+    "job_title": "Marketing Spec",
+    "branch": "Bandung Kota",
+    "skills": "Campaign Management|Social Media|SEO/SEM",
+    "perf_score": 3.8,
+    "join_date": "2021-11-26"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9100",
+    "name": "Shinta.Usman",
+    "job_title": "Advisor Medis",
+    "branch": "YOG",
+    "skills": "Clinical Knowledge|Pharmacovigilance",
+    "perf_score": "",
+    "join_date": "11-17-2016"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1051",
+    "name": "imam riyadi",
+    "job_title": "marketing specialist",
+    "branch": "Plg",
+    "skills": "Social Media|Digital Marketing|SEO/SEM",
+    "perf_score": 4.8,
+    "join_date": "28/04/2019"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1085",
+    "name": "Zahra ISKANDAR",
+    "job_title": "Advisor Medis",
+    "branch": "SMG",
+    "skills": "KOL Management|Clinical Trials|Medical Writing|Clinical Knowledge|Regulatory Affairs",
+    "perf_score": 5.0,
+    "join_date": "30/01/2021"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1039",
+    "name": "Rizky Panjaitan",
+    "job_title": "Senior Sales",
+    "branch": "Mks",
+    "skills": "B2B Sales|Negotiation",
+    "perf_score": 4.7,
+    "join_date": "31/01/2018"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5147",
+    "name": "D. Wahyudi",
+    "job_title": "Branch Mgr",
+    "branch": "medan",
+    "skills": "",
+    "perf_score": 4.3,
+    "join_date": "2017-04-30"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9035",
+    "name": "Rani.Firmansyah",
+    "job_title": "FinOff",
+    "branch": "MKS",
+    "skills": "",
+    "perf_score": "",
+    "join_date": "04-30-2023"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5179",
+    "name": "C.Wibowo",
+    "job_title": "Warehouse",
+    "branch": "JAKARTA",
+    "skills": "Forklift Operation",
+    "perf_score": 3.8,
+    "join_date": "2016-07-26"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9058",
+    "name": "C.Haryono",
+    "job_title": "Human Resource",
+    "branch": "MDN",
+    "skills": "Recruitment|HRIS",
+    "perf_score": "",
+    "join_date": "03-25-2016"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5023",
+    "name": "Y. Hakim",
+    "job_title": "Regulatory Off.",
+    "branch": "Bandung Kota",
+    "skills": "BPOM Regulation|Audit Support|Submission Management|Dossier Preparation",
+    "perf_score": 3.0,
+    "join_date": "2020-09-12"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9111",
+    "name": "Wahyu Lestari",
+    "job_title": "Layanan Pelanggan",
+    "branch": "jakarta",
+    "skills": "",
+    "perf_score": "",
+    "join_date": "04-18-2017"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5117",
+    "name": "K. Cahyono",
+    "job_title": "logistics coordinator",
+    "branch": "PLB",
+    "skills": "Supply Chain|Warehouse Management|Route Optimization",
+    "perf_score": 4.1,
+    "join_date": "2022-11-08"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5101",
+    "name": "Hafiz PRATAMA",
+    "job_title": "marketing specialist",
+    "branch": "Bali Island",
+    "skills": "Google Analytics|Digital Marketing|SEO/SEM|Campaign Management",
+    "perf_score": 2.5,
+    "join_date": "2020-06-15"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5182",
+    "name": "C.Wijaya",
+    "job_title": "medical advisor",
+    "branch": "Mdn",
+    "skills": "Pharmacovigilance|Clinical Knowledge|KOL Management",
+    "perf_score": 3.1,
+    "join_date": "2020-01-09"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1008",
+    "name": "D. Mahendra",
+    "job_title": "hr specialist",
+    "branch": "Jogja",
+    "skills": "Recruitment|Labor Law",
+    "perf_score": 3.7,
+    "join_date": "14/05/2018"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5036",
+    "name": "Z. Tambunan",
+    "job_title": "Reg Affairs",
+    "branch": "Denpasar",
+    "skills": "Dossier Preparation|Labeling Compliance|Submission Management|GCP",
+    "perf_score": 4.4,
+    "join_date": "2017-08-19"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1176",
+    "name": "arif rahayu",
+    "job_title": "Sales Exec",
+    "branch": "SMG",
+    "skills": "",
+    "perf_score": 3.9,
+    "join_date": "14/10/2017"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9011",
+    "name": "J.Yulianto",
+    "job_title": "Reg Affairs",
+    "branch": "MDN",
+    "skills": "Labeling Compliance|GCP",
+    "perf_score": "",
+    "join_date": "08-21-2016"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5165",
+    "name": "Kartika Halim",
+    "job_title": "Staf Keuangan",
+    "branch": "Smg.",
+    "skills": "SAP Finance",
+    "perf_score": 3.5,
+    "join_date": "2018-09-23"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5010",
+    "name": "Z.Lestari",
+    "job_title": "Sales Staf",
+    "branch": "Jakarta",
+    "skills": "Salesforce|Pipeline Management|Territory Management",
+    "perf_score": 4.4,
+    "join_date": "2019-10-26"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1191",
+    "name": "Chandra RIYADI",
+    "job_title": "Cust. Service",
+    "branch": "jogjakarta",
+    "skills": "",
+    "perf_score": 4.9,
+    "join_date": "20/01/2022"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5001",
+    "name": "I.Susanto",
+    "job_title": "HRD",
+    "branch": "Surabaya",
+    "skills": "Recruitment|HRIS|Performance Management|Labor Law",
+    "perf_score": 2.6,
+    "join_date": "2018-08-01"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1112",
+    "name": "Umi Rahayu",
+    "job_title": "Sales Officer",
+    "branch": "Bandung",
+    "skills": "Territory Management|Salesforce|Account Management|B2B Sales",
+    "perf_score": 3.0,
+    "join_date": "29/05/2017"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1153",
+    "name": "Lina Suharto",
+    "job_title": "Staf Keuangan",
+    "branch": "Smg",
+    "skills": "",
+    "perf_score": 4.5,
+    "join_date": "09/11/2017"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5114",
+    "name": "Made Kusuma",
+    "job_title": "Tech Support",
+    "branch": "SMG",
+    "skills": "Networking|Windows Server|Active Directory",
+    "perf_score": 3.1,
+    "join_date": "2021-10-01"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1103",
+    "name": "ulfa firmansyah",
+    "job_title": "IT Supp",
+    "branch": "Surabaya",
+    "skills": "",
+    "perf_score": 4.7,
+    "join_date": "24/03/2022"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1084",
+    "name": "Nuri Saputra",
+    "job_title": "Pharmacy Tech",
+    "branch": "SMG",
+    "skills": "GMP Standards|Drug Dispensing|Inventory Management|Patient Counseling|SAP Pharma",
+    "perf_score": 4.1,
+    "join_date": "27/06/2020"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5103",
+    "name": "U. Firmansyah",
+    "job_title": "IT Supp",
+    "branch": "Sby",
+    "skills": "",
+    "perf_score": 3.9,
+    "join_date": "2022-04-15"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1193",
+    "name": "Yanuar.Rahayu",
+    "job_title": "Human Resource",
+    "branch": "palembang",
+    "skills": "",
+    "perf_score": 3.0,
+    "join_date": "11/12/2018"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1136",
+    "name": "vero kurniawan",
+    "job_title": "Mkt. Spec",
+    "branch": "palembang",
+    "skills": "Social Media|Content Creation|Digital Marketing|Google Analytics",
+    "perf_score": 3.5,
+    "join_date": "01/09/2019"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1049",
+    "name": "rama nugroho",
+    "job_title": "Sales Officer",
+    "branch": "SMG",
+    "skills": "Territory Management|Negotiation|Account Management|Salesforce|CRM",
+    "perf_score": 2.7,
+    "join_date": "09/07/2019"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9133",
+    "name": "H.Kurniawan",
+    "job_title": "Logistics Coord",
+    "branch": "SMG",
+    "skills": "Route Optimization|Vendor Management|Warehouse Management",
+    "perf_score": "",
+    "join_date": "04-14-2019"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1029",
+    "name": "Niko UTOMO",
+    "job_title": "HR Spec",
+    "branch": "PLB",
+    "skills": "",
+    "perf_score": 3.3,
+    "join_date": "15/01/2021"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5138",
+    "name": "Karina.Firmansyah",
+    "job_title": "Staff Gudang",
+    "branch": "Yogya",
+    "skills": "Forklift Operation|Safety Compliance|Inventory Control",
+    "perf_score": 3.9,
+    "join_date": "2022-02-22"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5131",
+    "name": "Siti KARTONO",
+    "job_title": "marketing specialist",
+    "branch": "bali",
+    "skills": "",
+    "perf_score": 4.9,
+    "join_date": "2022-03-27"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9041",
+    "name": "Valdi Mulyono",
+    "job_title": "Customer Svc",
+    "branch": "Medan",
+    "skills": "",
+    "perf_score": "",
+    "join_date": "06-09-2021"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1102",
+    "name": "E.Pratama",
+    "job_title": "HR Spec",
+    "branch": "BDG",
+    "skills": "Recruitment|Performance Management",
+    "perf_score": 3.6,
+    "join_date": "03/11/2019"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9005",
+    "name": "made pranoto",
+    "job_title": "WH Staf",
+    "branch": "Plg",
+    "skills": "Barcode Scanning|Safety Compliance",
+    "perf_score": "",
+    "join_date": "03-29-2021"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9076",
+    "name": "H. Pratama",
+    "job_title": "Marketing Spec",
+    "branch": "Bali",
+    "skills": "SEO/SEM",
+    "perf_score": "",
+    "join_date": "06-15-2020"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9002",
+    "name": "I.Setiawan",
+    "job_title": "pharm tech",
+    "branch": "Jkt",
+    "skills": "",
+    "perf_score": "",
+    "join_date": "12-20-2016"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1067",
+    "name": "Sigit TAMBUNAN",
+    "job_title": "WH Staf",
+    "branch": "Bali",
+    "skills": "",
+    "perf_score": 3.4,
+    "join_date": "26/08/2018"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5132",
+    "name": "O. Kartono",
+    "job_title": "Staf Regulasi",
+    "branch": "Bdg",
+    "skills": "Submission Management",
+    "perf_score": 2.5,
+    "join_date": "2017-05-21"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9121",
+    "name": "Teguh.Handoko",
+    "job_title": "Human Resource",
+    "branch": "Smg",
+    "skills": "",
+    "perf_score": "",
+    "join_date": "08-10-2018"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9034",
+    "name": "Kiki Firmansyah",
+    "job_title": "hr specialist",
+    "branch": "YOG",
+    "skills": "Performance Management|Onboarding|Labor Law",
+    "perf_score": "",
+    "join_date": "04-17-2019"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1062",
+    "name": "B. Riyadi",
+    "job_title": "Human Resource",
+    "branch": "JAKARTA",
+    "skills": "Onboarding|Performance Management",
+    "perf_score": 3.6,
+    "join_date": "11/10/2019"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5166",
+    "name": "Wulan.Firmansyah",
+    "job_title": "Spesialis Marketing",
+    "branch": "Medan",
+    "skills": "Campaign Management",
+    "perf_score": 3.3,
+    "join_date": "2020-11-06"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5024",
+    "name": "L.Usman",
+    "job_title": "Regulatory Off.",
+    "branch": "Sby",
+    "skills": "",
+    "perf_score": 3.2,
+    "join_date": "2023-02-01"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1161",
+    "name": "Panji Haryono",
+    "job_title": "CS",
+    "branch": "Balikpapan Kota",
+    "skills": "",
+    "perf_score": 2.5,
+    "join_date": "14/10/2018"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5046",
+    "name": "Benny.Bachtiar",
+    "job_title": "Customer Svc",
+    "branch": "Jakarta Pusat",
+    "skills": "Cross-selling|SLA Management",
+    "perf_score": 4.7,
+    "join_date": "2020-06-20"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1186",
+    "name": "Erwin FIRMANSYAH",
+    "job_title": "Pharmacy Tech",
+    "branch": "PLB",
+    "skills": "",
+    "perf_score": 4.8,
+    "join_date": "08/11/2019"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9006",
+    "name": "Hafiz Utomo",
+    "job_title": "Branch Mgr",
+    "branch": "Sby",
+    "skills": "Strategic Planning|Budgeting|P&L Management",
+    "perf_score": "",
+    "join_date": "03-11-2020"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9096",
+    "name": "Surya Budiman",
+    "job_title": "HR Officer",
+    "branch": "Yogya",
+    "skills": "",
+    "perf_score": "",
+    "join_date": "07-05-2016"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5175",
+    "name": "W.Kartono",
+    "job_title": "Koordinator Logistik",
+    "branch": "Bdg",
+    "skills": "Vendor Management|Supply Chain",
+    "perf_score": 3.8,
+    "join_date": "2018-03-14"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5061",
+    "name": "Triana Suryadi",
+    "job_title": "Regulatory Off.",
+    "branch": "surabaya",
+    "skills": "Audit Support",
+    "perf_score": 4.2,
+    "join_date": "2020-12-07"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5034",
+    "name": "R.Nugroho",
+    "job_title": "Layanan Pelanggan",
+    "branch": "Bali Island",
+    "skills": "CRM|Complaint Handling",
+    "perf_score": 4.5,
+    "join_date": "2017-05-01"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5146",
+    "name": "jefri santoso",
+    "job_title": "WH Staf",
+    "branch": "Makassar",
+    "skills": "",
+    "perf_score": 3.6,
+    "join_date": "2022-05-05"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1098",
+    "name": "Murti EFFENDI",
+    "job_title": "Staf Keuangan",
+    "branch": "Bdg",
+    "skills": "SAP Finance|Cost Analysis|Accounting|Tax Compliance",
+    "perf_score": 2.6,
+    "join_date": "19/02/2016"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1138",
+    "name": "Karina.Firmansyah",
+    "job_title": "Gudang",
+    "branch": "Yogya",
+    "skills": "FIFO Method|Barcode Scanning",
+    "perf_score": 4.8,
+    "join_date": "07/12/2021"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5062",
+    "name": "B.Riyadi",
+    "job_title": "Personalia",
+    "branch": "Jkt",
+    "skills": "Payroll|Recruitment|Employee Relations",
+    "perf_score": 4.0,
+    "join_date": "2019-10-11"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1064",
+    "name": "T. Osman",
+    "job_title": "Med Advisor",
+    "branch": "Jakarta Pusat",
+    "skills": "",
+    "perf_score": 3.6,
+    "join_date": "24/04/2019"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1173",
+    "name": "Andri.Junaedi",
+    "job_title": "Mgr Branch",
+    "branch": "Jakarta Pusat",
+    "skills": "Strategic Planning|KPI Monitoring|Team Leadership|Budgeting",
+    "perf_score": 4.3,
+    "join_date": "14/07/2023"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1030",
+    "name": "Juwita.Hartono",
+    "job_title": "Medis Advisor",
+    "branch": "Yogya",
+    "skills": "",
+    "perf_score": 4.0,
+    "join_date": "13/07/2020"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9122",
+    "name": "P. Haryono",
+    "job_title": "Cust. Service",
+    "branch": "Balikpapan",
+    "skills": "",
+    "perf_score": "",
+    "join_date": "10-14-2018"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1165",
+    "name": "Kartika HALIM",
+    "job_title": "FinOff",
+    "branch": "Semarang",
+    "skills": "SAP Finance|Financial Reporting|Cost Analysis|Accounting",
+    "perf_score": 3.2,
+    "join_date": "12/09/2018"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9031",
+    "name": "H. Nasution",
+    "job_title": "Staf Regulasi",
+    "branch": "medan",
+    "skills": "",
+    "perf_score": "",
+    "join_date": "07-05-2018"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5105",
+    "name": "Ika Rachman",
+    "job_title": "Personalia",
+    "branch": "Yogya",
+    "skills": "",
+    "perf_score": 2.8,
+    "join_date": "2020-08-23"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1104",
+    "name": "oscar handoko",
+    "job_title": "Koordinator Logistik",
+    "branch": "Medan",
+    "skills": "Procurement|SAP WM|Warehouse Management|Supply Chain|Vendor Management",
+    "perf_score": 4.1,
+    "join_date": "03/12/2020"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1018",
+    "name": "J. Yulianto",
+    "job_title": "RAO",
+    "branch": "Medan",
+    "skills": "GCP|Audit Support|BPOM Regulation",
+    "perf_score": 2.7,
+    "join_date": "25/07/2016"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1027",
+    "name": "vero setiawan",
+    "job_title": "Gudang",
+    "branch": "jogjakarta",
+    "skills": "",
+    "perf_score": 3.6,
+    "join_date": "13/11/2021"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9135",
+    "name": "J.Santoso",
+    "job_title": "customer service",
+    "branch": "MDN",
+    "skills": "Communication|SLA Management",
+    "perf_score": "",
+    "join_date": "06-21-2022"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5143",
+    "name": "Gita PRATAMA",
+    "job_title": "regulatory affairs officer",
+    "branch": "makassar",
+    "skills": "",
+    "perf_score": 3.6,
+    "join_date": "2018-08-16"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1094",
+    "name": "vincent santoso",
+    "job_title": "Regulatory Off.",
+    "branch": "JKT",
+    "skills": "",
+    "perf_score": 4.2,
+    "join_date": "20/01/2017"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1151",
+    "name": "V.Santoso",
+    "job_title": "sales rep",
+    "branch": "bandung",
+    "skills": "B2B Sales|CRM|Account Management|Cold Calling|Negotiation",
+    "perf_score": 4.7,
+    "join_date": "21/03/2023"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1145",
+    "name": "wahyu lestari",
+    "job_title": "Cust. Service",
+    "branch": "Jakarta Pusat",
+    "skills": "",
+    "perf_score": 2.6,
+    "join_date": "19/01/2017"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9018",
+    "name": "made purnomo",
+    "job_title": "WH Staff",
+    "branch": "Surabaya Timur",
+    "skills": "",
+    "perf_score": "",
+    "join_date": "06-22-2019"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5148",
+    "name": "Andri EFFENDI",
+    "job_title": "Reg Affairs",
+    "branch": "JKT",
+    "skills": "Submission Management|GCP|BPOM Regulation",
+    "perf_score": 3.9,
+    "join_date": "2019-05-15"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9115",
+    "name": "Gina MAULANA",
+    "job_title": "Warehouse",
+    "branch": "makassar",
+    "skills": "",
+    "perf_score": "",
+    "join_date": "10-29-2020"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9131",
+    "name": "D. Kusuma",
+    "job_title": "IT Support",
+    "branch": "Surabaya Timur",
+    "skills": "Windows Server",
+    "perf_score": "",
+    "join_date": "11-12-2020"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5195",
+    "name": "eko firmansyah",
+    "job_title": "Staf Regulasi",
+    "branch": "Mks",
+    "skills": "",
+    "perf_score": 4.9,
+    "join_date": "2018-12-29"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9140",
+    "name": "D.Osman",
+    "job_title": "Med. Adv.",
+    "branch": "jakarta",
+    "skills": "",
+    "perf_score": "",
+    "join_date": "07-04-2018"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9026",
+    "name": "Rizky Nugroho",
+    "job_title": "Cust. Service",
+    "branch": "Denpasar",
+    "skills": "SLA Management|CRM",
+    "perf_score": "",
+    "join_date": "04-27-2017"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5119",
+    "name": "W. Effendi",
+    "job_title": "Pharmacy Tech",
+    "branch": "Denpasar",
+    "skills": "SAP Pharma|GMP Standards|Inventory Management|Patient Counseling",
+    "perf_score": 3.1,
+    "join_date": "2020-11-03"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5058",
+    "name": "S.Pranoto",
+    "job_title": "Layanan Pelanggan",
+    "branch": "SMG",
+    "skills": "Cross-selling",
+    "perf_score": 4.7,
+    "join_date": "2017-10-14"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5142",
+    "name": "Galih SUSANTO",
+    "job_title": "Logistik",
+    "branch": "Smg.",
+    "skills": "Warehouse Management|Supply Chain|SAP WM",
+    "perf_score": 4.2,
+    "join_date": "2021-11-16"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1140",
+    "name": "A. Maulana",
+    "job_title": "Mkt. Spec",
+    "branch": "YOG",
+    "skills": "",
+    "perf_score": 3.9,
+    "join_date": "28/03/2019"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5032",
+    "name": "I. Setiawan",
+    "job_title": "CS",
+    "branch": "Ujung Pandang",
+    "skills": "Cross-selling",
+    "perf_score": 3.3,
+    "join_date": "2022-09-22"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9045",
+    "name": "N.Riyadi",
+    "job_title": "Layanan Pelanggan",
+    "branch": "Medan Kota",
+    "skills": "Communication",
+    "perf_score": "",
+    "join_date": "07-13-2023"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5070",
+    "name": "T.Hartono",
+    "job_title": "finance officer",
+    "branch": "DPS",
+    "skills": "",
+    "perf_score": 3.6,
+    "join_date": "2018-01-20"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1158",
+    "name": "Ferry BASUKI",
+    "job_title": "RA Officer",
+    "branch": "Yogyakarta",
+    "skills": "",
+    "perf_score": 2.9,
+    "join_date": "03/05/2018"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9037",
+    "name": "Erwin Maulana",
+    "job_title": "Customer Svc",
+    "branch": "MKS",
+    "skills": "SLA Management|Cross-selling|Communication",
+    "perf_score": "",
+    "join_date": "07-24-2023"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5083",
+    "name": "ferry kartono",
+    "job_title": "CS",
+    "branch": "JKT",
+    "skills": "",
+    "perf_score": 4.1,
+    "join_date": "2018-03-05"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5040",
+    "name": "U. Suharto",
+    "job_title": "Pharm. Tech",
+    "branch": "Mks",
+    "skills": "",
+    "perf_score": 4.1,
+    "join_date": "2021-08-15"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9107",
+    "name": "F. Tambunan",
+    "job_title": "Finance Off.",
+    "branch": "Jogja",
+    "skills": "",
+    "perf_score": "",
+    "join_date": "09-29-2021"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5053",
+    "name": "Kiki Tambunan",
+    "job_title": "Gudang",
+    "branch": "semarang",
+    "skills": "Inventory Control",
+    "perf_score": 4.6,
+    "join_date": "2018-11-22"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5067",
+    "name": "Sigit TAMBUNAN",
+    "job_title": "Staff Gudang",
+    "branch": "Denpasar",
+    "skills": "",
+    "perf_score": 3.2,
+    "join_date": "2018-05-11"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1199",
+    "name": "Kiki KURNIAWAN",
+    "job_title": "Medis Advisor",
+    "branch": "Jkt",
+    "skills": "",
+    "perf_score": 3.0,
+    "join_date": "26/12/2020"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9108",
+    "name": "Galih SUSANTO",
+    "job_title": "Logistik",
+    "branch": "SMG",
+    "skills": "Route Optimization|Vendor Management|Warehouse Management",
+    "perf_score": "",
+    "join_date": "11-15-2021"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5052",
+    "name": "Kiki MAULANA",
+    "job_title": "RAO",
+    "branch": "jogjakarta",
+    "skills": "Submission Management|Dossier Preparation",
+    "perf_score": 4.4,
+    "join_date": "2016-10-21"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5189",
+    "name": "P. Kurniawan",
+    "job_title": "Med Advisor",
+    "branch": "Balikpapan Kota",
+    "skills": "Regulatory Affairs|Pharmacovigilance|Clinical Knowledge|Clinical Trials",
+    "perf_score": 2.8,
+    "join_date": "2020-11-20"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1197",
+    "name": "laila lukman",
+    "job_title": "Manager Cabang",
+    "branch": "Medan Kota",
+    "skills": "KPI Monitoring|P&L Management",
+    "perf_score": 4.4,
+    "join_date": "14/01/2023"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5096",
+    "name": "Vero SUPRAPTO",
+    "job_title": "WH Staff",
+    "branch": "Bali",
+    "skills": "Forklift Operation|Barcode Scanning|FIFO Method",
+    "perf_score": 2.9,
+    "join_date": "2016-01-17"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1054",
+    "name": "joko santosa",
+    "job_title": "RAO",
+    "branch": "Plbg",
+    "skills": "GCP|Labeling Compliance|Audit Support|Dossier Preparation",
+    "perf_score": 4.2,
+    "join_date": "15/04/2019"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9022",
+    "name": "juwita hartono",
+    "job_title": "Advisor Medis",
+    "branch": "Jogja",
+    "skills": "",
+    "perf_score": "",
+    "join_date": "10-05-2020"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1040",
+    "name": "umi suharto",
+    "job_title": "Pharma Technician",
+    "branch": "Makassar",
+    "skills": "",
+    "perf_score": 3.1,
+    "join_date": "19/05/2021"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1155",
+    "name": "jefri setiawan",
+    "job_title": "Staff Gudang",
+    "branch": "jakarta",
+    "skills": "Safety Compliance|Inventory Control|Barcode Scanning",
+    "perf_score": 2.8,
+    "join_date": "16/04/2021"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5153",
+    "name": "lina suharto",
+    "job_title": "Fin Officer",
+    "branch": "Smg.",
+    "skills": "",
+    "perf_score": 2.6,
+    "join_date": "2017-11-09"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9032",
+    "name": "Claudia SAPUTRA",
+    "job_title": "CS",
+    "branch": "Mks",
+    "skills": "",
+    "perf_score": "",
+    "join_date": "10-11-2019"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1148",
+    "name": "Andri.Effendi",
+    "job_title": "Reg Affairs",
+    "branch": "Jakarta",
+    "skills": "Labeling Compliance|GCP|Dossier Preparation",
+    "perf_score": 2.9,
+    "join_date": "15/05/2019"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9066",
+    "name": "Sari.Wibowo",
+    "job_title": "Layanan Pelanggan",
+    "branch": "Jkt",
+    "skills": "",
+    "perf_score": "",
+    "join_date": "05-12-2020"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1097",
+    "name": "dita mahendra",
+    "job_title": "Tech Support",
+    "branch": "Bandung",
+    "skills": "",
+    "perf_score": 2.6,
+    "join_date": "28/02/2022"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1081",
+    "name": "H.Lukman",
+    "job_title": "Kepala Cabang",
+    "branch": "jogjakarta",
+    "skills": "Team Leadership|P&L Management|Budgeting|KPI Monitoring",
+    "perf_score": 4.6,
+    "join_date": "21/02/2020"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5077",
+    "name": "J. Putra",
+    "job_title": "Logistik",
+    "branch": "Palembang",
+    "skills": "Warehouse Management|Supply Chain",
+    "perf_score": 3.1,
+    "join_date": "2019-03-20"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1019",
+    "name": "Z. Setiawan",
+    "job_title": "Staf Regulasi",
+    "branch": "Bali Island",
+    "skills": "",
+    "perf_score": 3.2,
+    "join_date": "03/06/2018"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9086",
+    "name": "Zulfa SURYADI",
+    "job_title": "RAO",
+    "branch": "Balikpapan",
+    "skills": "",
+    "perf_score": "",
+    "join_date": "08-06-2018"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1077",
+    "name": "Johan.Putra",
+    "job_title": "Log. Coord",
+    "branch": "palembang",
+    "skills": "Vendor Management|Route Optimization|Warehouse Management",
+    "perf_score": 4.2,
+    "join_date": "23/03/2019"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1119",
+    "name": "W.Effendi",
+    "job_title": "Apoteker Asisten",
+    "branch": "Denpasar",
+    "skills": "SAP Pharma|Drug Dispensing|BPOM Compliance|GMP Standards|Patient Counseling",
+    "perf_score": 3.1,
+    "join_date": "21/11/2020"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9092",
+    "name": "G. Riyadi",
+    "job_title": "logistics coordinator",
+    "branch": "BDG",
+    "skills": "Route Optimization|Procurement",
+    "perf_score": "",
+    "join_date": "08-18-2023"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9145",
+    "name": "Lukman Iskandar",
+    "job_title": "Mktg Specialist",
+    "branch": "Balikpapan",
+    "skills": "Campaign Management|Google Analytics",
+    "perf_score": "",
+    "join_date": "10-15-2016"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5090",
+    "name": "C. Susanto",
+    "job_title": "sales rep",
+    "branch": "BPN",
+    "skills": "",
+    "perf_score": 4.9,
+    "join_date": "2021-05-16"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1074",
+    "name": "Kevin Haryono",
+    "job_title": "Med Advisor",
+    "branch": "Bdg",
+    "skills": "",
+    "perf_score": 3.9,
+    "join_date": "04/10/2020"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1160",
+    "name": "Citra Susanto",
+    "job_title": "SALES REP",
+    "branch": "jogjakarta",
+    "skills": "",
+    "perf_score": 3.1,
+    "join_date": "13/07/2017"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5184",
+    "name": "yoga purnomo",
+    "job_title": "Kepala Cabang",
+    "branch": "Jkt",
+    "skills": "",
+    "perf_score": 4.4,
+    "join_date": "2016-08-25"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1133",
+    "name": "Shinta USMAN",
+    "job_title": "Medis Advisor",
+    "branch": "jogjakarta",
+    "skills": "Clinical Trials|KOL Management|Clinical Knowledge|Regulatory Affairs",
+    "perf_score": 3.4,
+    "join_date": "23/10/2016"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1075",
+    "name": "N.Perdana",
+    "job_title": "regulatory affairs officer",
+    "branch": "JKT",
+    "skills": "Audit Support|BPOM Regulation",
+    "perf_score": 4.0,
+    "join_date": "15/12/2021"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5074",
+    "name": "kevin haryono",
+    "job_title": "Medical Rep",
+    "branch": "Bandung Kota",
+    "skills": "",
+    "perf_score": 3.1,
+    "join_date": "2020-09-03"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5072",
+    "name": "Umi HARYONO",
+    "job_title": "Marketing",
+    "branch": "medan",
+    "skills": "Digital Marketing|Social Media|Campaign Management",
+    "perf_score": 4.7,
+    "join_date": "2017-11-09"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1031",
+    "name": "S. Osman",
+    "job_title": "BM",
+    "branch": "SMG",
+    "skills": "Budgeting|Strategic Planning|P&L Management",
+    "perf_score": 3.5,
+    "join_date": "04/05/2021"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9151",
+    "name": "Laila Lukman",
+    "job_title": "Kepala Cabang",
+    "branch": "Mdn",
+    "skills": "KPI Monitoring",
+    "perf_score": "",
+    "join_date": "12-20-2022"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5075",
+    "name": "Naomi Perdana",
+    "job_title": "Reg Affairs",
+    "branch": "JAKARTA",
+    "skills": "Audit Support",
+    "perf_score": 4.5,
+    "join_date": "2021-12-15"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1056",
+    "name": "Y.Setiawan",
+    "job_title": "Warehouse",
+    "branch": "Balikpapan Kota",
+    "skills": "",
+    "perf_score": 4.6,
+    "join_date": "01/01/2019"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5191",
+    "name": "Chandra.Riyadi",
+    "job_title": "CustServ",
+    "branch": "Yogyakarta",
+    "skills": "",
+    "perf_score": 3.5,
+    "join_date": "2022-03-20"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5186",
+    "name": "Erwin Firmansyah",
+    "job_title": "Apt. Asst",
+    "branch": "Plbg",
+    "skills": "",
+    "perf_score": 3.6,
+    "join_date": "2019-11-08"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5031",
+    "name": "sari osman",
+    "job_title": "Manager Cabang",
+    "branch": "Semarang",
+    "skills": "KPI Monitoring|Team Leadership|Strategic Planning|Stakeholder Management",
+    "perf_score": 2.8,
+    "join_date": "2021-05-14"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1022",
+    "name": "E.Rahayu",
+    "job_title": "CustServ",
+    "branch": "MDN",
+    "skills": "",
+    "perf_score": 4.4,
+    "join_date": "05/04/2016"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9044",
+    "name": "Sigit Pranoto",
+    "job_title": "Layanan Pelanggan",
+    "branch": "semarang",
+    "skills": "CRM|Complaint Handling",
+    "perf_score": "",
+    "join_date": "10-04-2017"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1172",
+    "name": "Hendra.Kurniawan",
+    "job_title": "Logistic",
+    "branch": "semarang",
+    "skills": "Route Optimization|Procurement|SAP WM",
+    "perf_score": 5.0,
+    "join_date": "13/04/2019"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9023",
+    "name": "sari osman",
+    "job_title": "Branch Mgr",
+    "branch": "Semarang",
+    "skills": "P&L Management|Team Leadership|Budgeting",
+    "perf_score": "",
+    "join_date": "05-04-2021"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5041",
+    "name": "N. Santoso",
+    "job_title": "Pharmacy Tech",
+    "branch": "Bdg",
+    "skills": "SAP Pharma",
+    "perf_score": 4.6,
+    "join_date": "2022-07-26"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1002",
+    "name": "I. Setiawan",
+    "job_title": "Pharm. Tech",
+    "branch": "Jkt",
+    "skills": "",
+    "perf_score": 2.5,
+    "join_date": "11/01/2017"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9106",
+    "name": "Agus MAULANA",
+    "job_title": "Marketing",
+    "branch": "Jogja",
+    "skills": "",
+    "perf_score": "",
+    "join_date": "02-12-2019"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1196",
+    "name": "Tika PRANOTO",
+    "job_title": "regulatory affairs officer",
+    "branch": "jakarta",
+    "skills": "",
+    "perf_score": 2.9,
+    "join_date": "23/02/2017"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5035",
+    "name": "udin kartono",
+    "job_title": "warehouse staff",
+    "branch": "Jakarta",
+    "skills": "",
+    "perf_score": 3.2,
+    "join_date": "2017-12-14"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5193",
+    "name": "Yanuar Rahayu",
+    "job_title": "Human Resource",
+    "branch": "Palembang",
+    "skills": "",
+    "perf_score": 3.6,
+    "join_date": "2019-01-24"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9025",
+    "name": "V.Cahyono",
+    "job_title": "Warehouse",
+    "branch": "Palembang",
+    "skills": "",
+    "perf_score": "",
+    "join_date": "07-30-2020"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9149",
+    "name": "W.Halim",
+    "job_title": "Kepala Cabang",
+    "branch": "Smg",
+    "skills": "KPI Monitoring|P&L Management",
+    "perf_score": "",
+    "join_date": "09-20-2016"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5080",
+    "name": "Gina.Kusuma",
+    "job_title": "Staf Keuangan",
+    "branch": "JAKARTA",
+    "skills": "Reconciliation|Tax Compliance|Cost Analysis|SAP Finance",
+    "perf_score": 3.0,
+    "join_date": "2016-06-13"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1183",
+    "name": "Surya RIYADI",
+    "job_title": "Warehouse",
+    "branch": "Medan",
+    "skills": "",
+    "perf_score": 2.5,
+    "join_date": "30/09/2018"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5065",
+    "name": "B.Kurniawan",
+    "job_title": "Pharmacy Tech",
+    "branch": "YOG",
+    "skills": "",
+    "perf_score": 4.1,
+    "join_date": "2023-07-01"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1164",
+    "name": "U.Santosa",
+    "job_title": "Staf Regulasi",
+    "branch": "Jakarta Pusat",
+    "skills": "",
+    "perf_score": 2.8,
+    "join_date": "19/03/2022"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1105",
+    "name": "ika rachman",
+    "job_title": "Personalia",
+    "branch": "YOG",
+    "skills": "",
+    "perf_score": 4.2,
+    "join_date": "06/09/2020"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9077",
+    "name": "U.Firmansyah",
+    "job_title": "it support",
+    "branch": "Sby",
+    "skills": "",
+    "perf_score": "",
+    "join_date": "03-24-2022"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9104",
+    "name": "Karina.Firmansyah",
+    "job_title": "Staff Gudang",
+    "branch": "Yogya",
+    "skills": "Safety Compliance|FIFO Method|Inventory Control",
+    "perf_score": "",
+    "join_date": "02-23-2022"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1184",
+    "name": "Y. Purnomo",
+    "job_title": "BM",
+    "branch": "JKT",
+    "skills": "",
+    "perf_score": 3.0,
+    "join_date": "30/10/2016"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5064",
+    "name": "Triana Osman",
+    "job_title": "Advisor Medis",
+    "branch": "jakarta",
+    "skills": "",
+    "perf_score": 4.4,
+    "join_date": "2019-04-24"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9053",
+    "name": "Umi Haryono",
+    "job_title": "Mktg Specialist",
+    "branch": "MDN",
+    "skills": "Content Creation|Digital Marketing|Campaign Management",
+    "perf_score": "",
+    "join_date": "10-09-2017"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1154",
+    "name": "H.Firmansyah",
+    "job_title": "Sales 2",
+    "branch": "Jogja",
+    "skills": "",
+    "perf_score": 4.5,
+    "join_date": "30/10/2019"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1091",
+    "name": "Ferry EFFENDI",
+    "job_title": "Marketing",
+    "branch": "DPS",
+    "skills": "",
+    "perf_score": 4.0,
+    "join_date": "26/05/2021"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1167",
+    "name": "Elsa GUNAWAN",
+    "job_title": "RAO",
+    "branch": "Mdn",
+    "skills": "",
+    "perf_score": 4.3,
+    "join_date": "18/04/2022"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1057",
+    "name": "J.Kartono",
+    "job_title": "Med. Adv.",
+    "branch": "Bali",
+    "skills": "",
+    "perf_score": 3.2,
+    "join_date": "03/08/2020"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1190",
+    "name": "L.Rachman",
+    "job_title": "Mgr Branch",
+    "branch": "MKS",
+    "skills": "Budgeting|P&L Management|Strategic Planning|Stakeholder Management",
+    "perf_score": 4.5,
+    "join_date": "23/02/2020"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1034",
+    "name": "rizky nugroho",
+    "job_title": "Cust. Service",
+    "branch": "Bali",
+    "skills": "Ticketing|Complaint Handling",
+    "perf_score": 3.6,
+    "join_date": "11/04/2017"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1053",
+    "name": "kiki tambunan",
+    "job_title": "Staff Gudang",
+    "branch": "SMG",
+    "skills": "Safety Compliance|Forklift Operation|Stock Opname|Inventory Control",
+    "perf_score": 4.4,
+    "join_date": "15/11/2018"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5000",
+    "name": "Fajar.Riyadi",
+    "job_title": "CS",
+    "branch": "jakarta",
+    "skills": "SLA Management|Cross-selling",
+    "perf_score": 2.9,
+    "join_date": "2018-03-10"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9043",
+    "name": "Jefri KARTONO",
+    "job_title": "Medical Rep",
+    "branch": "Denpasar",
+    "skills": "",
+    "perf_score": "",
+    "join_date": "06-04-2020"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1150",
+    "name": "Gina Maulana",
+    "job_title": "Gudang",
+    "branch": "Ujung Pandang",
+    "skills": "",
+    "perf_score": 3.5,
+    "join_date": "29/10/2020"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1144",
+    "name": "hani suprapto",
+    "job_title": "Pharma Technician",
+    "branch": "Plbg",
+    "skills": "Inventory Management|BPOM Compliance|GMP Standards|SAP Pharma",
+    "perf_score": 3.6,
+    "join_date": "27/11/2018"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9088",
+    "name": "W. Nasution",
+    "job_title": "Advisor Medis",
+    "branch": "Jogja",
+    "skills": "",
+    "perf_score": "",
+    "join_date": "08-04-2016"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5157",
+    "name": "T.Handoko",
+    "job_title": "hr specialist",
+    "branch": "Smg",
+    "skills": "",
+    "perf_score": 3.2,
+    "join_date": "2018-07-26"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9007",
+    "name": "V. Yulianto",
+    "job_title": "Finance Off.",
+    "branch": "balikpapan",
+    "skills": "",
+    "perf_score": "",
+    "join_date": "06-28-2023"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5045",
+    "name": "M.Susanto",
+    "job_title": "Mgr Branch",
+    "branch": "Medan Kota",
+    "skills": "Strategic Planning|Stakeholder Management|Budgeting",
+    "perf_score": 3.0,
+    "join_date": "2016-05-07"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1106",
+    "name": "G.Wahyudi",
+    "job_title": "Med Advisor",
+    "branch": "JAKARTA",
+    "skills": "KOL Management|Clinical Knowledge|Pharmacovigilance|Clinical Trials|Medical Writing",
+    "perf_score": 2.8,
+    "join_date": "28/03/2017"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1134",
+    "name": "Fitri.Osman",
+    "job_title": "Staf Regulasi",
+    "branch": "Bandung Kota",
+    "skills": "Audit Support|BPOM Regulation|GCP|Submission Management",
+    "perf_score": 2.6,
+    "join_date": "12/12/2017"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1044",
+    "name": "H.Panjaitan",
+    "job_title": "Pharm. Tech",
+    "branch": "Smg",
+    "skills": "",
+    "perf_score": 4.4,
+    "join_date": "24/02/2022"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1073",
+    "name": "Ulfa WIBOWO",
+    "job_title": "Human Resource",
+    "branch": "DPS",
+    "skills": "Employee Relations|Labor Law|Onboarding|Performance Management|Payroll",
+    "perf_score": 3.8,
+    "join_date": "20/04/2018"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5123",
+    "name": "Galih Riyadi",
+    "job_title": "Koordinator Logistik",
+    "branch": "BDG",
+    "skills": "Warehouse Management|Route Optimization|SAP WM",
+    "perf_score": 5.0,
+    "join_date": "2023-11-03"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5020",
+    "name": "Wahyu HARYONO",
+    "job_title": "medical advisor",
+    "branch": "DPS",
+    "skills": "",
+    "perf_score": 3.6,
+    "join_date": "2020-12-14"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9016",
+    "name": "Yuni HAKIM",
+    "job_title": "Regulatory Off.",
+    "branch": "Bandung",
+    "skills": "Dossier Preparation|GCP|Audit Support",
+    "perf_score": "",
+    "join_date": "09-12-2020"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5164",
+    "name": "U. Santosa",
+    "job_title": "regulatory affairs officer",
+    "branch": "Jakarta Pusat",
+    "skills": "",
+    "perf_score": 3.1,
+    "join_date": "2022-01-03"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1080",
+    "name": "G. Kusuma",
+    "job_title": "FinOff",
+    "branch": "Jakarta Pusat",
+    "skills": "Reconciliation|Cost Analysis",
+    "perf_score": 4.0,
+    "join_date": "02/08/2016"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9138",
+    "name": "Y. Riyadi",
+    "job_title": "logistics coordinator",
+    "branch": "Mdn",
+    "skills": "Procurement|Warehouse Management",
+    "perf_score": "",
+    "join_date": "10-05-2017"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1118",
+    "name": "W.Nasution",
+    "job_title": "Advisor Medis",
+    "branch": "Yogya",
+    "skills": "",
+    "perf_score": 4.3,
+    "join_date": "04/08/2016"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1009",
+    "name": "V.Yulianto",
+    "job_title": "finance officer",
+    "branch": "Bpn",
+    "skills": "",
+    "perf_score": 2.7,
+    "join_date": "29/05/2023"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5026",
+    "name": "Lukman.Santoso",
+    "job_title": "Log. Coord",
+    "branch": "Bandung",
+    "skills": "Supply Chain",
+    "perf_score": 2.5,
+    "join_date": "2020-04-09"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9089",
+    "name": "Widi Effendi",
+    "job_title": "Pharma Technician",
+    "branch": "DPS",
+    "skills": "SAP Pharma",
+    "perf_score": "",
+    "join_date": "11-21-2020"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5048",
+    "name": "R.Firmansyah",
+    "job_title": "Keuangan",
+    "branch": "MKS",
+    "skills": "",
+    "perf_score": 3.5,
+    "join_date": "2023-04-30"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1110",
+    "name": "Chandra Susanto",
+    "job_title": "logistics coordinator",
+    "branch": "Smg.",
+    "skills": "Supply Chain|SAP WM|Route Optimization",
+    "perf_score": 4.1,
+    "join_date": "21/01/2020"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1061",
+    "name": "triana suryadi",
+    "job_title": "RAO",
+    "branch": "SBY",
+    "skills": "GCP|Submission Management",
+    "perf_score": 4.1,
+    "join_date": "07/12/2020"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9067",
+    "name": "A.Iskandar",
+    "job_title": "marketing specialist",
+    "branch": "PLB",
+    "skills": "Google Analytics|Social Media|SEO/SEM",
+    "perf_score": "",
+    "join_date": "03-22-2018"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5173",
+    "name": "A. Junaedi",
+    "job_title": "Manager Cabang",
+    "branch": "Jakarta Pusat",
+    "skills": "Strategic Planning",
+    "perf_score": 4.6,
+    "join_date": "2023-08-14"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5017",
+    "name": "N.Gunawan",
+    "job_title": "HR Officer",
+    "branch": "bandung",
+    "skills": "Performance Management|Onboarding",
+    "perf_score": 2.9,
+    "join_date": "2018-03-22"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5099",
+    "name": "Gina.Mulyono",
+    "job_title": "SALES REP",
+    "branch": "Smg",
+    "skills": "Cold Calling",
+    "perf_score": 3.2,
+    "join_date": "2020-09-22"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1170",
+    "name": "dewi kusuma",
+    "job_title": "Teknisi IT",
+    "branch": "surabaya",
+    "skills": "Active Directory|Networking|Troubleshooting",
+    "perf_score": 4.3,
+    "join_date": "23/11/2020"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5150",
+    "name": "Gina MAULANA",
+    "job_title": "Gudang",
+    "branch": "MKS",
+    "skills": "",
+    "perf_score": 2.7,
+    "join_date": "2020-12-09"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5097",
+    "name": "D. Mahendra",
+    "job_title": "Tech Support",
+    "branch": "BDG",
+    "skills": "",
+    "perf_score": 3.1,
+    "join_date": "2021-09-24"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9051",
+    "name": "T.Hartono",
+    "job_title": "finance officer",
+    "branch": "DPS",
+    "skills": "",
+    "perf_score": "",
+    "join_date": "04-09-2018"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1033",
+    "name": "vina cahyono",
+    "job_title": "Warehouse",
+    "branch": "PLB",
+    "skills": "",
+    "perf_score": 4.1,
+    "join_date": "31/07/2020"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1194",
+    "name": "Wulan.Halim",
+    "job_title": "Mgr Branch",
+    "branch": "SMG",
+    "skills": "Strategic Planning|Stakeholder Management|KPI Monitoring",
+    "perf_score": 3.3,
+    "join_date": "20/09/2016"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1060",
+    "name": "umi cahyono",
+    "job_title": "medical advisor",
+    "branch": "PLB",
+    "skills": "",
+    "perf_score": 3.3,
+    "join_date": "18/01/2023"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5113",
+    "name": "Toni PURNOMO",
+    "job_title": "Teknisi IT",
+    "branch": "MDN",
+    "skills": "Helpdesk|Active Directory|Cybersecurity Basics|Troubleshooting",
+    "perf_score": 4.3,
+    "join_date": "2022-02-11"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9148",
+    "name": "Priya Iskandar",
+    "job_title": "Manager Cabang",
+    "branch": "YOG",
+    "skills": "KPI Monitoring",
+    "perf_score": "",
+    "join_date": "10-02-2019"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1132",
+    "name": "Oscar.Kartono",
+    "job_title": "Regulatory Off.",
+    "branch": "Bandung",
+    "skills": "GCP|Audit Support|Labeling Compliance",
+    "perf_score": 4.8,
+    "join_date": "21/05/2017"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1047",
+    "name": "Kiki.Firmansyah",
+    "job_title": "HR Officer",
+    "branch": "Yogya",
+    "skills": "Payroll|Performance Management|Labor Law",
+    "perf_score": 3.8,
+    "join_date": "29/06/2019"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1131",
+    "name": "S. Kartono",
+    "job_title": "marketing specialist",
+    "branch": "Bali Island",
+    "skills": "",
+    "perf_score": 4.6,
+    "join_date": "27/03/2022"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5198",
+    "name": "L. Halim",
+    "job_title": "Koordinator Logistik",
+    "branch": "Jakarta",
+    "skills": "",
+    "perf_score": 4.2,
+    "join_date": "2018-05-20"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1099",
+    "name": "G.Mulyono",
+    "job_title": "Sales Exec",
+    "branch": "Smg.",
+    "skills": "Account Management|Cold Calling|Territory Management|Salesforce|B2B Sales",
+    "perf_score": 3.3,
+    "join_date": "22/08/2020"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5095",
+    "name": "Vero BASUKI",
+    "job_title": "Marketing Spec",
+    "branch": "JKT",
+    "skills": "SEO/SEM|Social Media|Digital Marketing|Google Analytics",
+    "perf_score": 2.5,
+    "join_date": "2016-10-22"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9065",
+    "name": "Z.Iskandar",
+    "job_title": "Advisor Medis",
+    "branch": "Smg",
+    "skills": "Clinical Knowledge",
+    "perf_score": "",
+    "join_date": "03-02-2021"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9046",
+    "name": "Umi CAHYONO",
+    "job_title": "Medical Rep",
+    "branch": "Plg",
+    "skills": "",
+    "perf_score": "",
+    "join_date": "12-09-2022"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5136",
+    "name": "Vero KURNIAWAN",
+    "job_title": "Mktg Specialist",
+    "branch": "PLB",
+    "skills": "Content Creation",
+    "perf_score": 2.8,
+    "join_date": "2019-09-01"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5093",
+    "name": "Yoga Halim",
+    "job_title": "WH Staf",
+    "branch": "JKT",
+    "skills": "Barcode Scanning|FIFO Method|Forklift Operation|Stock Opname",
+    "perf_score": 3.0,
+    "join_date": "2020-11-30"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1107",
+    "name": "Rendi Handoko",
+    "job_title": "Branch Mgr",
+    "branch": "BDG",
+    "skills": "Team Leadership|Budgeting|Strategic Planning|P&L Management|KPI Monitoring",
+    "perf_score": 2.9,
+    "join_date": "22/02/2019"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9064",
+    "name": "Nuri SAPUTRA",
+    "job_title": "Pharm. Tech",
+    "branch": "SMG",
+    "skills": "SAP Pharma|Drug Dispensing",
+    "perf_score": "",
+    "join_date": "05-13-2020"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9009",
+    "name": "Budi.Usman",
+    "job_title": "Branch Mgr",
+    "branch": "Mks",
+    "skills": "P&L Management|KPI Monitoring|Strategic Planning",
+    "perf_score": "",
+    "join_date": "05-03-2018"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5069",
+    "name": "Fajar.Santoso",
+    "job_title": "Personalia",
+    "branch": "Surabaya Timur",
+    "skills": "Recruitment",
+    "perf_score": 3.2,
+    "join_date": "2017-03-13"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9117",
+    "name": "Lina.Suharto",
+    "job_title": "FinOff",
+    "branch": "Semarang",
+    "skills": "",
+    "perf_score": "",
+    "join_date": "11-09-2017"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9152",
+    "name": "Lukman HALIM",
+    "job_title": "Logistik",
+    "branch": "Jakarta Pusat",
+    "skills": "",
+    "perf_score": "",
+    "join_date": "05-21-2018"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1125",
+    "name": "K. Bachtiar",
+    "job_title": "Manager Cabang",
+    "branch": "Semarang",
+    "skills": "",
+    "perf_score": 3.2,
+    "join_date": "03/10/2022"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5163",
+    "name": "Yuni Suprapto",
+    "job_title": "RAO",
+    "branch": "Smg",
+    "skills": "Dossier Preparation|Submission Management|Labeling Compliance|GCP",
+    "perf_score": 4.2,
+    "join_date": "2021-10-13"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1015",
+    "name": "B.Usman",
+    "job_title": "Manager Cabang",
+    "branch": "Ujung Pandang",
+    "skills": "Budgeting|KPI Monitoring",
+    "perf_score": 4.8,
+    "join_date": "23/01/2018"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5038",
+    "name": "Shinta Firmansyah",
+    "job_title": "Koordinator Logistik",
+    "branch": "Yogya",
+    "skills": "",
+    "perf_score": 3.3,
+    "join_date": "2018-11-21"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5155",
+    "name": "Jefri SETIAWAN",
+    "job_title": "WH Staf",
+    "branch": "JKT",
+    "skills": "FIFO Method|Forklift Operation",
+    "perf_score": 3.0,
+    "join_date": "2021-05-13"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5172",
+    "name": "hendra kurniawan",
+    "job_title": "Log. Coord",
+    "branch": "Smg",
+    "skills": "SAP WM",
+    "perf_score": 4.1,
+    "join_date": "2019-04-14"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1100",
+    "name": "Kevin HANDOKO",
+    "job_title": "Fin Officer",
+    "branch": "Plbg",
+    "skills": "Financial Reporting|SAP Finance|Reconciliation|Tax Compliance|Accounting",
+    "perf_score": 4.2,
+    "join_date": "11/07/2017"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5009",
+    "name": "vina yulianto",
+    "job_title": "FinOff",
+    "branch": "Balikpapan Kota",
+    "skills": "",
+    "perf_score": 2.6,
+    "join_date": "2023-06-17"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1000",
+    "name": "Fajar Riyadi",
+    "job_title": "CS",
+    "branch": "JAKARTA",
+    "skills": "CRM|Cross-selling",
+    "perf_score": 4.7,
+    "join_date": "30/03/2018"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5060",
+    "name": "U. Cahyono",
+    "job_title": "Med Advisor",
+    "branch": "palembang",
+    "skills": "",
+    "perf_score": 4.8,
+    "join_date": "2022-12-09"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5169",
+    "name": "B.Nugroho",
+    "job_title": "CS",
+    "branch": "Sby",
+    "skills": "",
+    "perf_score": 3.4,
+    "join_date": "2023-01-15"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5111",
+    "name": "R. Hartono",
+    "job_title": "HR Spec",
+    "branch": "SMG",
+    "skills": "Labor Law|Employee Relations|Recruitment|Onboarding",
+    "perf_score": 4.9,
+    "join_date": "2016-11-09"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9012",
+    "name": "Z.Setiawan",
+    "job_title": "regulatory affairs officer",
+    "branch": "DPS",
+    "skills": "",
+    "perf_score": "",
+    "join_date": "07-21-2018"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9062",
+    "name": "C. Effendi",
+    "job_title": "IT Support",
+    "branch": "Medan Kota",
+    "skills": "",
+    "perf_score": "",
+    "join_date": "08-05-2022"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9054",
+    "name": "Ulfa WIBOWO",
+    "job_title": "Personalia",
+    "branch": "Denpasar",
+    "skills": "Employee Relations|Performance Management|Onboarding",
+    "perf_score": "",
+    "join_date": "04-20-2018"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1076",
+    "name": "Monica.Pranoto",
+    "job_title": "Layanan Pelanggan",
+    "branch": "Medan",
+    "skills": "",
+    "perf_score": 3.0,
+    "join_date": "04/04/2023"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5125",
+    "name": "K.Bachtiar",
+    "job_title": "Kepala Cabang",
+    "branch": "SMG",
+    "skills": "",
+    "perf_score": 3.9,
+    "join_date": "2022-10-26"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1126",
+    "name": "L.Handoko",
+    "job_title": "Sales Exec",
+    "branch": "Jkt",
+    "skills": "",
+    "perf_score": 4.9,
+    "join_date": "12/11/2017"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5012",
+    "name": "U. Putra",
+    "job_title": "BM",
+    "branch": "Bali",
+    "skills": "KPI Monitoring|Stakeholder Management|Strategic Planning|P&L Management",
+    "perf_score": 3.7,
+    "join_date": "2016-12-25"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1050",
+    "name": "erwin maulana",
+    "job_title": "Customer Svc",
+    "branch": "makassar",
+    "skills": "Ticketing|Communication|Cross-selling|SLA Management|Complaint Handling",
+    "perf_score": 3.0,
+    "join_date": "21/08/2023"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5085",
+    "name": "Zahra ISKANDAR",
+    "job_title": "Advisor Medis",
+    "branch": "Semarang",
+    "skills": "Clinical Trials|Medical Writing|Clinical Knowledge",
+    "perf_score": 3.6,
+    "join_date": "2021-03-02"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1121",
+    "name": "Putri Purnomo",
+    "job_title": "Mgr Branch",
+    "branch": "SBY",
+    "skills": "",
+    "perf_score": 2.8,
+    "join_date": "21/07/2021"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5183",
+    "name": "surya riyadi",
+    "job_title": "Staff Gudang",
+    "branch": "Medan Kota",
+    "skills": "",
+    "perf_score": 4.5,
+    "join_date": "2018-09-30"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1004",
+    "name": "W. Mahendra",
+    "job_title": "Staf Keuangan",
+    "branch": "Plbg",
+    "skills": "Tax Compliance|Cost Analysis|SAP Finance",
+    "perf_score": 3.2,
+    "join_date": "23/02/2022"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5088",
+    "name": "Arif ISKANDAR",
+    "job_title": "marketing specialist",
+    "branch": "palembang",
+    "skills": "Google Analytics|Digital Marketing",
+    "perf_score": 4.1,
+    "join_date": "2018-04-30"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1006",
+    "name": "Citra Tambunan",
+    "job_title": "pharm tech",
+    "branch": "Medan Kota",
+    "skills": "",
+    "perf_score": 4.7,
+    "join_date": "16/11/2022"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1171",
+    "name": "I. Mulyono",
+    "job_title": "Mktg Specialist",
+    "branch": "Mks",
+    "skills": "",
+    "perf_score": 2.5,
+    "join_date": "15/02/2018"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1007",
+    "name": "H. Utomo",
+    "job_title": "BM",
+    "branch": "surabaya",
+    "skills": "Stakeholder Management|Budgeting|Team Leadership",
+    "perf_score": 4.5,
+    "join_date": "05/03/2020"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9105",
+    "name": "V.Rachman",
+    "job_title": "Technical Support",
+    "branch": "Jakarta",
+    "skills": "Cybersecurity Basics|Helpdesk",
+    "perf_score": "",
+    "join_date": "07-25-2023"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5129",
+    "name": "Gina Saputra",
+    "job_title": "Sales Officer",
+    "branch": "Bandung Kota",
+    "skills": "Pipeline Management|Territory Management|CRM|Negotiation",
+    "perf_score": 4.5,
+    "join_date": "2016-03-03"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5118",
+    "name": "wahyu nasution",
+    "job_title": "medical advisor",
+    "branch": "Yogya",
+    "skills": "",
+    "perf_score": 3.6,
+    "join_date": "2016-07-25"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1162",
+    "name": "Zahra MAHENDRA",
+    "job_title": "Pharma Technician",
+    "branch": "JAKARTA",
+    "skills": "GMP Standards|Patient Counseling",
+    "perf_score": 3.7,
+    "join_date": "03/02/2019"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5079",
+    "name": "Oki LUKMAN",
+    "job_title": "Logistik",
+    "branch": "Sby",
+    "skills": "Supply Chain|SAP WM",
+    "perf_score": 2.8,
+    "join_date": "2017-01-18"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9074",
+    "name": "G.Mulyono",
+    "job_title": "Sales Exec",
+    "branch": "Smg",
+    "skills": "Account Management|B2B Sales|Territory Management",
+    "perf_score": "",
+    "join_date": "07-01-2020"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9036",
+    "name": "Rama Nugroho",
+    "job_title": "Sales Exec",
+    "branch": "Semarang",
+    "skills": "Territory Management|Account Management",
+    "perf_score": "",
+    "join_date": "07-09-2019"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1141",
+    "name": "Fajar TAMBUNAN",
+    "job_title": "FinOff",
+    "branch": "YOG",
+    "skills": "",
+    "perf_score": 2.9,
+    "join_date": "29/09/2021"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9124",
+    "name": "Yuni.Suprapto",
+    "job_title": "RAO",
+    "branch": "Smg",
+    "skills": "Audit Support|Dossier Preparation",
+    "perf_score": "",
+    "join_date": "10-13-2021"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5078",
+    "name": "C.Haryono",
+    "job_title": "HRD",
+    "branch": "medan",
+    "skills": "Performance Management",
+    "perf_score": 4.2,
+    "join_date": "2016-03-25"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1014",
+    "name": "F.Junaedi",
+    "job_title": "Sales Officer",
+    "branch": "SBY",
+    "skills": "Salesforce|Pipeline Management|Cold Calling|CRM",
+    "perf_score": 4.1,
+    "join_date": "04/04/2022"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1088",
+    "name": "A.Iskandar",
+    "job_title": "Mktg Specialist",
+    "branch": "Plg",
+    "skills": "Google Analytics|SEO/SEM|Social Media",
+    "perf_score": 4.3,
+    "join_date": "30/04/2018"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1066",
+    "name": "Y.Effendi",
+    "job_title": "CustServ",
+    "branch": "Palembang",
+    "skills": "",
+    "perf_score": 4.7,
+    "join_date": "30/09/2018"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9024",
+    "name": "I.Setiawan",
+    "job_title": "Layanan Pelanggan",
+    "branch": "MKS",
+    "skills": "Complaint Handling|CRM",
+    "perf_score": "",
+    "join_date": "09-22-2022"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9130",
+    "name": "bagas nugroho",
+    "job_title": "CS",
+    "branch": "Sby",
+    "skills": "",
+    "perf_score": "",
+    "join_date": "01-15-2023"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5007",
+    "name": "Hafiz.Utomo",
+    "job_title": "Branch Mgr",
+    "branch": "Surabaya",
+    "skills": "Budgeting|P&L Management|Team Leadership|KPI Monitoring",
+    "perf_score": 3.5,
+    "join_date": "2020-04-01"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5137",
+    "name": "Eko.Riyadi",
+    "job_title": "Staff Gudang",
+    "branch": "MDN",
+    "skills": "Stock Opname",
+    "perf_score": 3.8,
+    "join_date": "2019-01-13"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1113",
+    "name": "toni purnomo",
+    "job_title": "it support",
+    "branch": "Medan Kota",
+    "skills": "Active Directory|Windows Server|Networking",
+    "perf_score": 3.2,
+    "join_date": "11/02/2022"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9040",
+    "name": "J.Santosa",
+    "job_title": "RA Officer",
+    "branch": "Plg",
+    "skills": "Submission Management|Dossier Preparation|Audit Support",
+    "perf_score": "",
+    "join_date": "04-15-2019"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9050",
+    "name": "F. Santoso",
+    "job_title": "HRD",
+    "branch": "Surabaya Timur",
+    "skills": "Employee Relations|Performance Management",
+    "perf_score": "",
+    "join_date": "04-05-2017"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1032",
+    "name": "Ika Setiawan",
+    "job_title": "CustServ",
+    "branch": "Ujung Pandang",
+    "skills": "Ticketing|Cross-selling|SLA Management|Communication|Complaint Handling",
+    "perf_score": 4.5,
+    "join_date": "22/09/2022"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5037",
+    "name": "Dian PERDANA",
+    "job_title": "Pharmacy Tech",
+    "branch": "JKT",
+    "skills": "Patient Counseling|Inventory Management|BPOM Compliance|SAP Pharma",
+    "perf_score": 4.5,
+    "join_date": "2019-08-02"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9033",
+    "name": "Haris PANJAITAN",
+    "job_title": "Pharma Technician",
+    "branch": "Smg.",
+    "skills": "",
+    "perf_score": "",
+    "join_date": "03-02-2022"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9137",
+    "name": "arif rahayu",
+    "job_title": "sales rep",
+    "branch": "Semarang",
+    "skills": "",
+    "perf_score": "",
+    "join_date": "10-14-2017"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9075",
+    "name": "kevin handoko",
+    "job_title": "Staf Keuangan",
+    "branch": "Plbg",
+    "skills": "Cost Analysis",
+    "perf_score": "",
+    "join_date": "07-11-2017"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9068",
+    "name": "Ferry Effendi",
+    "job_title": "Mktg Specialist",
+    "branch": "Bali",
+    "skills": "",
+    "perf_score": "",
+    "join_date": "05-05-2021"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9095",
+    "name": "kiki panjaitan",
+    "job_title": "Tech Support",
+    "branch": "Bali",
+    "skills": "",
+    "perf_score": "",
+    "join_date": "11-10-2018"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5055",
+    "name": "Valdi MULYONO",
+    "job_title": "Customer Svc",
+    "branch": "medan",
+    "skills": "",
+    "perf_score": 2.8,
+    "join_date": "2021-05-08"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5128",
+    "name": "Surya BUDIMAN",
+    "job_title": "HR Spec",
+    "branch": "Jogja",
+    "skills": "",
+    "perf_score": 4.0,
+    "join_date": "2016-07-05"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1109",
+    "name": "K. Perdana",
+    "job_title": "branch manager",
+    "branch": "Mdn",
+    "skills": "",
+    "perf_score": 4.2,
+    "join_date": "28/03/2018"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9142",
+    "name": "Y.Purnomo",
+    "job_title": "branch manager",
+    "branch": "Jakarta",
+    "skills": "",
+    "perf_score": "",
+    "join_date": "08-29-2016"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5192",
+    "name": "Priya.Iskandar",
+    "job_title": "branch manager",
+    "branch": "jogjakarta",
+    "skills": "Budgeting|Strategic Planning|KPI Monitoring",
+    "perf_score": 4.0,
+    "join_date": "2019-09-09"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5159",
+    "name": "Nuri Usman",
+    "job_title": "HR Officer",
+    "branch": "Yogyakarta",
+    "skills": "Employee Relations|Onboarding|Performance Management",
+    "perf_score": 4.6,
+    "join_date": "2022-11-09"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1001",
+    "name": "I.Susanto",
+    "job_title": "HRD",
+    "branch": "Surabaya",
+    "skills": "Onboarding|Payroll",
+    "perf_score": 3.8,
+    "join_date": "01/08/2018"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5120",
+    "name": "bagas lukman",
+    "job_title": "Koordinator Logistik",
+    "branch": "Plg",
+    "skills": "",
+    "perf_score": 3.4,
+    "join_date": "2018-01-05"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9119",
+    "name": "Jefri Setiawan",
+    "job_title": "WH Staff",
+    "branch": "Jkt",
+    "skills": "FIFO Method",
+    "perf_score": "",
+    "join_date": "04-15-2021"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1135",
+    "name": "Johan MAHENDRA",
+    "job_title": "Teknisi IT",
+    "branch": "YOG",
+    "skills": "",
+    "perf_score": 3.0,
+    "join_date": "23/07/2019"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9099",
+    "name": "O. Kartono",
+    "job_title": "Staf Regulasi",
+    "branch": "bandung",
+    "skills": "Labeling Compliance|GCP|Submission Management",
+    "perf_score": "",
+    "join_date": "05-21-2017"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5043",
+    "name": "C. Saputra",
+    "job_title": "Customer Svc",
+    "branch": "makassar",
+    "skills": "",
+    "perf_score": 3.6,
+    "join_date": "2019-10-11"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5134",
+    "name": "Fitri OSMAN",
+    "job_title": "Regulatory Off.",
+    "branch": "Bandung Kota",
+    "skills": "BPOM Regulation|Audit Support",
+    "perf_score": 2.9,
+    "join_date": "2017-11-02"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5174",
+    "name": "juwita santoso",
+    "job_title": "customer service",
+    "branch": "Mdn",
+    "skills": "Complaint Handling|Communication",
+    "perf_score": 2.6,
+    "join_date": "2022-06-22"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9093",
+    "name": "Nuri HALIM",
+    "job_title": "regulatory affairs officer",
+    "branch": "DPS",
+    "skills": "GCP",
+    "perf_score": "",
+    "join_date": "05-06-2022"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1192",
+    "name": "Priya.Iskandar",
+    "job_title": "Branch Mgr",
+    "branch": "Jogja",
+    "skills": "P&L Management|Stakeholder Management|Team Leadership|Strategic Planning|KPI Monitoring",
+    "perf_score": 3.7,
+    "join_date": "26/10/2019"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5015",
+    "name": "B.Usman",
+    "job_title": "Mgr Branch",
+    "branch": "Mks",
+    "skills": "Strategic Planning|P&L Management|Budgeting",
+    "perf_score": 2.9,
+    "join_date": "2018-04-14"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1142",
+    "name": "Galih SUSANTO",
+    "job_title": "Logistik",
+    "branch": "Smg",
+    "skills": "Warehouse Management|Vendor Management|Supply Chain",
+    "perf_score": 3.0,
+    "join_date": "16/11/2021"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1041",
+    "name": "Nanda SANTOSO",
+    "job_title": "pharm tech",
+    "branch": "Bandung Kota",
+    "skills": "GMP Standards|SAP Pharma|Drug Dispensing",
+    "perf_score": 4.9,
+    "join_date": "15/06/2022"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1117",
+    "name": "Karina CAHYONO",
+    "job_title": "Logistics Coord",
+    "branch": "Palembang",
+    "skills": "Vendor Management|Warehouse Management|Route Optimization|Supply Chain",
+    "perf_score": 3.6,
+    "join_date": "08/11/2022"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9144",
+    "name": "Erwin.Firmansyah",
+    "job_title": "Apoteker Asisten",
+    "branch": "Plbg",
+    "skills": "",
+    "perf_score": "",
+    "join_date": "11-25-2019"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9132",
+    "name": "I. Mulyono",
+    "job_title": "Marketing Spec",
+    "branch": "MKS",
+    "skills": "",
+    "perf_score": "",
+    "join_date": "03-10-2018"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1093",
+    "name": "yoga halim",
+    "job_title": "Gudang",
+    "branch": "jakarta",
+    "skills": "Inventory Control|Barcode Scanning|Stock Opname|FIFO Method",
+    "perf_score": 4.7,
+    "join_date": "26/02/2021"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5171",
+    "name": "ika mulyono",
+    "job_title": "Mkt. Spec",
+    "branch": "Makassar",
+    "skills": "",
+    "perf_score": 4.4,
+    "join_date": "2018-01-23"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9048",
+    "name": "T. Osman",
+    "job_title": "Medical Rep",
+    "branch": "jakarta",
+    "skills": "",
+    "perf_score": "",
+    "join_date": "04-24-2019"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9052",
+    "name": "Budi GUNAWAN",
+    "job_title": "Mgr Branch",
+    "branch": "BPN",
+    "skills": "",
+    "perf_score": "",
+    "join_date": "06-25-2019"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9038",
+    "name": "K. Maulana",
+    "job_title": "Regulatory Off.",
+    "branch": "jogjakarta",
+    "skills": "Audit Support",
+    "perf_score": "",
+    "join_date": "01-07-2017"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1055",
+    "name": "V. Mulyono",
+    "job_title": "Layanan Pelanggan",
+    "branch": "medan",
+    "skills": "",
+    "perf_score": 3.8,
+    "join_date": "08/05/2021"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5199",
+    "name": "kiki kurniawan",
+    "job_title": "Advisor Medis",
+    "branch": "Jakarta",
+    "skills": "",
+    "perf_score": 3.3,
+    "join_date": "2020-10-16"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5107",
+    "name": "R. Handoko",
+    "job_title": "Kepala Cabang",
+    "branch": "Bandung",
+    "skills": "Team Leadership",
+    "perf_score": 2.9,
+    "join_date": "2019-01-22"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5139",
+    "name": "Vina RACHMAN",
+    "job_title": "Teknisi IT",
+    "branch": "JAKARTA",
+    "skills": "Windows Server|Troubleshooting|Cybersecurity Basics",
+    "perf_score": 3.8,
+    "join_date": "2023-07-25"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5130",
+    "name": "Prita.Handoko",
+    "job_title": "marketing specialist",
+    "branch": "Denpasar",
+    "skills": "Social Media|Content Creation|Google Analytics",
+    "perf_score": 4.0,
+    "join_date": "2017-06-27"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5082",
+    "name": "Chandra Effendi",
+    "job_title": "Tech Support",
+    "branch": "Medan Kota",
+    "skills": "",
+    "perf_score": 4.5,
+    "join_date": "2022-08-05"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9141",
+    "name": "Surya Riyadi",
+    "job_title": "Staff Gudang",
+    "branch": "MDN",
+    "skills": "",
+    "perf_score": "",
+    "join_date": "09-30-2018"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1012",
+    "name": "Umi PUTRA",
+    "job_title": "Kepala Cabang",
+    "branch": "bali",
+    "skills": "P&L Management|Stakeholder Management|Strategic Planning|KPI Monitoring|Budgeting",
+    "perf_score": 3.3,
+    "join_date": "25/12/2016"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1129",
+    "name": "G. Saputra",
+    "job_title": "SALES REP",
+    "branch": "Bdg",
+    "skills": "Negotiation|Account Management|B2B Sales|Territory Management|Salesforce",
+    "perf_score": 3.9,
+    "join_date": "01/03/2016"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5068",
+    "name": "gita osman",
+    "job_title": "Manager Cabang",
+    "branch": "Semarang",
+    "skills": "",
+    "perf_score": 4.1,
+    "join_date": "2023-05-07"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5018",
+    "name": "J.Yulianto",
+    "job_title": "regulatory affairs officer",
+    "branch": "MDN",
+    "skills": "Dossier Preparation|Audit Support",
+    "perf_score": 3.0,
+    "join_date": "2016-07-29"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9070",
+    "name": "yoga halim",
+    "job_title": "WH Staf",
+    "branch": "JKT",
+    "skills": "Safety Compliance",
+    "perf_score": "",
+    "join_date": "02-26-2021"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5162",
+    "name": "Zahra MAHENDRA",
+    "job_title": "Apoteker Asisten",
+    "branch": "Jakarta Pusat",
+    "skills": "Drug Dispensing",
+    "perf_score": 3.5,
+    "join_date": "2018-10-12"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1198",
+    "name": "Lukman HALIM",
+    "job_title": "Logistic",
+    "branch": "Jakarta Pusat",
+    "skills": "",
+    "perf_score": 3.2,
+    "join_date": "20/05/2018"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1078",
+    "name": "Citra.Haryono",
+    "job_title": "Human Resource",
+    "branch": "Medan Kota",
+    "skills": "HRIS|Onboarding|Payroll|Performance Management",
+    "perf_score": 3.2,
+    "join_date": "25/03/2016"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5087",
+    "name": "Haris.Perdana",
+    "job_title": "branch manager",
+    "branch": "Jakarta Pusat",
+    "skills": "P&L Management|Team Leadership|Budgeting",
+    "perf_score": 3.4,
+    "join_date": "2017-11-26"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1157",
+    "name": "Teguh HANDOKO",
+    "job_title": "hr specialist",
+    "branch": "semarang",
+    "skills": "",
+    "perf_score": 3.7,
+    "join_date": "02/08/2018"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5104",
+    "name": "Oscar Handoko",
+    "job_title": "Logistic",
+    "branch": "Medan Kota",
+    "skills": "Procurement|Route Optimization|Supply Chain|SAP WM",
+    "perf_score": 3.1,
+    "join_date": "2020-12-03"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5133",
+    "name": "Shinta Usman",
+    "job_title": "Medis Advisor",
+    "branch": "YOG",
+    "skills": "KOL Management",
+    "perf_score": 3.6,
+    "join_date": "2016-10-23"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1086",
+    "name": "S. Wibowo",
+    "job_title": "CS",
+    "branch": "Jakarta Pusat",
+    "skills": "",
+    "perf_score": 2.7,
+    "join_date": "12/05/2020"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5054",
+    "name": "Joko Santosa",
+    "job_title": "RAO",
+    "branch": "Plbg",
+    "skills": "BPOM Regulation",
+    "perf_score": 4.2,
+    "join_date": "2019-05-13"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1035",
+    "name": "udin kartono",
+    "job_title": "Warehouse",
+    "branch": "JKT",
+    "skills": "",
+    "perf_score": 4.3,
+    "join_date": "22/12/2017"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1028",
+    "name": "Fajar Wahyudi",
+    "job_title": "CustServ",
+    "branch": "Mdn",
+    "skills": "Cross-selling|Ticketing|Communication|SLA Management",
+    "perf_score": 4.3,
+    "join_date": "14/08/2016"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5154",
+    "name": "Hafiz.Firmansyah",
+    "job_title": "Sales Staf",
+    "branch": "Yogyakarta",
+    "skills": "",
+    "perf_score": 4.7,
+    "join_date": "2019-11-02"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5056",
+    "name": "Y. Setiawan",
+    "job_title": "warehouse staff",
+    "branch": "Balikpapan",
+    "skills": "",
+    "perf_score": 4.8,
+    "join_date": "2018-11-17"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5170",
+    "name": "D. Kusuma",
+    "job_title": "Technical Support",
+    "branch": "SBY",
+    "skills": "Cybersecurity Basics|Windows Server|Helpdesk",
+    "perf_score": 4.8,
+    "join_date": "2020-10-21"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1026",
+    "name": "lukman santoso",
+    "job_title": "Log. Coord",
+    "branch": "BDG",
+    "skills": "Route Optimization|Warehouse Management",
+    "perf_score": 4.5,
+    "join_date": "20/04/2020"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9060",
+    "name": "gina kusuma",
+    "job_title": "Staf Keuangan",
+    "branch": "Jkt",
+    "skills": "Accounting|Cost Analysis|Reconciliation",
+    "perf_score": "",
+    "join_date": "08-26-2016"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5050",
+    "name": "Erwin.Maulana",
+    "job_title": "CustServ",
+    "branch": "MKS",
+    "skills": "Complaint Handling",
+    "perf_score": 3.4,
+    "join_date": "2023-07-24"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5039",
+    "name": "Rizky PANJAITAN",
+    "job_title": "sales rep",
+    "branch": "makassar",
+    "skills": "Salesforce|Cold Calling|Pipeline Management|B2B Sales",
+    "perf_score": 3.9,
+    "join_date": "2018-01-31"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1090",
+    "name": "C.Susanto",
+    "job_title": "Sales 2",
+    "branch": "Balikpapan Kota",
+    "skills": "",
+    "perf_score": 3.9,
+    "join_date": "30/04/2021"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1128",
+    "name": "S.Budiman",
+    "job_title": "HR Officer",
+    "branch": "YOG",
+    "skills": "",
+    "perf_score": 4.8,
+    "join_date": "05/07/2016"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9030",
+    "name": "Nanda Santoso",
+    "job_title": "Apoteker Asisten",
+    "branch": "bandung",
+    "skills": "SAP Pharma",
+    "perf_score": "",
+    "join_date": "07-26-2022"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1139",
+    "name": "V. Rachman",
+    "job_title": "Teknisi IT",
+    "branch": "jakarta",
+    "skills": "Troubleshooting|Active Directory|Helpdesk|Cybersecurity Basics",
+    "perf_score": 3.4,
+    "join_date": "25/07/2023"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9079",
+    "name": "Galih WAHYUDI",
+    "job_title": "Med Advisor",
+    "branch": "jakarta",
+    "skills": "Regulatory Affairs",
+    "perf_score": "",
+    "join_date": "04-24-2017"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5019",
+    "name": "Zulfa SETIAWAN",
+    "job_title": "RA Officer",
+    "branch": "Bali",
+    "skills": "",
+    "perf_score": 4.3,
+    "join_date": "2018-08-07"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1079",
+    "name": "Oki Lukman",
+    "job_title": "Koordinator Logistik",
+    "branch": "Surabaya Timur",
+    "skills": "Vendor Management|Warehouse Management",
+    "perf_score": 2.6,
+    "join_date": "05/11/2016"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5106",
+    "name": "galih wahyudi",
+    "job_title": "Medical Rep",
+    "branch": "Jkt",
+    "skills": "Medical Writing|Pharmacovigilance|Clinical Trials",
+    "perf_score": 3.7,
+    "join_date": "2017-04-24"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9113",
+    "name": "Andri EFFENDI",
+    "job_title": "RA Officer",
+    "branch": "JAKARTA",
+    "skills": "Audit Support|BPOM Regulation|Submission Management",
+    "perf_score": "",
+    "join_date": "03-30-2019"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9123",
+    "name": "zahra mahendra",
+    "job_title": "Pharm. Tech",
+    "branch": "JKT",
+    "skills": "SAP Pharma|Patient Counseling",
+    "perf_score": "",
+    "join_date": "11-16-2018"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5160",
+    "name": "C. Susanto",
+    "job_title": "Sales Staf",
+    "branch": "YOG",
+    "skills": "",
+    "perf_score": 5.0,
+    "join_date": "2017-07-05"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1046",
+    "name": "benny bachtiar",
+    "job_title": "customer service",
+    "branch": "Jakarta",
+    "skills": "SLA Management|Communication",
+    "perf_score": 4.4,
+    "join_date": "05/07/2020"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9098",
+    "name": "Siti.Kartono",
+    "job_title": "marketing specialist",
+    "branch": "Bali Island",
+    "skills": "",
+    "perf_score": "",
+    "join_date": "03-27-2022"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1127",
+    "name": "Kiki Panjaitan",
+    "job_title": "it support",
+    "branch": "bali",
+    "skills": "",
+    "perf_score": 2.6,
+    "join_date": "24/10/2018"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1069",
+    "name": "F.Santoso",
+    "job_title": "HRD",
+    "branch": "SBY",
+    "skills": "Employee Relations|Recruitment|Onboarding|Labor Law|Payroll",
+    "perf_score": 4.4,
+    "join_date": "05/04/2017"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9083",
+    "name": "C.Susanto",
+    "job_title": "Koordinator Logistik",
+    "branch": "Smg",
+    "skills": "Procurement|Vendor Management|SAP WM",
+    "perf_score": "",
+    "join_date": "12-15-2019"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5167",
+    "name": "Elsa Gunawan",
+    "job_title": "Reg Affairs",
+    "branch": "MDN",
+    "skills": "",
+    "perf_score": 2.8,
+    "join_date": "2022-06-07"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5016",
+    "name": "A.Hartono",
+    "job_title": "Pharma Technician",
+    "branch": "Jakarta Pusat",
+    "skills": "SAP Pharma|Patient Counseling",
+    "perf_score": 4.1,
+    "join_date": "2016-11-27"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5149",
+    "name": "Ika ISKANDAR",
+    "job_title": "Manager Cabang",
+    "branch": "jakarta",
+    "skills": "",
+    "perf_score": 3.2,
+    "join_date": "2018-03-31"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5161",
+    "name": "Panji Haryono",
+    "job_title": "Customer Svc",
+    "branch": "balikpapan",
+    "skills": "",
+    "perf_score": 4.0,
+    "join_date": "2018-11-26"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5042",
+    "name": "Hendra NASUTION",
+    "job_title": "Regulatory Off.",
+    "branch": "MDN",
+    "skills": "",
+    "perf_score": 3.9,
+    "join_date": "2018-05-21"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9003",
+    "name": "J. Bachtiar",
+    "job_title": "Regulatory Off.",
+    "branch": "jogjakarta",
+    "skills": "Audit Support|GCP|Submission Management",
+    "perf_score": "",
+    "join_date": "04-17-2020"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9146",
+    "name": "priya santoso",
+    "job_title": "FinOff",
+    "branch": "Yogya",
+    "skills": "",
+    "perf_score": "",
+    "join_date": "12-07-2020"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5168",
+    "name": "Juwita MULYONO",
+    "job_title": "warehouse staff",
+    "branch": "Makassar",
+    "skills": "Forklift Operation|Stock Opname",
+    "perf_score": 2.6,
+    "join_date": "2022-05-01"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1095",
+    "name": "V.Basuki",
+    "job_title": "Marketing Spec",
+    "branch": "jakarta",
+    "skills": "Campaign Management|Social Media|Digital Marketing|SEO/SEM|Google Analytics",
+    "perf_score": 4.1,
+    "join_date": "13/11/2016"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1013",
+    "name": "panji mulyono",
+    "job_title": "Mktg Specialist",
+    "branch": "BPN",
+    "skills": "Digital Marketing|Campaign Management|SEO/SEM",
+    "perf_score": 3.1,
+    "join_date": "07/07/2020"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5002",
+    "name": "imam setiawan",
+    "job_title": "Pharm. Tech",
+    "branch": "Jakarta Pusat",
+    "skills": "",
+    "perf_score": 4.4,
+    "join_date": "2016-12-07"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9136",
+    "name": "W.Kartono",
+    "job_title": "Logistics Coord",
+    "branch": "BDG",
+    "skills": "SAP WM",
+    "perf_score": "",
+    "join_date": "03-14-2018"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5021",
+    "name": "teguh kurniawan",
+    "job_title": "Pharm. Tech",
+    "branch": "Sby",
+    "skills": "",
+    "perf_score": 3.3,
+    "join_date": "2017-12-21"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9129",
+    "name": "Juwita Mulyono",
+    "job_title": "warehouse staff",
+    "branch": "Mks",
+    "skills": "Stock Opname",
+    "perf_score": "",
+    "join_date": "05-01-2022"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5110",
+    "name": "C. Susanto",
+    "job_title": "Log. Coord",
+    "branch": "SMG",
+    "skills": "Vendor Management|Warehouse Management|Supply Chain|SAP WM",
+    "perf_score": 5.0,
+    "join_date": "2019-11-16"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5177",
+    "name": "Yanuar Riyadi",
+    "job_title": "Log. Coord",
+    "branch": "Medan",
+    "skills": "Warehouse Management",
+    "perf_score": 4.8,
+    "join_date": "2017-08-05"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9090",
+    "name": "P. Purnomo",
+    "job_title": "Branch Mgr",
+    "branch": "SBY",
+    "skills": "",
+    "perf_score": "",
+    "join_date": "07-26-2021"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1122",
+    "name": "P. Gunawan",
+    "job_title": "Marketing Spec",
+    "branch": "Mks",
+    "skills": "SEO/SEM|Campaign Management|Content Creation|Google Analytics",
+    "perf_score": 3.3,
+    "join_date": "21/02/2016"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1011",
+    "name": "L. Suryadi",
+    "job_title": "Marketing",
+    "branch": "Bdg",
+    "skills": "Digital Marketing|Content Creation|Campaign Management",
+    "perf_score": 2.8,
+    "join_date": "20/12/2021"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9010",
+    "name": "Naomi Gunawan",
+    "job_title": "hr specialist",
+    "branch": "Bandung",
+    "skills": "Employee Relations|Recruitment",
+    "perf_score": "",
+    "join_date": "03-22-2018"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5063",
+    "name": "C.Osman",
+    "job_title": "Finance Off.",
+    "branch": "Denpasar",
+    "skills": "",
+    "perf_score": 4.1,
+    "join_date": "2016-01-18"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5071",
+    "name": "B. Gunawan",
+    "job_title": "Mgr Branch",
+    "branch": "BPN",
+    "skills": "",
+    "perf_score": 4.6,
+    "join_date": "2019-07-01"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1156",
+    "name": "Karina HIDAYAT",
+    "job_title": "Manager Cabang",
+    "branch": "Bali",
+    "skills": "P&L Management|Budgeting|Team Leadership",
+    "perf_score": 3.7,
+    "join_date": "22/02/2020"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1058",
+    "name": "S. Pranoto",
+    "job_title": "customer service",
+    "branch": "SMG",
+    "skills": "Cross-selling|Communication|Ticketing|SLA Management",
+    "perf_score": 3.9,
+    "join_date": "04/11/2017"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1114",
+    "name": "made kusuma",
+    "job_title": "IT Support",
+    "branch": "SMG",
+    "skills": "Active Directory|Helpdesk|Windows Server|Networking|Cybersecurity Basics",
+    "perf_score": 2.5,
+    "join_date": "01/10/2021"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5006",
+    "name": "Citra TAMBUNAN",
+    "job_title": "Apoteker Asisten",
+    "branch": "Medan",
+    "skills": "",
+    "perf_score": 4.2,
+    "join_date": "2022-11-16"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5100",
+    "name": "Kevin HANDOKO",
+    "job_title": "FinOff",
+    "branch": "PLB",
+    "skills": "Tax Compliance|Reconciliation|Cost Analysis|Financial Reporting",
+    "perf_score": 4.7,
+    "join_date": "2017-07-11"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1149",
+    "name": "I.Iskandar",
+    "job_title": "Kepala Cabang",
+    "branch": "Jakarta Pusat",
+    "skills": "",
+    "perf_score": 3.7,
+    "join_date": "20/01/2018"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1063",
+    "name": "C. Osman",
+    "job_title": "finance officer",
+    "branch": "DPS",
+    "skills": "",
+    "perf_score": 3.3,
+    "join_date": "18/01/2016"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5197",
+    "name": "Laila.Lukman",
+    "job_title": "Mgr Branch",
+    "branch": "Medan Kota",
+    "skills": "KPI Monitoring|Budgeting",
+    "perf_score": 3.1,
+    "join_date": "2022-12-20"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9020",
+    "name": "vero setiawan",
+    "job_title": "WH Staf",
+    "branch": "Yogyakarta",
+    "skills": "",
+    "perf_score": "",
+    "join_date": "11-13-2021"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1168",
+    "name": "Juwita.Mulyono",
+    "job_title": "WH Staff",
+    "branch": "Mks",
+    "skills": "Safety Compliance|Stock Opname|Forklift Operation",
+    "perf_score": 4.6,
+    "join_date": "01/05/2022"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9057",
+    "name": "J.Putra",
+    "job_title": "Logistik",
+    "branch": "Palembang",
+    "skills": "SAP WM",
+    "perf_score": "",
+    "join_date": "03-23-2019"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9091",
+    "name": "P. Gunawan",
+    "job_title": "Spesialis Marketing",
+    "branch": "makassar",
+    "skills": "Digital Marketing|SEO/SEM",
+    "perf_score": "",
+    "join_date": "02-21-2016"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9094",
+    "name": "Lestari.Handoko",
+    "job_title": "Sales Staf",
+    "branch": "Jkt",
+    "skills": "",
+    "perf_score": "",
+    "join_date": "11-12-2017"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1137",
+    "name": "Eko Riyadi",
+    "job_title": "Gudang",
+    "branch": "MDN",
+    "skills": "Barcode Scanning|Forklift Operation|FIFO Method",
+    "perf_score": 4.3,
+    "join_date": "13/01/2019"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5089",
+    "name": "Murti YULIANTO",
+    "job_title": "Teknisi IT",
+    "branch": "JAKARTA",
+    "skills": "",
+    "perf_score": 4.6,
+    "join_date": "2022-04-28"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1166",
+    "name": "W.Firmansyah",
+    "job_title": "Marketing",
+    "branch": "Medan",
+    "skills": "Campaign Management|Google Analytics|SEO/SEM|Content Creation",
+    "perf_score": 3.7,
+    "join_date": "20/09/2020"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9126",
+    "name": "K. Halim",
+    "job_title": "Keuangan",
+    "branch": "Semarang",
+    "skills": "Financial Reporting|Accounting|Tax Compliance",
+    "perf_score": "",
+    "join_date": "09-12-2018"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1038",
+    "name": "S. Firmansyah",
+    "job_title": "Logistic",
+    "branch": "Jogja",
+    "skills": "",
+    "perf_score": 3.4,
+    "join_date": "21/11/2018"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5027",
+    "name": "vero setiawan",
+    "job_title": "Gudang",
+    "branch": "Jogja",
+    "skills": "",
+    "perf_score": 2.6,
+    "join_date": "2021-10-08"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9143",
+    "name": "Agus Wijaya",
+    "job_title": "logistics coordinator",
+    "branch": "SBY",
+    "skills": "SAP WM|Route Optimization|Warehouse Management",
+    "perf_score": "",
+    "join_date": "12-21-2017"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5115",
+    "name": "P.Riyadi",
+    "job_title": "medical advisor",
+    "branch": "Smg.",
+    "skills": "Regulatory Affairs|Pharmacovigilance|Clinical Knowledge|KOL Management",
+    "perf_score": 2.9,
+    "join_date": "2017-12-24"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5194",
+    "name": "wulan halim",
+    "job_title": "Mgr Branch",
+    "branch": "SMG",
+    "skills": "Budgeting|Stakeholder Management|KPI Monitoring",
+    "perf_score": 2.9,
+    "join_date": "2016-09-20"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5126",
+    "name": "Lestari.Handoko",
+    "job_title": "Sr. Sales",
+    "branch": "Jakarta Pusat",
+    "skills": "",
+    "perf_score": 4.5,
+    "join_date": "2017-11-12"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5102",
+    "name": "E. Pratama",
+    "job_title": "Human Resource",
+    "branch": "Bdg",
+    "skills": "HRIS",
+    "perf_score": 3.9,
+    "join_date": "2019-11-03"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1070",
+    "name": "Teguh.Hartono",
+    "job_title": "FinOff",
+    "branch": "bali",
+    "skills": "",
+    "perf_score": 3.7,
+    "join_date": "09/04/2018"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5013",
+    "name": "Panji MULYONO",
+    "job_title": "Marketing",
+    "branch": "balikpapan",
+    "skills": "Content Creation",
+    "perf_score": 4.5,
+    "join_date": "2020-07-30"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1182",
+    "name": "Claudia Wijaya",
+    "job_title": "Med. Adv.",
+    "branch": "Mdn",
+    "skills": "Medical Writing|KOL Management",
+    "perf_score": 3.5,
+    "join_date": "09/01/2020"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5122",
+    "name": "P. Gunawan",
+    "job_title": "Marketing",
+    "branch": "Makassar",
+    "skills": "Google Analytics|Social Media",
+    "perf_score": 3.4,
+    "join_date": "2016-02-21"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5076",
+    "name": "Monica.Pranoto",
+    "job_title": "customer service",
+    "branch": "MDN",
+    "skills": "",
+    "perf_score": 5.0,
+    "join_date": "2023-01-31"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9134",
+    "name": "Andri.Junaedi",
+    "job_title": "Mgr Branch",
+    "branch": "JKT",
+    "skills": "Stakeholder Management|P&L Management",
+    "perf_score": "",
+    "join_date": "07-18-2023"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5180",
+    "name": "Dewi.Osman",
+    "job_title": "Med Advisor",
+    "branch": "jakarta",
+    "skills": "",
+    "perf_score": 3.1,
+    "join_date": "2018-08-06"
+  },
+  {
+    "source": "SAP",
+    "ext_id": "SAP-1146",
+    "name": "jefri santoso",
+    "job_title": "Gudang",
+    "branch": "Ujung Pandang",
+    "skills": "",
+    "perf_score": 4.8,
+    "join_date": "05/05/2022"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5049",
+    "name": "Rama.Nugroho",
+    "job_title": "Sales Officer",
+    "branch": "SMG",
+    "skills": "Negotiation|Pipeline Management|Cold Calling",
+    "perf_score": 4.8,
+    "join_date": "2019-05-26"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5196",
+    "name": "tika pranoto",
+    "job_title": "Regulatory Off.",
+    "branch": "JAKARTA",
+    "skills": "",
+    "perf_score": 4.6,
+    "join_date": "2017-02-13"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9029",
+    "name": "Umi SUHARTO",
+    "job_title": "Apoteker Asisten",
+    "branch": "Ujung Pandang",
+    "skills": "",
+    "perf_score": "",
+    "join_date": "08-15-2021"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5116",
+    "name": "Z. Suryadi",
+    "job_title": "RAO",
+    "branch": "Balikpapan Kota",
+    "skills": "",
+    "perf_score": 4.5,
+    "join_date": "2018-08-06"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5057",
+    "name": "J.Kartono",
+    "job_title": "Medical Rep",
+    "branch": "Bali",
+    "skills": "",
+    "perf_score": 4.2,
+    "join_date": "2020-09-16"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9085",
+    "name": "M.Kusuma",
+    "job_title": "IT Supp",
+    "branch": "Smg",
+    "skills": "Active Directory",
+    "perf_score": "",
+    "join_date": "11-04-2021"
+  },
+  {
+    "source": "Moodle",
+    "ext_id": "LMS-9150",
+    "name": "Eko FIRMANSYAH",
+    "job_title": "Regulatory Off.",
+    "branch": "Makassar",
+    "skills": "",
+    "perf_score": "",
+    "join_date": "02-10-2019"
+  },
+  {
+    "source": "Workable",
+    "ext_id": "WK-5025",
+    "name": "Made Purnomo",
+    "job_title": "warehouse staff",
+    "branch": "SBY",
+    "skills": "",
+    "perf_score": 3.7,
+    "join_date": "2019-06-26"
+  }
+]
