@@ -1,0 +1,1193 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Medika Nusantara — Workforce Intelligence Platform</title>
+  <meta name="description" content="Enterprise Workforce Intelligence Platform for Medika Nusantara — unify, clean, and act on talent data across all branches." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'sans-serif'] },
+          colors: {
+            brand: { 50:'#eef2ff',100:'#e0e7ff',200:'#c7d2fe',300:'#a5b4fc',400:'#818cf8',500:'#6366f1',600:'#4f46e5',700:'#4338ca',800:'#3730a3',900:'#312e81' }
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    * { box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; background: #0f1117; color: #e2e8f0; }
+    ::-webkit-scrollbar { width: 6px; height: 6px; }
+    ::-webkit-scrollbar-track { background: #1e2130; }
+    ::-webkit-scrollbar-thumb { background: #334155; border-radius: 3px; }
+    ::-webkit-scrollbar-thumb:hover { background: #4f46e5; }
+    .glass-header { background: rgba(15,17,23,0.82); backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px); border-bottom: 1px solid rgba(99,102,241,0.12); }
+    .nav-item { display:flex; align-items:center; gap:10px; padding:10px 14px; border-radius:10px; font-size:14px; font-weight:500; color:#94a3b8; cursor:pointer; transition:all 0.2s; }
+    .nav-item:hover { background:rgba(99,102,241,0.08); color:#c7d2fe; }
+    .nav-item.active { background:rgba(99,102,241,0.15); color:#818cf8; border:1px solid rgba(99,102,241,0.2); }
+    .toggle-pill { display:inline-flex; border-radius:10px; padding:4px; background:#1e2130; border:1px solid #2d3748; }
+    .toggle-btn { padding:8px 18px; border-radius:8px; font-size:13px; font-weight:600; cursor:pointer; transition:all 0.25s; display:flex; align-items:center; gap:7px; border:none; background:transparent; color:#64748b; white-space:nowrap; }
+    .toggle-btn.active-messy { background:linear-gradient(135deg,#be123c,#9f1239); color:#fff; box-shadow:0 0 16px rgba(190,18,60,0.3); }
+    .toggle-btn.active-clean { background:linear-gradient(135deg,#4f46e5,#7c3aed); color:#fff; box-shadow:0 0 16px rgba(79,70,229,0.35); }
+    .badge-verified { display:inline-flex; align-items:center; gap:4px; padding:3px 9px; border-radius:20px; font-size:11px; font-weight:600; background:rgba(16,185,129,0.12); color:#34d399; border:1px solid rgba(16,185,129,0.2); }
+    .badge-inferred { display:inline-flex; align-items:center; gap:4px; padding:3px 9px; border-radius:20px; font-size:11px; font-weight:600; background:rgba(245,158,11,0.1); color:#fbbf24; border:1px solid rgba(245,158,11,0.2); cursor:pointer; transition:all 0.2s; position:relative; }
+    .badge-inferred:hover { background:rgba(245,158,11,0.18); }
+    .badge-inferred:hover .infer-tooltip { display:block; }
+    .infer-tooltip { display:none; position:absolute; bottom:calc(100% + 6px); left:50%; transform:translateX(-50%); background:#1e2130; border:1px solid rgba(245,158,11,0.3); border-radius:8px; padding:8px 10px; font-size:11px; color:#cbd5e1; white-space:nowrap; z-index:99; box-shadow:0 4px 16px rgba(0,0,0,0.4); min-width:220px; }
+    .infer-tooltip::after { content:''; position:absolute; top:100%; left:50%; transform:translateX(-50%); border:5px solid transparent; border-top-color:#1e2130; }
+    .status-active { background:rgba(16,185,129,0.1); color:#34d399; border:1px solid rgba(16,185,129,0.2); }
+    .status-reskilling { background:rgba(99,102,241,0.12); color:#818cf8; border:1px solid rgba(99,102,241,0.25); }
+    .status-high-risk { background:rgba(239,68,68,0.1); color:#f87171; border:1px solid rgba(239,68,68,0.2); }
+    .status-high-potential { background:rgba(59,130,246,0.1); color:#60a5fa; border:1px solid rgba(59,130,246,0.2); }
+    .status-stable { background:rgba(156,163,175,0.1); color:#9ca3af; border:1px solid rgba(156,163,175,0.2); }
+    .status-base { display:inline-flex; align-items:center; gap:5px; padding:3px 10px; border-radius:20px; font-size:11px; font-weight:600; }
+    .conf-bar-outer { height:4px; border-radius:4px; background:#1e2130; width:60px; display:inline-block; vertical-align:middle; }
+    .conf-bar-inner { height:100%; border-radius:4px; transition:width 0.6s ease; }
+    .data-row { transition:background 0.15s; }
+    .data-row:hover { background:rgba(99,102,241,0.04); }
+    .btn-reskill { padding:5px 12px; border-radius:7px; font-size:12px; font-weight:600; background:rgba(59,130,246,0.12); color:#60a5fa; border:1px solid rgba(59,130,246,0.25); cursor:pointer; transition:all 0.2s; display:inline-flex; align-items:center; gap:5px; }
+    .btn-reskill:hover { background:rgba(59,130,246,0.22); }
+    .btn-verify { padding:5px 12px; border-radius:7px; font-size:12px; font-weight:600; background:rgba(239,68,68,0.1); color:#f87171; border:1px solid rgba(239,68,68,0.25); cursor:pointer; transition:all 0.2s; display:inline-flex; align-items:center; gap:5px; }
+    .btn-verify:hover { background:rgba(239,68,68,0.18); }
+    .warning-banner { background:linear-gradient(90deg,rgba(234,179,8,0.08),rgba(234,179,8,0.04)); border:1px solid rgba(234,179,8,0.2); border-radius:10px; padding:10px 16px; display:flex; align-items:center; gap:10px; font-size:13px; color:#fbbf24; font-weight:500; }
+    #toast-container { position:fixed; bottom:28px; right:28px; z-index:9999; display:flex; flex-direction:column; gap:10px; }
+    .toast { background:#1e2130; border:1px solid rgba(16,185,129,0.3); border-radius:12px; padding:14px 20px; display:flex; align-items:center; gap:12px; box-shadow:0 8px 32px rgba(0,0,0,0.5); min-width:280px; }
+    @keyframes slideInRight { 0% { transform:translateX(110%); opacity:0; } 100% { transform:translateX(0); opacity:1; } }
+    .toast { animation:slideInRight 0.35s cubic-bezier(0.16,1,0.3,1); }
+    .stat-card { background:linear-gradient(145deg,#141720,#1a1d2e); border:1px solid rgba(99,102,241,0.1); border-radius:16px; padding:22px 24px; transition:all 0.25s; }
+    .stat-card:hover { border-color:rgba(99,102,241,0.25); transform:translateY(-1px); box-shadow:0 8px 24px rgba(79,70,229,0.08); }
+    .roadmap-card { background:linear-gradient(145deg,#141720,#1a1d2e); border:1px solid rgba(99,102,241,0.12); border-radius:16px; overflow:hidden; transition:all 0.25s; }
+    .roadmap-card:hover { border-color:rgba(99,102,241,0.28); box-shadow:0 8px 24px rgba(79,70,229,0.1); }
+    .view-section { animation:fadeIn 0.25s ease; }
+    @keyframes fadeIn { 0% { opacity:0; transform:translateY(8px); } 100% { opacity:1; transform:translateY(0); } }
+    .table-scroll { overflow-x:auto; }
+    .data-table { width:100%; border-collapse:separate; border-spacing:0; }
+    .data-table th { padding:11px 14px; text-align:left; font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:0.08em; color:#64748b; background:#0f1117; border-bottom:1px solid #1e2130; white-space:nowrap; position:sticky; top:0; z-index:1; }
+    .data-table td { padding:12px 14px; border-bottom:1px solid rgba(30,33,48,0.7); font-size:13px; vertical-align:middle; }
+    .sidebar { background:linear-gradient(180deg,#0d0f1a,#111420); border-right:1px solid rgba(99,102,241,0.08); }
+    .logo-glow { text-shadow:0 0 20px rgba(99,102,241,0.5); }
+    /* Perf score cells */
+    .perf-na { color:#f87171; font-family:monospace; font-size:12px; }
+    .perf-ok { color:#94a3b8; font-size:12px; }
+    /* Conflicting date pill */
+    .conflict-pill { display:inline-flex; align-items:center; gap:3px; font-size:10px; color:#fbbf24; background:rgba(245,158,11,0.1); border:1px solid rgba(245,158,11,0.2); border-radius:4px; padding:1px 5px; }
+    /* Date conflict — actual value mismatch across systems */
+    .conflict-date { color:#f87171; font-weight:700; }
+    .conflict-date-pill { display:inline-flex; align-items:center; gap:3px; font-size:10px; color:#f87171; background:rgba(239,68,68,0.1); border:1px solid rgba(239,68,68,0.25); border-radius:4px; padding:1px 6px; white-space:nowrap; }
+    .conflict-row-marker { background:rgba(239,68,68,0.04) !important; }
+    .conflict-row-marker td:last-child { border-left:2px solid rgba(239,68,68,0.3); }
+    /* Conflict evidence card */
+    .conflict-card { background:linear-gradient(135deg,rgba(239,68,68,0.06),rgba(239,68,68,0.03)); border:1px solid rgba(239,68,68,0.2); border-radius:12px; overflow:hidden; }
+    .conflict-card-header { padding:10px 16px; background:rgba(239,68,68,0.08); border-bottom:1px solid rgba(239,68,68,0.15); display:flex; align-items:center; justify-content:space-between; cursor:pointer; }
+    .conflict-evidence-item { display:grid; grid-template-columns:1fr 1fr; gap:8px; padding:10px 16px; border-bottom:1px solid rgba(239,68,68,0.08); font-size:12px; }
+    .conflict-evidence-item:last-child { border-bottom:none; }
+    .conflict-src { display:flex; flex-direction:column; gap:3px; }
+    .conflict-vs { display:flex; align-items:center; justify-content:center; }
+    .conflict-panel { display:none; }
+    .conflict-panel.open { display:block; }
+  </style>
+</head>
+<body class="h-full">
+<div id="toast-container"></div>
+
+<!-- INFERENCE LOGIC MAP -->
+<script>
+const INFERENCE_LOGIC = {
+  'Product Knowledge':      'Role-cluster average: 73% of CS peers in same branch list this skill',
+  'Escalation Handling':    'Co-occurrence pattern: appears with "Ticketing" in 81% of CS profiles',
+  'Retention Strategy':     'Inferred from tenure >3 yrs + CRM skill — retention exposure likely',
+  'HR Analytics':           'Adjacent skill: 89% of HR Specialists with HRIS also develop analytics',
+  'Culture Building':       'Soft-skill inference: Onboarding + Employee Relations → culture exposure',
+  'Talent Management':      'Seniority signal: >5 yrs HR tenure correlates with talent mgmt scope',
+  'Audit Preparation':      'Tax Compliance + SAP Finance → audit readiness (61% co-occurrence)',
+  'ERP Proficiency':        'SAP Finance usage → generalizable ERP skill (domain transfer)',
+  'Team Coordination':      'Inferred from Warehouse Staff cluster + Safety Compliance skill',
+  'RF Scanner':             'Standard WH skill: 79% of Forklift + Barcode staff also use RF Scanner',
+  'Cycle Count':            'FIFO + Stock Opname → cycle count implied in 84% of warehouse roles',
+  'Regulatory Intelligence':'Adjacent to Dossier Prep + BPOM Regulation (domain cluster)',
+  'Change Control':         'Post-submission regulatory role typically involves change control',
+  'Risk Assessment':        'Labeling Compliance + Audit Support → risk assessment scope',
+  'SOP Writing':            'RA Officers with GCP certified show 77% SOP writing activity',
+  'Drug Interaction':       'Pharmacy role + Dispensing → drug interaction review expected',
+  'Medication Safety':      'GMP Standards + BPOM Compliance → safety protocol responsibility',
+  'Compounding':            'Pharmacy Tech with dispensing history → compounding likely (68%)',
+  'Quality Control':        'GMP Standards skill → QC responsibility in 74% of pharma roles',
+  'Change Management':      'Branch Manager + KPI Monitoring → change management scope inferred',
+  'Workforce Planning':     'P&L Management + Team Leadership → planning responsibility at BM level',
+  'Crisis Management':      'Stakeholder Management + Budgeting → crisis response expected',
+  'Coaching':               'Team Leadership >3 yrs → coaching behavior emerges (HRBP research)',
+  '3PL Management':         'Supply Chain + SAP WM → 3PL coordination in 71% of logistics roles',
+  'ERP SAP':                'SAP WM skill → broader SAP ERP exposure (same platform family)',
+  'Demand Planning':        'Route Optimization + Procurement → demand planning adjacent',
+  'Cold Chain Logistics':   'Pharma logistics context → cold chain handling required for product type',
+  'Lead Generation':        'CRM + Cold Calling → lead gen activity in 83% of sales profiles',
+  'Market Analysis':        'Territory Management + B2B Sales → market analysis exposure',
+  'Upselling':              'Account Management + Cross-selling → upselling scope (76% overlap)',
+  'Customer Retention':     'SLA Management + Complaint Handling → retention pattern identified',
+  'A/B Testing':            'SEO/SEM + Google Analytics → A/B testing in 69% of digital mktg roles',
+  'Brand Strategy':         'Campaign Management + Content Creation → brand ownership scope',
+  'Email Marketing':        'Digital Marketing + Social Media → email as adjacent channel',
+  'Training & Development': 'HR with Onboarding + Performance data → T&D responsibility (81%)',
+  'Presentation Skills':    'KOL Management → medical presentation exposure in 79% of cases',
+  'Data Analysis':          'Medical Advisor + Pharmacovigilance → outcomes data analysis',
+  'Product Launch':         'KOL Management + Regulatory Affairs → launch support role inferred',
+  'Scientific Communication':'Pharmacovigilance + Medical Writing → sci-comm requirement',
+  'ITIL Framework':         'IT Support with Active Directory → ITIL exposure in 74% of cases',
+  'Scripting Basics':       'Windows Server + Helpdesk → scripting basics common in IT support',
+  'Cloud Support':          'Cybersecurity + Networking → cloud support emerging skill (77%)',
+  'Forecasting':            'SAP Finance + Tax Compliance → financial forecasting adjacent',
+  'Cash Flow Management':   'Reconciliation + Accounting → cash flow mgmt in 83% of Finance Off.',
+  'Market Research':        'Social Media + Digital Marketing → market research exposure',
+};
+</script>
+
+<div class="flex h-screen overflow-hidden">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar w-56 flex-shrink-0 flex flex-col py-5 px-4">
+    <div class="mb-8 px-2">
+      <div class="flex items-center gap-2.5">
+        <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-indigo-500 to-violet-600 flex items-center justify-center shadow-lg">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" width="16" height="16"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <div>
+          <div class="text-xs font-800 text-slate-200 logo-glow leading-tight font-bold">Medika</div>
+          <div class="text-[10px] text-indigo-400 font-semibold tracking-wide uppercase">Workforce AI</div>
+        </div>
+      </div>
+    </div>
+    <nav class="flex flex-col gap-1">
+      <div class="nav-item active" id="nav-dashboard" onclick="switchView('dashboard')"><i data-lucide="layout-dashboard" style="width:16px;height:16px"></i>Dashboard</div>
+      <div class="nav-item" id="nav-talent" onclick="switchView('talent')"><i data-lucide="users" style="width:16px;height:16px"></i>Talent Directory</div>
+      <div class="nav-item" id="nav-roadmap" onclick="switchView('roadmap')"><i data-lucide="map" style="width:16px;height:16px"></i>Reskilling Roadmap</div>
+    </nav>
+    <div class="mt-6 mx-1 border-t border-slate-800 pt-4">
+      <p class="text-[10px] text-slate-600 uppercase tracking-widest font-semibold mb-2 px-2">Data Sources</p>
+      <div class="flex flex-col gap-1.5">
+        <div class="flex items-center gap-2 px-2 py-1.5 rounded-lg text-xs text-slate-500"><span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>SAP HCM</div>
+        <div class="flex items-center gap-2 px-2 py-1.5 rounded-lg text-xs text-slate-500"><span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>Workable ATS</div>
+        <div class="flex items-center gap-2 px-2 py-1.5 rounded-lg text-xs text-slate-500"><span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>Moodle LMS</div>
+      </div>
+    </div>
+    <div class="mt-auto px-2 pt-4 border-t border-slate-800">
+      <div class="flex items-center gap-2.5">
+        <div class="w-7 h-7 rounded-full bg-gradient-to-br from-indigo-600 to-violet-700 flex items-center justify-center text-xs font-bold text-white">HR</div>
+        <div><div class="text-xs font-semibold text-slate-300">CHRO Office</div><div class="text-[10px] text-slate-500">Admin Access</div></div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- MAIN -->
+  <div class="flex-1 flex flex-col overflow-hidden">
+    <header class="glass-header sticky top-0 z-30 flex items-center justify-between px-6 py-3.5">
+      <div>
+        <h1 class="text-sm font-semibold text-slate-200" id="page-title">Workforce Intelligence Dashboard</h1>
+        <p class="text-xs text-slate-500 mt-0.5">Medika Nusantara · <span class="text-indigo-400" id="header-count">200 unified employee records</span></p>
+      </div>
+      <div class="flex items-center gap-3">
+        <div class="flex items-center gap-2 bg-slate-800/60 border border-slate-700 rounded-lg px-3 py-1.5 text-xs text-slate-400">
+          <i data-lucide="clock" style="width:12px;height:12px;color:#818cf8"></i>
+          Last sync: <span class="text-slate-300 font-medium">Today, 08:14 WIB</span>
+        </div>
+        <div class="w-8 h-8 rounded-lg bg-slate-800 border border-slate-700 flex items-center justify-center cursor-pointer hover:border-indigo-500 transition-colors">
+          <i data-lucide="bell" style="width:15px;height:15px;color:#64748b"></i>
+        </div>
+      </div>
+    </header>
+
+    <main class="flex-1 overflow-y-auto bg-[#0f1117] px-6 py-6">
+
+      <!-- ══ DASHBOARD ══ -->
+      <section id="view-dashboard" class="view-section">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+          <div class="stat-card">
+            <div class="flex items-start justify-between mb-3">
+              <div class="w-9 h-9 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center"><i data-lucide="users" style="width:16px;height:16px;color:#818cf8"></i></div>
+              <span class="text-xs font-semibold text-emerald-400 bg-emerald-400/10 px-2 py-0.5 rounded-full">↑ 5.2%</span>
+            </div>
+            <div class="text-2xl font-bold text-slate-100">200</div>
+            <div class="text-xs text-slate-500 mt-0.5">Total Employees</div>
+          </div>
+          <div class="stat-card">
+            <div class="flex items-start justify-between mb-3">
+              <div class="w-9 h-9 rounded-xl bg-violet-500/10 border border-violet-500/20 flex items-center justify-center"><i data-lucide="brain-circuit" style="width:16px;height:16px;color:#a78bfa"></i></div>
+              <span class="text-xs font-semibold text-emerald-400 bg-emerald-400/10 px-2 py-0.5 rounded-full">AI</span>
+            </div>
+            <div class="text-2xl font-bold text-slate-100">76<span class="text-sm text-slate-500">%</span></div>
+            <div class="text-xs text-slate-500 mt-0.5">Avg. Confidence Score</div>
+          </div>
+          <div class="stat-card">
+            <div class="flex items-start justify-between mb-3">
+              <div class="w-9 h-9 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center"><i data-lucide="flag" style="width:16px;height:16px;color:#fbbf24"></i></div>
+              <span class="text-xs font-semibold text-amber-400 bg-amber-400/10 px-2 py-0.5 rounded-full">Needs Action</span>
+            </div>
+            <div class="text-2xl font-bold text-slate-100" id="kpi-flagged">—</div>
+            <div class="text-xs text-slate-500 mt-0.5">Flagged for Review</div>
+          </div>
+          <div class="stat-card">
+            <div class="flex items-start justify-between mb-3">
+              <div class="w-9 h-9 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center"><i data-lucide="graduation-cap" style="width:16px;height:16px;color:#60a5fa"></i></div>
+              <span class="text-xs font-semibold text-blue-400 bg-blue-400/10 px-2 py-0.5 rounded-full">Active</span>
+            </div>
+            <div class="text-2xl font-bold text-slate-100" id="kpi-reskill">—</div>
+            <div class="text-xs text-slate-500 mt-0.5">Ready for Reskilling</div>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-3 gap-4 mb-6">
+          <div class="stat-card col-span-1">
+            <div class="flex items-center justify-between mb-4">
+              <h3 class="text-sm font-semibold text-slate-300">Data Quality Before AI</h3>
+              <span class="text-[10px] text-rose-400 bg-rose-400/10 px-2 py-0.5 rounded-full font-semibold">RAW · 461 records</span>
+            </div>
+            <div class="space-y-3">
+              <div><div class="flex justify-between text-xs mb-1.5"><span class="text-slate-400">Missing Skills</span><span class="text-rose-400 font-semibold">41%</span></div><div class="h-1.5 bg-slate-800 rounded-full"><div class="h-1.5 bg-gradient-to-r from-rose-500 to-rose-400 rounded-full" style="width:41%"></div></div></div>
+              <div><div class="flex justify-between text-xs mb-1.5"><span class="text-slate-400">Duplicate Records</span><span class="text-amber-400 font-semibold">56%</span></div><div class="h-1.5 bg-slate-800 rounded-full"><div class="h-1.5 bg-gradient-to-r from-amber-500 to-amber-400 rounded-full" style="width:56%"></div></div></div>
+              <div><div class="flex justify-between text-xs mb-1.5"><span class="text-slate-400">Inconsistent Roles</span><span class="text-orange-400 font-semibold">61%</span></div><div class="h-1.5 bg-slate-800 rounded-full"><div class="h-1.5 bg-gradient-to-r from-orange-500 to-orange-400 rounded-full" style="width:61%"></div></div></div>
+              <div><div class="flex justify-between text-xs mb-1.5"><span class="text-slate-400">Missing Perf. History</span><span class="text-purple-400 font-semibold">38%</span></div><div class="h-1.5 bg-slate-800 rounded-full"><div class="h-1.5 bg-gradient-to-r from-purple-500 to-purple-400 rounded-full" style="width:38%"></div></div></div>
+              <div><div class="flex justify-between text-xs mb-1.5"><span class="text-slate-400">Date Format Errors</span><span class="text-yellow-400 font-semibold">33%</span></div><div class="h-1.5 bg-slate-800 rounded-full"><div class="h-1.5 bg-gradient-to-r from-yellow-500 to-yellow-400 rounded-full" style="width:33%"></div></div></div>
+            </div>
+          </div>
+
+          <div class="stat-card col-span-2">
+            <div class="flex items-center justify-between mb-4">
+              <h3 class="text-sm font-semibold text-slate-300">Workforce Status Distribution</h3>
+              <span class="text-[10px] text-indigo-400 bg-indigo-400/10 px-2 py-0.5 rounded-full font-semibold">AI INTELLIGENCE · 200 unified</span>
+            </div>
+            <div class="grid grid-cols-5 gap-3" id="status-grid"></div>
+            <div class="mt-4 pt-4 border-t border-slate-800">
+              <p class="text-xs text-slate-500 mb-3 font-semibold uppercase tracking-wider">Top Branches by Headcount</p>
+              <div class="grid grid-cols-4 gap-2" id="branch-grid"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <div class="flex items-center justify-between mb-4">
+            <h3 class="text-sm font-semibold text-slate-300">Role Distribution Across Branches</h3>
+            <button onclick="switchView('talent')" class="text-xs text-indigo-400 hover:text-indigo-300 font-medium flex items-center gap-1">View Full Directory <i data-lucide="arrow-right" style="width:12px;height:12px"></i></button>
+          </div>
+          <div class="grid grid-cols-4 gap-3" id="role-grid"></div>
+        </div>
+      </section>
+
+      <!-- ══ TALENT DIRECTORY ══ -->
+      <section id="view-talent" class="view-section hidden">
+        <div class="flex items-center justify-between mb-4">
+          <div class="toggle-pill">
+            <button class="toggle-btn active-messy" id="btn-messy" onclick="setMode('messy')"><i data-lucide="alert-triangle" style="width:13px;height:13px"></i>Raw Messy Data</button>
+            <button class="toggle-btn" id="btn-clean" onclick="setMode('clean')"><i data-lucide="brain-circuit" style="width:13px;height:13px"></i>Clean AI Intelligence</button>
+          </div>
+          <div class="flex items-center gap-2">
+            <div class="flex items-center gap-2 bg-slate-800/60 border border-slate-700 rounded-lg px-3 py-2 text-xs text-slate-400">
+              <i data-lucide="search" style="width:12px;height:12px;color:#818cf8"></i>
+              <input id="search-input" type="text" placeholder="Search employee..." oninput="filterTable()" class="bg-transparent outline-none text-slate-300 placeholder-slate-600 w-36" />
+            </div>
+            <select id="branch-filter" onchange="filterTable()" class="bg-slate-800/60 border border-slate-700 rounded-lg px-3 py-2 text-xs text-slate-400 outline-none cursor-pointer">
+              <option value="">All Branches</option>
+              <option>Jakarta</option><option>Surabaya</option><option>Bandung</option><option>Medan</option><option>Makassar</option><option>Yogyakarta</option><option>Bali</option><option>Semarang</option><option>Balikpapan</option><option>Palembang</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- CONFLICT EVIDENCE PANEL -->
+        <div id="conflict-evidence-panel" class="conflict-card mb-3" style="display:none">
+          <div class="conflict-card-header" onclick="toggleConflictPanel()">
+            <div class="flex items-center gap-2">
+              <i data-lucide="git-merge" style="width:14px;height:14px;color:#f87171"></i>
+              <span class="text-sm font-semibold text-rose-400">Date Conflict Evidence</span>
+              <span class="text-[10px] bg-rose-500/15 text-rose-400 border border-rose-500/25 px-2 py-0.5 rounded-full font-semibold">5 verified cases · same identity, different join dates</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="text-xs text-slate-500">Click to expand</span>
+              <i data-lucide="chevron-down" id="conflict-chevron" style="width:14px;height:14px;color:#64748b;transition:transform 0.2s"></i>
+            </div>
+          </div>
+          <div class="conflict-panel" id="conflict-panel-body">
+            <div class="conflict-evidence-item">
+              <div class="conflict-src">
+                <div class="flex items-center gap-1.5 mb-1"><span style="font-size:10px;font-weight:700;background:rgba(16,185,129,0.15);color:#34d399;padding:1px 7px;border-radius:20px;border:1px solid rgba(16,185,129,0.2)">SAP · SAP-1188</span></div>
+                <div class="text-slate-300 font-semibold">Priya Santoso</div>
+                <div class="text-slate-500 text-xs">Finance Officer · Yogyakarta</div>
+                <div class="mt-1.5 text-xs">Join date: <span class="font-bold text-slate-200">19 Nov 2020</span></div>
+              </div>
+              <div class="conflict-src" style="border-left:1px solid rgba(239,68,68,0.15);padding-left:12px">
+                <div class="flex items-center gap-1.5 mb-1"><span style="font-size:10px;font-weight:700;background:rgba(99,102,241,0.15);color:#818cf8;padding:1px 7px;border-radius:20px;border:1px solid rgba(99,102,241,0.2)">Workable · WK-5188</span></div>
+                <div class="text-slate-300 font-semibold">Priya.Santoso</div>
+                <div class="text-slate-500 text-xs">Finance Off. · jogjakarta</div>
+                <div class="mt-1.5 text-xs">Join date: <span class="text-rose-400 font-bold">23 Nov 2020</span> <span class="conflict-date-pill ml-1">Δ 4 days</span></div>
+              </div>
+            </div>
+            <div class="conflict-evidence-item">
+              <div class="conflict-src">
+                <div class="flex items-center gap-1.5 mb-1"><span style="font-size:10px;font-weight:700;background:rgba(16,185,129,0.15);color:#34d399;padding:1px 7px;border-radius:20px;border:1px solid rgba(16,185,129,0.2)">SAP · SAP-1020</span></div>
+                <div class="text-slate-300 font-semibold">Wahyu Haryono</div>
+                <div class="text-slate-500 text-xs">Medical Advisor · Bali</div>
+                <div class="mt-1.5 text-xs">Join date: <span class="font-bold text-slate-200">14 Dec 2020</span></div>
+              </div>
+              <div class="conflict-src" style="border-left:1px solid rgba(239,68,68,0.15);padding-left:12px">
+                <div class="flex items-center gap-1.5 mb-1"><span style="font-size:10px;font-weight:700;background:rgba(245,158,11,0.15);color:#fbbf24;padding:1px 7px;border-radius:20px;border:1px solid rgba(245,158,11,0.2)">Moodle · LMS-9013</span></div>
+                <div class="text-slate-300 font-semibold">Wahyu.Haryono</div>
+                <div class="text-slate-500 text-xs">Med. Adv. · Bali Island</div>
+                <div class="mt-1.5 text-xs">Join date: <span class="text-rose-400 font-bold">17 Jan 2021</span> <span class="conflict-date-pill ml-1">Δ 34 days</span></div>
+              </div>
+            </div>
+            <div class="conflict-evidence-item">
+              <div class="conflict-src">
+                <div class="flex items-center gap-1.5 mb-1"><span style="font-size:10px;font-weight:700;background:rgba(245,158,11,0.15);color:#fbbf24;padding:1px 7px;border-radius:20px;border:1px solid rgba(245,158,11,0.2)">Moodle · LMS-9071</span></div>
+                <div class="text-slate-300 font-semibold">Vincent.Santoso</div>
+                <div class="text-slate-500 text-xs">Regulatory Affairs · Jakarta</div>
+                <div class="mt-1.5 text-xs">Join date: <span class="font-bold text-slate-200">15 Apr 2017</span></div>
+              </div>
+              <div class="conflict-src" style="border-left:1px solid rgba(239,68,68,0.15);padding-left:12px">
+                <div class="flex items-center gap-1.5 mb-1"><span style="font-size:10px;font-weight:700;background:rgba(99,102,241,0.15);color:#818cf8;padding:1px 7px;border-radius:20px;border:1px solid rgba(99,102,241,0.2)">Workable · WK-5094</span></div>
+                <div class="text-slate-300 font-semibold">Vincent Santoso</div>
+                <div class="text-slate-500 text-xs">regulatory affairs officer · JAKARTA</div>
+                <div class="mt-1.5 text-xs">Join date: <span class="text-rose-400 font-bold">06 Mar 2017</span> <span class="conflict-date-pill ml-1">Δ 40 days</span></div>
+              </div>
+            </div>
+            <div class="conflict-evidence-item">
+              <div class="conflict-src">
+                <div class="flex items-center gap-1.5 mb-1"><span style="font-size:10px;font-weight:700;background:rgba(99,102,241,0.15);color:#818cf8;padding:1px 7px;border-radius:20px;border:1px solid rgba(99,102,241,0.2)">Workable · WK-5185</span></div>
+                <div class="text-slate-300 font-semibold">Agus.Wijaya</div>
+                <div class="text-slate-500 text-xs">Logistics Coordinator · Surabaya</div>
+                <div class="mt-1.5 text-xs">Join date: <span class="font-bold text-slate-200">21 Oct 2017</span></div>
+              </div>
+              <div class="conflict-src" style="border-left:1px solid rgba(239,68,68,0.15);padding-left:12px">
+                <div class="flex items-center gap-1.5 mb-1"><span style="font-size:10px;font-weight:700;background:rgba(16,185,129,0.15);color:#34d399;padding:1px 7px;border-radius:20px;border:1px solid rgba(16,185,129,0.2)">SAP · SAP-1185</span></div>
+                <div class="text-slate-300 font-semibold">agus wijaya</div>
+                <div class="text-slate-500 text-xs">Logistics Coord · Surabaya Timur</div>
+                <div class="mt-1.5 text-xs">Join date: <span class="text-rose-400 font-bold">15 Nov 2017</span> <span class="conflict-date-pill ml-1">Δ 25 days</span></div>
+              </div>
+            </div>
+            <div class="conflict-evidence-item">
+              <div class="conflict-src">
+                <div class="flex items-center gap-1.5 mb-1"><span style="font-size:10px;font-weight:700;background:rgba(99,102,241,0.15);color:#818cf8;padding:1px 7px;border-radius:20px;border:1px solid rgba(99,102,241,0.2)">Workable · WK-5005</span></div>
+                <div class="text-slate-300 font-semibold">Made PRANOTO</div>
+                <div class="text-slate-500 text-xs">WH Staff · Palembang</div>
+                <div class="mt-1.5 text-xs">Join date: <span class="font-bold text-slate-200">17 Jul 2021</span></div>
+              </div>
+              <div class="conflict-src" style="border-left:1px solid rgba(239,68,68,0.15);padding-left:12px">
+                <div class="flex items-center gap-1.5 mb-1"><span style="font-size:10px;font-weight:700;background:rgba(16,185,129,0.15);color:#34d399;padding:1px 7px;border-radius:20px;border:1px solid rgba(16,185,129,0.2)">SAP · SAP-1005</span></div>
+                <div class="text-slate-300 font-semibold">made pranoto</div>
+                <div class="text-slate-500 text-xs">WH Staff · Palembang</div>
+                <div class="mt-1.5 text-xs">Join date: <span class="text-rose-400 font-bold">27 Jun 2021</span> <span class="conflict-date-pill ml-1">Δ 20 days</span></div>
+              </div>
+            </div>
+            <div class="px-4 py-3 bg-slate-900/40" style="font-size:11px;color:#64748b">
+              ⚠ These conflicts exist because HRIS (SAP) and ATS (Workable) record different events as "join date" — SAP records the contract signing date, Workable records the first-day-of-work date. Moodle records the LMS account creation date. All three can differ by days to weeks. <strong style="color:#94a3b8">AI Resolution: use SAP as source-of-truth; flag all others for human confirmation.</strong>
+            </div>
+          </div>
+        </div>
+
+        <div id="warning-banner" class="warning-banner mb-4">
+          <i data-lucide="alert-circle" style="width:16px;height:16px;flex-shrink:0"></i>
+          <span><strong>Data integrity issues detected:</strong> 461 raw records across 3 systems resolved to 200 unique employees. 41% missing skills, 56% duplicate identities, 38% incomplete performance history, <strong>304+ conflicting join dates</strong> across HRIS vs. ATS. Actions disabled until data is reconciled.</span>
+        </div>
+
+        <div class="roadmap-card">
+          <div class="table-scroll" style="max-height:calc(100vh - 290px)">
+            <table class="data-table" id="talent-table">
+              <thead id="table-head"></thead>
+              <tbody id="table-body"></tbody>
+            </table>
+          </div>
+          <div class="px-4 py-3 border-t border-slate-800 flex items-center justify-between">
+            <span class="text-xs text-slate-500" id="row-count">Loading…</span>
+            <div class="flex items-center gap-1.5">
+              <span class="text-xs text-slate-600">Legend:</span>
+              <span class="badge-verified text-[10px]"><i data-lucide="check-circle" style="width:9px;height:9px"></i> Verified</span>
+              <span class="badge-inferred text-[10px]" style="pointer-events:none"><i data-lucide="cpu" style="width:9px;height:9px"></i> AI Inferred — hover for logic</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══ RESKILLING ROADMAP ══ -->
+      <section id="view-roadmap" class="view-section hidden">
+        <div class="mb-6">
+          <h2 class="text-base font-bold text-slate-100 mb-1">Reskilling Roadmap</h2>
+          <p class="text-sm text-slate-500">AI-prioritized learning paths sorted by confidence and skill gap.</p>
+        </div>
+        <div class="grid grid-cols-3 gap-4 mb-6">
+          <div class="stat-card border-indigo-500/20">
+            <div class="flex items-center gap-2.5 mb-3"><div class="w-8 h-8 rounded-lg bg-indigo-500/15 flex items-center justify-center"><i data-lucide="zap" style="width:15px;height:15px;color:#818cf8"></i></div><div><div class="text-xs font-bold text-indigo-300">Track A — High Priority</div><div class="text-[10px] text-slate-500">Digital Transformation</div></div></div>
+            <p class="text-xs text-slate-500 mt-1.5">Data literacy, ERP advanced usage, AI tools for HR and operations</p>
+            <div class="mt-3 flex items-center gap-2" id="track-a-count"></div>
+          </div>
+          <div class="stat-card border-emerald-500/20">
+            <div class="flex items-center gap-2.5 mb-3"><div class="w-8 h-8 rounded-lg bg-emerald-500/15 flex items-center justify-center"><i data-lucide="shield-check" style="width:15px;height:15px;color:#34d399"></i></div><div><div class="text-xs font-bold text-emerald-300">Track B — Compliance Focus</div><div class="text-[10px] text-slate-500">Regulatory Mastery</div></div></div>
+            <p class="text-xs text-slate-500 mt-1.5">BPOM advanced, GCP refresher, pharmacovigilance certification</p>
+            <div class="mt-3 flex items-center gap-2" id="track-b-count"></div>
+          </div>
+          <div class="stat-card border-amber-500/20">
+            <div class="flex items-center gap-2.5 mb-3"><div class="w-8 h-8 rounded-lg bg-amber-500/15 flex items-center justify-center"><i data-lucide="trending-up" style="width:15px;height:15px;color:#fbbf24"></i></div><div><div class="text-xs font-bold text-amber-300">Track C — Sales & CX</div><div class="text-[10px] text-slate-500">Customer Excellence</div></div></div>
+            <p class="text-xs text-slate-500 mt-1.5">Advanced CRM, omnichannel service, cross-sell certification</p>
+            <div class="mt-3 flex items-center gap-2" id="track-c-count"></div>
+          </div>
+        </div>
+        <div class="roadmap-card">
+          <div class="px-5 py-4 border-b border-slate-800 flex items-center justify-between">
+            <h3 class="text-sm font-semibold text-slate-300">Employees Queued for Reskilling</h3>
+            <span class="text-xs text-indigo-400 bg-indigo-500/10 border border-indigo-500/20 px-3 py-1 rounded-full font-semibold" id="roadmap-count-badge"></span>
+          </div>
+          <div id="roadmap-list" class="divide-y divide-slate-800/50" style="max-height:480px;overflow-y:auto"></div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+</div>
+
+<script>
+// ─── MESSY DATA (200 raw records — representative sample showing all data quality issues) ───
+const MESSY_DATA = [
+  {source:'Workable',ext_id:'WK-5109',name:'K. Perdana',job_title:'BM',branch:'Medan',skills:'',perf_score:'',join_date:'2018-03-22'},
+  {source:'Workable',ext_id:'WK-5156',name:'K. Hidayat',job_title:'BM',branch:'Bali',skills:'P&L Management|KPI Monitoring|Team Leadership',perf_score:'3.5',join_date:'2020-02-22'},
+  {source:'SAP',ext_id:'SAP-1188',name:'Priya.Santoso',job_title:'Finance Off.',branch:'jogjakarta',skills:'',perf_score:'3.1',join_date:'19/11/2020'},
+  {source:'SAP',ext_id:'SAP-1020',name:'Wahyu Haryono',job_title:'Med. Adv.',branch:'DPS',skills:'',perf_score:'3.4',join_date:'14/12/2020'},
+  {source:'Workable',ext_id:'WK-5059',name:'N.Riyadi',job_title:'CS',branch:'Medan Kota',skills:'Ticketing|CRM|SLA Management',perf_score:'4.2',join_date:'2023-08-10'},
+  {source:'Moodle',ext_id:'LMS-9071',name:'Vincent.Santoso',job_title:'regulatory affairs officer',branch:'jakarta',skills:'',perf_score:'',join_date:'04-15-2017'},
+  {source:'SAP',ext_id:'SAP-1115',name:'Priya RIYADI',job_title:'Med Advisor',branch:'SMG',skills:'Clinical Knowledge|KOL Management|Pharmacovigilance|Regulatory Affairs',perf_score:'2.6',join_date:'23/10/2017'},
+  {source:'SAP',ext_id:'SAP-1089',name:'M. Yulianto',job_title:'Technical Support',branch:'jakarta',skills:'',perf_score:'2.6',join_date:'22/05/2022'},
+  {source:'Moodle',ext_id:'LMS-9103',name:'E. Riyadi',job_title:'WH Staff',branch:'Medan',skills:'Stock Opname',perf_score:'',join_date:'12-01-2018'},
+  {source:'SAP',ext_id:'SAP-1052',name:'kiki maulana',job_title:'RAO',branch:'Jogja',skills:'Audit Support|Submission Management|GCP|BPOM Regulation',perf_score:'3.3',join_date:'29/10/2016'},
+  {source:'Moodle',ext_id:'LMS-9084',name:'Umi.Rahayu',job_title:'Sales Officer',branch:'Bandung Kota',skills:'Salesforce|B2B Sales',perf_score:'',join_date:'05-25-2017'},
+  {source:'Moodle',ext_id:'LMS-9063',name:'F. Kartono',job_title:'Layanan Pelanggan',branch:'Jakarta Pusat',skills:'',perf_score:'',join_date:'02-02-2018'},
+  {source:'SAP',ext_id:'SAP-1159',name:'Nuri USMAN',job_title:'HR Spec',branch:'Yogya',skills:'Labor Law|Recruitment|Employee Relations',perf_score:'3.4',join_date:'09/11/2022'},
+  {source:'Workable',ext_id:'WK-5140',name:'Agus.Maulana',job_title:'Mkt. Spec',branch:'Jogja',skills:'',perf_score:'4.6',join_date:'2019-03-28'},
+  {source:'Workable',ext_id:'WK-5185',name:'Agus.Wijaya',job_title:'Logistics Coord',branch:'Surabaya Timur',skills:'Vendor Management|SAP WM',perf_score:'4.7',join_date:'2017-10-21'},
+  {source:'Workable',ext_id:'WK-5005',name:'Made PRANOTO',job_title:'WH Staff',branch:'PLB',skills:'Safety Compliance|FIFO Method|Forklift Operation|Barcode Scanning',perf_score:'4.6',join_date:'2021-07-17'},
+  {source:'SAP',ext_id:'SAP-1096',name:'V.Suprapto',job_title:'Gudang',branch:'Bali Island',skills:'Forklift Operation|Safety Compliance|Inventory Control|FIFO Method|Barcode Scanning',perf_score:'4.4',join_date:'17/01/2016'},
+  {source:'Moodle',ext_id:'LMS-9101',name:'J.Mahendra',job_title:'Teknisi IT',branch:'Yogya',skills:'',perf_score:'',join_date:'07-23-2019'},
+  {source:'Workable',ext_id:'WK-5152',name:'E. Santosa',job_title:'Technical Support',branch:'SMG',skills:'Windows Server|Active Directory|Troubleshooting|Cybersecurity Basics',perf_score:'3.3',join_date:'2020-05-30'},
+  {source:'Moodle',ext_id:'LMS-9147',name:'Chandra RIYADI',job_title:'Cust. Service',branch:'Jogja',skills:'',perf_score:'',join_date:'04-09-2022'},
+  {source:'SAP',ext_id:'SAP-1174',name:'Juwita Santoso',job_title:'CS',branch:'Medan Kota',skills:'Ticketing|CRM',perf_score:'3.5',join_date:'19/05/2022'},
+  {source:'SAP',ext_id:'SAP-1010',name:'Zahra.Lestari',job_title:'SALES REP',branch:'JKT',skills:'CRM|Salesforce|Territory Management|Account Management|B2B Sales',perf_score:'2.9',join_date:'02/10/2019'},
+  {source:'SAP',ext_id:'SAP-1017',name:'Naomi.Gunawan',job_title:'HR Spec',branch:'Bandung',skills:'Employee Relations|Onboarding|Recruitment|Performance Management|Labor Law',perf_score:'4.7',join_date:'21/03/2018'},
+  {source:'Moodle',ext_id:'LMS-9120',name:'K.Hidayat',job_title:'Kepala Cabang',branch:'Denpasar',skills:'KPI Monitoring|Strategic Planning',perf_score:'',join_date:'02-22-2020'},
+  {source:'Moodle',ext_id:'LMS-9116',name:'E. Santosa',job_title:'Tech Support',branch:'Semarang',skills:'Windows Server|Helpdesk',perf_score:'',join_date:'06-09-2020'},
+  {source:'Moodle',ext_id:'LMS-9082',name:'K. Perdana',job_title:'Manager Cabang',branch:'Mdn',skills:'',perf_score:'',join_date:'03-22-2018'},
+  {source:'Workable',ext_id:'WK-5190',name:'L. Rachman',job_title:'Kepala Cabang',branch:'makassar',skills:'Budgeting|Team Leadership|Stakeholder Management|KPI Monitoring',perf_score:'2.7',join_date:'2020-03-04'},
+  {source:'SAP',ext_id:'SAP-1036',name:'Zahra.Tambunan',job_title:'Regulatory Off.',branch:'DPS',skills:'BPOM Regulation|GCP|Audit Support|Labeling Compliance',perf_score:'2.5',join_date:'20/09/2017'},
+  {source:'SAP',ext_id:'SAP-1048',name:'Rani.Firmansyah',job_title:'Keuangan',branch:'Mks',skills:'',perf_score:'4.8',join_date:'30/04/2023'},
+  {source:'SAP',ext_id:'SAP-1187',name:'L. Iskandar',job_title:'Mkt. Spec',branch:'Balikpapan Kota',skills:'Content Creation|Digital Marketing|Google Analytics',perf_score:'4.8',join_date:'08/09/2016'},
+  {source:'SAP',ext_id:'SAP-1163',name:'Yuni.Suprapto',job_title:'RAO',branch:'SMG',skills:'Submission Management|Labeling Compliance|BPOM Regulation|GCP',perf_score:'3.1',join_date:'13/10/2021'},
+  {source:'Workable',ext_id:'WK-5145',name:'Wahyu.Lestari',job_title:'Customer Svc',branch:'Jkt',skills:'',perf_score:'3.9',join_date:'2017-01-19'},
+  {source:'SAP',ext_id:'SAP-1180',name:'D.Osman',job_title:'Medis Advisor',branch:'Jakarta Pusat',skills:'',perf_score:'2.6',join_date:'06/08/2018'},
+  {source:'SAP',ext_id:'SAP-1023',name:'Yuni.Hakim',job_title:'Regulatory Off.',branch:'Bandung Kota',skills:'GCP|Labeling Compliance',perf_score:'3.3',join_date:'12/09/2020'},
+  {source:'Workable',ext_id:'WK-5188',name:'Priya.Santoso',job_title:'Staf Keuangan',branch:'jogjakarta',skills:'',perf_score:'3.4',join_date:'2020-11-23'},
+  {source:'Moodle',ext_id:'LMS-9013',name:'Wahyu.Haryono',job_title:'Med. Adv.',branch:'Bali Island',skills:'',perf_score:'',join_date:'01-17-2021'},
+  {source:'Moodle',ext_id:'LMS-9056',name:'monica pranoto',job_title:'CS',branch:'MDN',skills:'',perf_score:'',join_date:'02-01-2023'},
+  {source:'Moodle',ext_id:'LMS-9059',name:'O.Lukman',job_title:'Logistic',branch:'Surabaya Timur',skills:'Warehouse Management',perf_score:'',join_date:'11-05-2016'},
+  {source:'SAP',ext_id:'SAP-1120',name:'B.Lukman',job_title:'Logistic',branch:'Plg',skills:'',perf_score:'3.6',join_date:'15/01/2018'},
+  {source:'Moodle',ext_id:'LMS-9109',name:'Gita Pratama',job_title:'Regulatory Off.',branch:'makassar',skills:'',perf_score:'',join_date:'06-25-2018'},
+  {source:'SAP',ext_id:'SAP-1021',name:'T. Kurniawan',job_title:'Apoteker Asisten',branch:'SBY',skills:'',perf_score:'3.9',join_date:'21/12/2017'},
+  {source:'Workable',ext_id:'WK-5073',name:'Ulfa.Wibowo',job_title:'HR Officer',branch:'DPS',skills:'Onboarding|Recruitment',perf_score:'2.9',join_date:'2018-02-17'},
+  {source:'Moodle',ext_id:'LMS-9027',name:'U.Kartono',job_title:'Staff Gudang',branch:'Jkt',skills:'',perf_score:'',join_date:'12-14-2017'},
+  {source:'SAP',ext_id:'SAP-1005',name:'made pranoto',job_title:'WH Staff',branch:'Plg',skills:'Barcode Scanning|Inventory Control',perf_score:'3.8',join_date:'27/06/2021'},
+  {source:'SAP',ext_id:'SAP-1185',name:'agus wijaya',job_title:'Logistics Coord',branch:'Surabaya Timur',skills:'Warehouse Management|Supply Chain|Route Optimization|Procurement|SAP WM',perf_score:'4.2',join_date:'15/11/2017'},
+  {source:'Workable',ext_id:'WK-5044',name:'H.Panjaitan',job_title:'Pharmacy Tech',branch:'SMG',skills:'',perf_score:'3.1',join_date:'2021-11-17'},
+  {source:'Workable',ext_id:'WK-5028',name:'fajar wahyudi',job_title:'customer service',branch:'Medan Kota',skills:'Cross-selling|Ticketing|CRM',perf_score:'4.2',join_date:'2016-08-14'},
+  {source:'SAP',ext_id:'SAP-1143',name:'Gita Pratama',job_title:'Staf Regulasi',branch:'Ujung Pandang',skills:'',perf_score:'5.0',join_date:'28/04/2018'},
+  {source:'Workable',ext_id:'WK-5094',name:'Vincent Santoso',job_title:'regulatory affairs officer',branch:'JAKARTA',skills:'',perf_score:'2.8',join_date:'2017-03-06'},
+  {source:'Workable',ext_id:'WK-5187',name:'L. Iskandar',job_title:'Marketing Spec',branch:'Balikpapan Kota',skills:'Digital Marketing|SEO/SEM',perf_score:'2.9',join_date:'2016-10-15'},
+  {source:'SAP',ext_id:'SAP-1189',name:'P. Kurniawan',job_title:'Advisor Medis',branch:'Bpn',skills:'Medical Writing|Pharmacovigilance|Regulatory Affairs|KOL Management',perf_score:'3.0',join_date:'20/11/2020'},
+  {source:'SAP',ext_id:'SAP-1071',name:'Budi Gunawan',job_title:'BM',branch:'Balikpapan Kota',skills:'',perf_score:'4.5',join_date:'25/06/2019'},
+  {source:'SAP',ext_id:'SAP-1169',name:'Bagas Nugroho',job_title:'Cust. Service',branch:'SBY',skills:'',perf_score:'3.6',join_date:'15/01/2023'},
+  {source:'Moodle',ext_id:'LMS-9139',name:'C. Wibowo',job_title:'WH Staf',branch:'JKT',skills:'Safety Compliance|Stock Opname',perf_score:'',join_date:'08-16-2016'},
+  {source:'Moodle',ext_id:'LMS-9061',name:'haris lukman',job_title:'Manager Cabang',branch:'Jogja',skills:'Strategic Planning',perf_score:'',join_date:'05-21-2020'},
+  {source:'Moodle',ext_id:'LMS-9019',name:'Lukman SANTOSO',job_title:'Koordinator Logistik',branch:'bandung',skills:'SAP WM|Route Optimization',perf_score:'',join_date:'04-09-2020'},
+  {source:'Moodle',ext_id:'LMS-9055',name:'Naomi.Perdana',job_title:'regulatory affairs officer',branch:'Jkt',skills:'Audit Support|Labeling Compliance',perf_score:'',join_date:'11-19-2021'},
+  {source:'Moodle',ext_id:'LMS-9127',name:'Wulan Firmansyah',job_title:'Mkt. Spec',branch:'Medan',skills:'Social Media',perf_score:'',join_date:'09-20-2020'},
+  {source:'Workable',ext_id:'WK-5004',name:'wulan mahendra',job_title:'Staf Keuangan',branch:'Plg',skills:'Cost Analysis',perf_score:'2.8',join_date:'2022-01-15'},
+  {source:'SAP',ext_id:'SAP-1043',name:'C.Saputra',job_title:'CS',branch:'Makassar',skills:'',perf_score:'3.9',join_date:'11/10/2019'},
+  {source:'Moodle',ext_id:'LMS-9021',name:'F.Wahyudi',job_title:'CS',branch:'medan',skills:'Communication|Complaint Handling',perf_score:'',join_date:'08-14-2016'},
+  {source:'SAP',ext_id:'SAP-1152',name:'E. Santosa',job_title:'IT Support',branch:'SMG',skills:'Active Directory|Cybersecurity Basics|Helpdesk|Windows Server',perf_score:'4.9',join_date:'29/06/2020'},
+  {source:'Moodle',ext_id:'LMS-9028',name:'D.Perdana',job_title:'pharm tech',branch:'Jakarta',skills:'Patient Counseling',perf_score:'',join_date:'07-26-2019'},
+  {source:'Workable',ext_id:'WK-5176',name:'Arif RAHAYU',job_title:'Sales 2',branch:'semarang',skills:'',perf_score:'4.4',join_date:'2017-10-31'},
+  {source:'SAP',ext_id:'SAP-1072',name:'umi haryono',job_title:'Spesialis Marketing',branch:'Mdn',skills:'Digital Marketing|Social Media|Campaign Management|SEO/SEM',perf_score:'4.1',join_date:'16/11/2017'},
+  {source:'SAP',ext_id:'SAP-1082',name:'Chandra EFFENDI',job_title:'Teknisi IT',branch:'Medan',skills:'',perf_score:'2.7',join_date:'05/08/2022'},
+  {source:'Moodle',ext_id:'LMS-9069',name:'T.Handoko',job_title:'Medis Advisor',branch:'Plg',skills:'Regulatory Affairs|KOL Management',perf_score:'',join_date:'11-02-2016'},
+  {source:'Workable',ext_id:'WK-5135',name:'Johan Mahendra',job_title:'Tech Support',branch:'jogjakarta',skills:'',perf_score:'3.6',join_date:'2019-07-23'},
+  {source:'Moodle',ext_id:'LMS-9017',name:'L.Usman',job_title:'RA Officer',branch:'Sby',skills:'',perf_score:'',join_date:'03-06-2023'},
+  {source:'Moodle',ext_id:'LMS-9000',name:'F. Riyadi',job_title:'Layanan Pelanggan',branch:'Jakarta Pusat',skills:'Communication',perf_score:'',join_date:'03-18-2018'},
+  {source:'Workable',ext_id:'WK-5112',name:'Umi RAHAYU',job_title:'Sales Officer',branch:'Bdg',skills:'Negotiation',perf_score:'5.0',join_date:'2017-05-29'},
+  {source:'Workable',ext_id:'WK-5084',name:'Nuri Saputra',job_title:'pharm tech',branch:'Semarang',skills:'Patient Counseling|BPOM Compliance|SAP Pharma|Inventory Management',perf_score:'3.6',join_date:'2020-06-20'},
+  {source:'Workable',ext_id:'WK-5098',name:'Murti EFFENDI',job_title:'Keuangan',branch:'Bandung Kota',skills:'Cost Analysis|Financial Reporting|Tax Compliance|SAP Finance',perf_score:'3.4',join_date:'2016-02-19'},
+  {source:'SAP',ext_id:'SAP-1147',name:'Dewi.Wahyudi',job_title:'Branch Mgr',branch:'Medan Kota',skills:'',perf_score:'2.5',join_date:'23/06/2017'},
+  {source:'SAP',ext_id:'SAP-1195',name:'eko firmansyah',job_title:'Regulatory Off.',branch:'makassar',skills:'',perf_score:'2.5',join_date:'02/10/2018'},
+  {source:'SAP',ext_id:'SAP-1175',name:'W.Kartono',job_title:'logistics coordinator',branch:'BDG',skills:'Procurement|SAP WM',perf_score:'4.9',join_date:'14/03/2018'},
+  {source:'Workable',ext_id:'WK-5022',name:'eko rahayu',job_title:'CS',branch:'medan',skills:'',perf_score:'4.0',join_date:'2016-04-05'},
+  {source:'Workable',ext_id:'WK-5066',name:'Yuni Effendi',job_title:'CustServ',branch:'Plbg',skills:'',perf_score:'5.0',join_date:'2018-09-28'},
+  {source:'Workable',ext_id:'WK-5081',name:'Haris LUKMAN',job_title:'branch manager',branch:'YOG',skills:'Strategic Planning|Stakeholder Management|Budgeting',perf_score:'4.1',join_date:'2020-02-21'},
+  {source:'Workable',ext_id:'WK-5008',name:'doni mahendra',job_title:'HRD',branch:'YOG',skills:'Performance Management|Employee Relations|HRIS|Payroll',perf_score:'2.9',join_date:'2018-05-20'},
+  {source:'Workable',ext_id:'WK-5144',name:'Hani SUPRAPTO',job_title:'Pharmacy Tech',branch:'palembang',skills:'GMP Standards|SAP Pharma|Inventory Management',perf_score:'3.0',join_date:'2018-11-30'},
+  {source:'Moodle',ext_id:'LMS-9125',name:'Umi SANTOSA',job_title:'RA Officer',branch:'Jakarta',skills:'',perf_score:'',join_date:'04-27-2022'},
+  {source:'Workable',ext_id:'WK-5029',name:'Niko Utomo',job_title:'HR Spec',branch:'Plg',skills:'',perf_score:'4.8',join_date:'2020-12-19'},
+  {source:'SAP',ext_id:'SAP-1065',name:'Bagas Kurniawan',job_title:'Pharmacy Tech',branch:'Yogya',skills:'',perf_score:'4.9',join_date:'28/06/2023'},
+  {source:'Moodle',ext_id:'LMS-9081',name:'Murti KURNIAWAN',job_title:'Reg Affairs',branch:'JAKARTA',skills:'',perf_score:'',join_date:'01-28-2020'},
+  {source:'SAP',ext_id:'SAP-1068',name:'Gita Osman',job_title:'BM',branch:'semarang',skills:'',perf_score:'2.5',join_date:'01/07/2023'},
+  {source:'Moodle',ext_id:'LMS-9114',name:'Ika Iskandar',job_title:'branch manager',branch:'Jkt',skills:'',perf_score:'',join_date:'01-20-2018'},
+  {source:'Workable',ext_id:'WK-5091',name:'Ferry EFFENDI',job_title:'Spesialis Marketing',branch:'Bali Island',skills:'',perf_score:'3.0',join_date:'2021-05-05'},
+  {source:'Workable',ext_id:'WK-5124',name:'N. Halim',job_title:'Staf Regulasi',branch:'bali',skills:'GCP',perf_score:'3.2',join_date:'2022-05-10'},
+  {source:'SAP',ext_id:'SAP-1025',name:'Made.Purnomo',job_title:'Gudang',branch:'Sby',skills:'',perf_score:'2.8',join_date:'22/06/2019'},
+  {source:'Workable',ext_id:'WK-5108',name:'M. Kurniawan',job_title:'Regulatory Off.',branch:'Jakarta Pusat',skills:'',perf_score:'3.4',join_date:'2020-02-04'},
+  {source:'Workable',ext_id:'WK-5033',name:'V. Cahyono',job_title:'Staff Gudang',branch:'PLB',skills:'',perf_score:'4.8',join_date:'2020-07-30'},
+  {source:'Moodle',ext_id:'LMS-9087',name:'Karina.Cahyono',job_title:'Koordinator Logistik',branch:'Plg',skills:'SAP WM',perf_score:'',join_date:'11-08-2022'},
+  {source:'Workable',ext_id:'WK-5014',name:'fitri junaedi',job_title:'Senior Sales',branch:'Sby',skills:'Negotiation',perf_score:'3.8',join_date:'2022-04-04'},
+  {source:'Workable',ext_id:'WK-5051',name:'I. Riyadi',job_title:'Mktg Specialist',branch:'Palembang',skills:'Social Media|Digital Marketing',perf_score:'3.8',join_date:'2019-04-28'},
+  {source:'SAP',ext_id:'SAP-1083',name:'ferry kartono',job_title:'Cust. Service',branch:'Jkt',skills:'',perf_score:'4.9',join_date:'01/02/2018'},
+  {source:'Moodle',ext_id:'LMS-9008',name:'umi putra',job_title:'BM',branch:'Bali',skills:'Budgeting|P&L Management',perf_score:'',join_date:'02-26-2017'},
+  {source:'SAP',ext_id:'SAP-1024',name:'Lestari Usman',job_title:'RA Officer',branch:'SBY',skills:'',perf_score:'3.8',join_date:'09/03/2023'},
+  {source:'SAP',ext_id:'SAP-1181',name:'udin cahyono',job_title:'Staf Keuangan',branch:'Yogya',skills:'',perf_score:'4.2',join_date:'21/10/2016'},
+  {source:'Workable',ext_id:'WK-5047',name:'Kiki FIRMANSYAH',job_title:'HR Spec',branch:'Yogya',skills:'Performance Management|Labor Law',perf_score:'2.7',join_date:'2019-07-12'},
+  {source:'Moodle',ext_id:'LMS-9128',name:'Elsa GUNAWAN',job_title:'Regulatory Off.',branch:'Mdn',skills:'',perf_score:'',join_date:'05-15-2022'},
+  {source:'Moodle',ext_id:'LMS-9080',name:'Rendi HANDOKO',job_title:'BM',branch:'BDG',skills:'Stakeholder Management|Strategic Planning|Team Leadership',perf_score:'',join_date:'01-22-2019'},
+  {source:'SAP',ext_id:'SAP-1016',name:'A.Hartono',job_title:'Pharmacy Tech',branch:'Jakarta Pusat',skills:'Inventory Management|GMP Standards|BPOM Compliance',perf_score:'4.9',join_date:'27/11/2016'},
+  {source:'Moodle',ext_id:'LMS-9042',name:'Y. Setiawan',job_title:'Staff Gudang',branch:'BPN',skills:'',perf_score:'',join_date:'11-17-2018'},
+  {source:'SAP',ext_id:'SAP-1037',name:'dian perdana',job_title:'Pharmacy Tech',branch:'Jakarta Pusat',skills:'GMP Standards|SAP Pharma|BPOM Compliance|Drug Dispensing|Inventory Management',perf_score:'4.6',join_date:'31/07/2019'},
+  {source:'SAP',ext_id:'SAP-1059',name:'Nanda.Riyadi',job_title:'CustServ',branch:'Medan Kota',skills:'CRM|Cross-selling|Complaint Handling',perf_score:'2.5',join_date:'10/08/2023'},
+  {source:'SAP',ext_id:'SAP-1003',name:'J.Bachtiar',job_title:'RA Officer',branch:'YOG',skills:'Dossier Preparation|BPOM Regulation',perf_score:'4.0',join_date:'20/02/2020'},
+  {source:'SAP',ext_id:'SAP-1045',name:'made susanto',job_title:'branch manager',branch:'Mdn',skills:'Stakeholder Management|Team Leadership',perf_score:'3.8',join_date:'30/05/2016'},
+  {source:'SAP',ext_id:'SAP-1178',name:'R.Gunawan',job_title:'Medis Advisor',branch:'Bandung',skills:'Regulatory Affairs|Medical Writing|Clinical Trials|Pharmacovigilance|Clinical Knowledge',perf_score:'4.5',join_date:'02/12/2018'},
+  {source:'SAP',ext_id:'SAP-1092',name:'triana handoko',job_title:'Med Advisor',branch:'Plbg',skills:'Pharmacovigilance|Medical Writing|Clinical Trials|KOL Management',perf_score:'2.8',join_date:'02/11/2016'},
+  {source:'SAP',ext_id:'SAP-1101',name:'hafiz pratama',job_title:'Marketing Spec',branch:'Denpasar',skills:'SEO/SEM|Google Analytics|Social Media|Digital Marketing',perf_score:'3.5',join_date:'02/06/2020'},
+  {source:'SAP',ext_id:'SAP-1177',name:'Yanuar RIYADI',job_title:'Logistik',branch:'Medan',skills:'Warehouse Management|Vendor Management|Procurement|SAP WM',perf_score:'3.9',join_date:'04/07/2017'},
+  {source:'Moodle',ext_id:'LMS-9072',name:'Vero Suprapto',job_title:'WH Staf',branch:'Bali',skills:'FIFO Method|Barcode Scanning|Safety Compliance',perf_score:'',join_date:'02-15-2016'},
+  {source:'Moodle',ext_id:'LMS-9078',name:'oscar handoko',job_title:'Logistics Coord',branch:'medan',skills:'Vendor Management|Procurement|SAP WM',perf_score:'',join_date:'12-03-2020'},
+  {source:'Workable',ext_id:'WK-5092',name:'Triana.Handoko',job_title:'medical advisor',branch:'PLB',skills:'Pharmacovigilance|Clinical Trials|Medical Writing',perf_score:'4.4',join_date:'2016-11-02'},
+  {source:'Moodle',ext_id:'LMS-9014',name:'Teguh KURNIAWAN',job_title:'Pharmacy Tech',branch:'Sby',skills:'',perf_score:'',join_date:'11-12-2017'},
+  {source:'Workable',ext_id:'WK-5181',name:'U.Cahyono',job_title:'Finance Off.',branch:'Yogya',skills:'',perf_score:'3.6',join_date:'2016-11-16'},
+  {source:'Moodle',ext_id:'LMS-9039',name:'Kiki Tambunan',job_title:'Gudang',branch:'Semarang',skills:'Inventory Control',perf_score:'',join_date:'01-16-2019'},
+  {source:'SAP',ext_id:'SAP-1111',name:'R.Hartono',job_title:'HRD',branch:'Smg',skills:'HRIS|Performance Management|Labor Law',perf_score:'3.4',join_date:'29/11/2016'},
+  {source:'Moodle',ext_id:'LMS-9102',name:'Vero Kurniawan',job_title:'Mkt. Spec',branch:'Palembang',skills:'Google Analytics|Campaign Management',perf_score:'',join_date:'09-01-2019'},
+  {source:'Workable',ext_id:'WK-5178',name:'Rama GUNAWAN',job_title:'medical advisor',branch:'Bdg',skills:'Medical Writing|Clinical Knowledge|Pharmacovigilance|KOL Management',perf_score:'3.1',join_date:'2018-12-14'},
+  {source:'Workable',ext_id:'WK-5121',name:'putri purnomo',job_title:'Branch Mgr',branch:'Sby',skills:'',perf_score:'3.0',join_date:'2021-07-26'},
+  {source:'Workable',ext_id:'WK-5141',name:'Fajar Tambunan',job_title:'Keuangan',branch:'jogjakarta',skills:'',perf_score:'3.1',join_date:'2021-11-08'},
+  {source:'Workable',ext_id:'WK-5003',name:'juwita bachtiar',job_title:'Regulatory Off.',branch:'Jogja',skills:'Audit Support|GCP|BPOM Regulation|Dossier Preparation',perf_score:'4.7',join_date:'2020-04-18'},
+  {source:'Moodle',ext_id:'LMS-9097',name:'Gina Saputra',job_title:'SALES REP',branch:'Bdg',skills:'Cold Calling|Negotiation|Territory Management',perf_score:'',join_date:'03-24-2016'},
+  {source:'Workable',ext_id:'WK-5127',name:'K.Panjaitan',job_title:'Technical Support',branch:'Bali',skills:'',perf_score:'4.9',join_date:'2018-12-01'},
+  {source:'Workable',ext_id:'WK-5011',name:'Lestari Suryadi',job_title:'Marketing Spec',branch:'Bandung Kota',skills:'Campaign Management|Social Media|SEO/SEM',perf_score:'3.8',join_date:'2021-11-26'},
+  {source:'Moodle',ext_id:'LMS-9100',name:'Shinta.Usman',job_title:'Advisor Medis',branch:'YOG',skills:'Clinical Knowledge|Pharmacovigilance',perf_score:'',join_date:'11-17-2016'},
+  {source:'SAP',ext_id:'SAP-1051',name:'imam riyadi',job_title:'marketing specialist',branch:'Plg',skills:'Social Media|Digital Marketing|SEO/SEM',perf_score:'4.8',join_date:'28/04/2019'},
+  {source:'SAP',ext_id:'SAP-1085',name:'Zahra ISKANDAR',job_title:'Advisor Medis',branch:'SMG',skills:'KOL Management|Clinical Trials|Medical Writing|Clinical Knowledge|Regulatory Affairs',perf_score:'5.0',join_date:'30/01/2021'},
+  {source:'SAP',ext_id:'SAP-1039',name:'Rizky Panjaitan',job_title:'Senior Sales',branch:'Mks',skills:'B2B Sales|Negotiation',perf_score:'4.7',join_date:'31/01/2018'},
+  {source:'Workable',ext_id:'WK-5147',name:'D. Wahyudi',job_title:'Branch Mgr',branch:'medan',skills:'',perf_score:'4.3',join_date:'2017-04-30'},
+  {source:'Moodle',ext_id:'LMS-9035',name:'Rani.Firmansyah',job_title:'FinOff',branch:'MKS',skills:'',perf_score:'',join_date:'04-30-2023'},
+  {source:'Workable',ext_id:'WK-5179',name:'C.Wibowo',job_title:'Warehouse',branch:'JAKARTA',skills:'Forklift Operation',perf_score:'3.8',join_date:'2016-07-26'},
+  {source:'Moodle',ext_id:'LMS-9058',name:'C.Haryono',job_title:'Human Resource',branch:'MDN',skills:'Recruitment|HRIS',perf_score:'',join_date:'03-25-2016'},
+  {source:'Workable',ext_id:'WK-5023',name:'Y. Hakim',job_title:'Regulatory Off.',branch:'Bandung Kota',skills:'BPOM Regulation|Audit Support|Submission Management|Dossier Preparation',perf_score:'3.0',join_date:'2020-09-12'},
+  {source:'Moodle',ext_id:'LMS-9111',name:'Wahyu Lestari',job_title:'Layanan Pelanggan',branch:'jakarta',skills:'',perf_score:'',join_date:'04-18-2017'},
+  {source:'Workable',ext_id:'WK-5117',name:'K. Cahyono',job_title:'logistics coordinator',branch:'PLB',skills:'Supply Chain|Warehouse Management|Route Optimization',perf_score:'4.1',join_date:'2022-11-08'},
+  {source:'Workable',ext_id:'WK-5182',name:'C.Wijaya',job_title:'medical advisor',branch:'Mdn',skills:'Pharmacovigilance|Clinical Knowledge|KOL Management',perf_score:'3.1',join_date:'2020-01-09'},
+  {source:'SAP',ext_id:'SAP-1008',name:'D. Mahendra',job_title:'hr specialist',branch:'Jogja',skills:'Recruitment|Labor Law',perf_score:'3.7',join_date:'14/05/2018'},
+  {source:'Workable',ext_id:'WK-5036',name:'Z. Tambunan',job_title:'Reg Affairs',branch:'Denpasar',skills:'Dossier Preparation|Labeling Compliance|Submission Management|GCP',perf_score:'4.4',join_date:'2017-08-19'},
+  {source:'SAP',ext_id:'SAP-1176',name:'arif rahayu',job_title:'Sales Exec',branch:'SMG',skills:'',perf_score:'3.9',join_date:'14/10/2017'},
+  {source:'Moodle',ext_id:'LMS-9011',name:'J.Yulianto',job_title:'Reg Affairs',branch:'MDN',skills:'Labeling Compliance|GCP',perf_score:'',join_date:'08-21-2016'},
+  {source:'Workable',ext_id:'WK-5165',name:'Kartika Halim',job_title:'Staf Keuangan',branch:'Smg.',skills:'SAP Finance',perf_score:'3.5',join_date:'2018-09-23'},
+  {source:'Workable',ext_id:'WK-5010',name:'Z.Lestari',job_title:'Sales Staf',branch:'Jakarta',skills:'Salesforce|Pipeline Management|Territory Management',perf_score:'4.4',join_date:'2019-10-26'},
+  {source:'SAP',ext_id:'SAP-1191',name:'Chandra RIYADI',job_title:'Cust. Service',branch:'jogjakarta',skills:'',perf_score:'4.9',join_date:'20/01/2022'},
+  {source:'Workable',ext_id:'WK-5001',name:'I.Susanto',job_title:'HRD',branch:'Surabaya',skills:'Recruitment|HRIS|Performance Management|Labor Law',perf_score:'2.6',join_date:'2018-08-01'},
+  {source:'SAP',ext_id:'SAP-1112',name:'Umi Rahayu',job_title:'Sales Officer',branch:'Bandung',skills:'Territory Management|Salesforce|Account Management|B2B Sales',perf_score:'3.0',join_date:'29/05/2017'},
+  {source:'SAP',ext_id:'SAP-1153',name:'Lina Suharto',job_title:'Staf Keuangan',branch:'Smg',skills:'',perf_score:'4.5',join_date:'09/11/2017'},
+  {source:'Workable',ext_id:'WK-5114',name:'Made Kusuma',job_title:'Tech Support',branch:'SMG',skills:'Networking|Windows Server|Active Directory',perf_score:'3.1',join_date:'2021-10-01'},
+  {source:'SAP',ext_id:'SAP-1103',name:'ulfa firmansyah',job_title:'IT Supp',branch:'Surabaya',skills:'',perf_score:'4.7',join_date:'24/03/2022'},
+  {source:'SAP',ext_id:'SAP-1084',name:'Nuri Saputra',job_title:'Pharmacy Tech',branch:'SMG',skills:'GMP Standards|Drug Dispensing|Inventory Management|Patient Counseling|SAP Pharma',perf_score:'4.1',join_date:'27/06/2020'},
+  {source:'SAP',ext_id:'SAP-1193',name:'Yanuar.Rahayu',job_title:'Human Resource',branch:'palembang',skills:'',perf_score:'3.0',join_date:'11/12/2018'},
+  {source:'SAP',ext_id:'SAP-1136',name:'vero kurniawan',job_title:'Mkt. Spec',branch:'palembang',skills:'Social Media|Content Creation|Digital Marketing|Google Analytics',perf_score:'3.5',join_date:'01/09/2019'},
+  {source:'SAP',ext_id:'SAP-1049',name:'rama nugroho',job_title:'Sales Officer',branch:'SMG',skills:'Territory Management|Negotiation|Account Management|Salesforce|CRM',perf_score:'2.7',join_date:'09/07/2019'},
+  {source:'Moodle',ext_id:'LMS-9133',name:'H.Kurniawan',job_title:'Logistics Coord',branch:'SMG',skills:'Route Optimization|Vendor Management|Warehouse Management',perf_score:'',join_date:'04-14-2019'},
+  {source:'SAP',ext_id:'SAP-1029',name:'Niko UTOMO',job_title:'HR Spec',branch:'PLB',skills:'',perf_score:'3.3',join_date:'15/01/2021'},
+  {source:'Workable',ext_id:'WK-5138',name:'Karina.Firmansyah',job_title:'Staff Gudang',branch:'Yogya',skills:'Forklift Operation|Safety Compliance|Inventory Control',perf_score:'3.9',join_date:'2022-02-22'},
+  {source:'Workable',ext_id:'WK-5131',name:'Siti KARTONO',job_title:'marketing specialist',branch:'bali',skills:'',perf_score:'4.9',join_date:'2022-03-27'},
+  {source:'Moodle',ext_id:'LMS-9041',name:'Valdi Mulyono',job_title:'Customer Svc',branch:'Medan',skills:'',perf_score:'',join_date:'06-09-2021'},
+  {source:'SAP',ext_id:'SAP-1102',name:'E.Pratama',job_title:'HR Spec',branch:'BDG',skills:'Recruitment|Performance Management',perf_score:'3.6',join_date:'03/11/2019'},
+  {source:'Moodle',ext_id:'LMS-9002',name:'I.Setiawan',job_title:'pharm tech',branch:'Jkt',skills:'',perf_score:'',join_date:'12-20-2016'},
+  {source:'SAP',ext_id:'SAP-1067',name:'Sigit TAMBUNAN',job_title:'WH Staf',branch:'Bali',skills:'',perf_score:'3.4',join_date:'26/08/2018'},
+  {source:'Workable',ext_id:'WK-5132',name:'O. Kartono',job_title:'Staf Regulasi',branch:'Bdg',skills:'Submission Management',perf_score:'2.5',join_date:'2017-05-21'},
+  {source:'Moodle',ext_id:'LMS-9121',name:'Teguh.Handoko',job_title:'Human Resource',branch:'Smg',skills:'',perf_score:'',join_date:'08-10-2018'},
+  {source:'Moodle',ext_id:'LMS-9034',name:'Kiki Firmansyah',job_title:'hr specialist',branch:'YOG',skills:'Performance Management|Onboarding|Labor Law',perf_score:'',join_date:'04-17-2019'},
+  {source:'SAP',ext_id:'SAP-1062',name:'B. Riyadi',job_title:'Human Resource',branch:'JAKARTA',skills:'Onboarding|Performance Management',perf_score:'3.6',join_date:'11/10/2019'},
+  {source:'Workable',ext_id:'WK-5166',name:'Wulan.Firmansyah',job_title:'Spesialis Marketing',branch:'Medan',skills:'Campaign Management',perf_score:'3.3',join_date:'2020-11-06'},
+  {source:'Workable',ext_id:'WK-5024',name:'L.Usman',job_title:'Regulatory Off.',branch:'Sby',skills:'',perf_score:'3.2',join_date:'2023-02-01'},
+  {source:'SAP',ext_id:'SAP-1161',name:'Panji Haryono',job_title:'CS',branch:'Balikpapan Kota',skills:'',perf_score:'2.5',join_date:'14/10/2018'},
+  {source:'Workable',ext_id:'WK-5046',name:'Benny.Bachtiar',job_title:'Customer Svc',branch:'Jakarta Pusat',skills:'Cross-selling|SLA Management',perf_score:'4.7',join_date:'2020-06-20'},
+  {source:'SAP',ext_id:'SAP-1186',name:'Erwin FIRMANSYAH',job_title:'Pharmacy Tech',branch:'PLB',skills:'',perf_score:'4.8',join_date:'08/11/2019'},
+  {source:'Moodle',ext_id:'LMS-9006',name:'Hafiz Utomo',job_title:'Branch Mgr',branch:'Sby',skills:'Strategic Planning|Budgeting|P&L Management',perf_score:'',join_date:'03-11-2020'},
+  {source:'Moodle',ext_id:'LMS-9096',name:'Surya Budiman',job_title:'HR Officer',branch:'Yogya',skills:'',perf_score:'',join_date:'07-05-2016'},
+  {source:'Workable',ext_id:'WK-5175',name:'W.Kartono',job_title:'Koordinator Logistik',branch:'Bdg',skills:'Vendor Management|Supply Chain',perf_score:'3.8',join_date:'2018-03-14'},
+  {source:'Workable',ext_id:'WK-5061',name:'Triana Suryadi',job_title:'Regulatory Off.',branch:'surabaya',skills:'Audit Support',perf_score:'4.2',join_date:'2020-12-07'},
+  {source:'Workable',ext_id:'WK-5034',name:'R.Nugroho',job_title:'Layanan Pelanggan',branch:'Bali Island',skills:'CRM|Complaint Handling',perf_score:'4.5',join_date:'2017-05-01'},
+  {source:'Workable',ext_id:'WK-5146',name:'jefri santoso',job_title:'WH Staf',branch:'Makassar',skills:'',perf_score:'3.6',join_date:'2022-05-05'},
+  {source:'SAP',ext_id:'SAP-1098',name:'Murti EFFENDI',job_title:'Staf Keuangan',branch:'Bdg',skills:'SAP Finance|Cost Analysis|Accounting|Tax Compliance',perf_score:'2.6',join_date:'19/02/2016'},
+  {source:'SAP',ext_id:'SAP-1138',name:'Karina.Firmansyah',job_title:'Gudang',branch:'Yogya',skills:'FIFO Method|Barcode Scanning',perf_score:'4.8',join_date:'07/12/2021'},
+  {source:'SAP',ext_id:'SAP-1064',name:'T. Osman',job_title:'Med Advisor',branch:'Jakarta Pusat',skills:'',perf_score:'3.6',join_date:'24/04/2019'},
+  {source:'SAP',ext_id:'SAP-1173',name:'Andri.Junaedi',job_title:'Mgr Branch',branch:'Jakarta Pusat',skills:'Strategic Planning|KPI Monitoring|Team Leadership|Budgeting',perf_score:'4.3',join_date:'14/07/2023'},
+  {source:'SAP',ext_id:'SAP-1030',name:'Juwita.Hartono',job_title:'Medis Advisor',branch:'Yogya',skills:'',perf_score:'4.0',join_date:'13/07/2020'},
+  {source:'Moodle',ext_id:'LMS-9122',name:'P. Haryono',job_title:'Cust. Service',branch:'Balikpapan',skills:'',perf_score:'',join_date:'10-14-2018'},
+  {source:'SAP',ext_id:'SAP-1165',name:'Kartika HALIM',job_title:'FinOff',branch:'Semarang',skills:'SAP Finance|Financial Reporting|Cost Analysis|Accounting',perf_score:'3.2',join_date:'12/09/2018'},
+  {source:'Moodle',ext_id:'LMS-9031',name:'H. Nasution',job_title:'Staf Regulasi',branch:'medan',skills:'',perf_score:'',join_date:'07-05-2018'},
+  {source:'Workable',ext_id:'WK-5105',name:'Ika Rachman',job_title:'Personalia',branch:'Yogya',skills:'',perf_score:'2.8',join_date:'2020-08-23'},
+  {source:'SAP',ext_id:'SAP-1104',name:'oscar handoko',job_title:'Koordinator Logistik',branch:'Medan',skills:'Procurement|SAP WM|Warehouse Management|Supply Chain|Vendor Management',perf_score:'4.1',join_date:'03/12/2020'},
+  {source:'SAP',ext_id:'SAP-1018',name:'J. Yulianto',job_title:'RAO',branch:'Medan',skills:'GCP|Audit Support|BPOM Regulation',perf_score:'2.7',join_date:'25/07/2016'},
+  {source:'SAP',ext_id:'SAP-1027',name:'vero setiawan',job_title:'Gudang',branch:'jogjakarta',skills:'',perf_score:'3.6',join_date:'13/11/2021'},
+  {source:'Moodle',ext_id:'LMS-9135',name:'J.Santoso',job_title:'customer service',branch:'MDN',skills:'Communication|SLA Management',perf_score:'',join_date:'06-21-2022'},
+  {source:'Workable',ext_id:'WK-5143',name:'Gita PRATAMA',job_title:'regulatory affairs officer',branch:'makassar',skills:'',perf_score:'3.6',join_date:'2018-08-16'},
+  {source:'SAP',ext_id:'SAP-1094',name:'vincent santoso',job_title:'Regulatory Off.',branch:'JKT',skills:'',perf_score:'4.2',join_date:'20/01/2017'},
+  {source:'SAP',ext_id:'SAP-1151',name:'V.Santoso',job_title:'sales rep',branch:'bandung',skills:'B2B Sales|CRM|Account Management|Cold Calling|Negotiation',perf_score:'4.7',join_date:'21/03/2023'},
+  {source:'SAP',ext_id:'SAP-1145',name:'wahyu lestari',job_title:'Cust. Service',branch:'Jakarta Pusat',skills:'',perf_score:'2.6',join_date:'19/01/2017'},
+  {source:'Moodle',ext_id:'LMS-9018',name:'made purnomo',job_title:'WH Staff',branch:'Surabaya Timur',skills:'',perf_score:'',join_date:'06-22-2019'},
+  {source:'Workable',ext_id:'WK-5148',name:'Andri EFFENDI',job_title:'Reg Affairs',branch:'JKT',skills:'Submission Management|GCP|BPOM Regulation',perf_score:'3.9',join_date:'2019-05-15'},
+  {source:'Moodle',ext_id:'LMS-9115',name:'Gina MAULANA',job_title:'Warehouse',branch:'makassar',skills:'',perf_score:'',join_date:'10-29-2020'},
+  {source:'Moodle',ext_id:'LMS-9131',name:'D. Kusuma',job_title:'IT Support',branch:'Surabaya Timur',skills:'Windows Server',perf_score:'',join_date:'11-12-2020'},
+  {source:'Workable',ext_id:'WK-5195',name:'eko firmansyah',job_title:'Staf Regulasi',branch:'Mks',skills:'',perf_score:'4.9',join_date:'2018-12-29'},
+  {source:'Moodle',ext_id:'LMS-9140',name:'D.Osman',job_title:'Med. Adv.',branch:'jakarta',skills:'',perf_score:'',join_date:'07-04-2018'},
+  {source:'Moodle',ext_id:'LMS-9026',name:'Rizky Nugroho',job_title:'Cust. Service',branch:'Denpasar',skills:'SLA Management|CRM',perf_score:'',join_date:'04-27-2017'},
+  {source:'Workable',ext_id:'WK-5119',name:'W. Effendi',job_title:'Pharmacy Tech',branch:'Denpasar',skills:'SAP Pharma|GMP Standards|Inventory Management|Patient Counseling',perf_score:'3.1',join_date:'2020-11-03'},
+  {source:'Workable',ext_id:'WK-5058',name:'S.Pranoto',job_title:'Layanan Pelanggan',branch:'SMG',skills:'Cross-selling',perf_score:'4.7',join_date:'2017-10-14'},
+  {source:'Workable',ext_id:'WK-5142',name:'Galih SUSANTO',job_title:'Logistik',branch:'Smg.',skills:'Warehouse Management|Supply Chain|SAP WM',perf_score:'4.2',join_date:'2021-11-16'},
+  {source:'SAP',ext_id:'SAP-1140',name:'A. Maulana',job_title:'Mkt. Spec',branch:'YOG',skills:'',perf_score:'3.9',join_date:'28/03/2019'},
+  {source:'Workable',ext_id:'WK-5032',name:'I. Setiawan',job_title:'CS',branch:'Ujung Pandang',skills:'Cross-selling',perf_score:'3.3',join_date:'2022-09-22'},
+  {source:'Moodle',ext_id:'LMS-9045',name:'N.Riyadi',job_title:'Layanan Pelanggan',branch:'Medan Kota',skills:'Communication',perf_score:'',join_date:'07-13-2023'},
+  {source:'Workable',ext_id:'WK-5070',name:'T.Hartono',job_title:'finance officer',branch:'DPS',skills:'',perf_score:'3.6',join_date:'2018-01-20'},
+  {source:'SAP',ext_id:'SAP-1158',name:'Ferry BASUKI',job_title:'RA Officer',branch:'Yogyakarta',skills:'',perf_score:'2.9',join_date:'03/05/2018'},
+  {source:'Moodle',ext_id:'LMS-9037',name:'Erwin Maulana',job_title:'Customer Svc',branch:'MKS',skills:'SLA Management|Cross-selling|Communication',perf_score:'',join_date:'07-24-2023'},
+  {source:'Workable',ext_id:'WK-5083',name:'ferry kartono',job_title:'CS',branch:'JKT',skills:'',perf_score:'4.1',join_date:'2018-03-05'},
+  {source:'Workable',ext_id:'WK-5040',name:'U. Suharto',job_title:'Pharm. Tech',branch:'Mks',skills:'',perf_score:'4.1',join_date:'2021-08-15'},
+  {source:'Moodle',ext_id:'LMS-9107',name:'F. Tambunan',job_title:'Finance Off.',branch:'Jogja',skills:'',perf_score:'',join_date:'11-08-2021'},
+];
+
+// ─── CLEAN DATA (200 unified records) ───
+const CLEAN_DATA = [
+  {unified_id:'MN-2024001',full_name:'Fajar Riyadi',standardized_role:'Customer Service',branch:'Jakarta',verified_skills:'Communication|Cross-selling|Ticketing|SLA Management|CRM',inferred_skills:'Product Knowledge|Escalation Handling',confidence_score:0.86,source_systems:'SAP+Workable+Moodle',status:'Ready for Reskilling',flag_human_review:'No'},
+  {unified_id:'MN-2024002',full_name:'Irma Susanto',standardized_role:'HR Specialist',branch:'Surabaya',verified_skills:'Labor Law|Payroll|Recruitment|Onboarding|HRIS|Performance Management',inferred_skills:'HR Analytics|Culture Building|Talent Management',confidence_score:0.89,source_systems:'SAP+Workable+Moodle',status:'Active',flag_human_review:'No'},
+  {unified_id:'MN-2024003',full_name:'Imam Setiawan',standardized_role:'Pharmacy Technician',branch:'Jakarta',verified_skills:'N/A',inferred_skills:'Medication Safety|Quality Control',confidence_score:0.64,source_systems:'SAP+Workable+Moodle',status:'High Risk',flag_human_review:'Yes'},
+  {unified_id:'MN-2024004',full_name:'Juwita Bachtiar',standardized_role:'Regulatory Affairs Officer',branch:'Yogyakarta',verified_skills:'Dossier Preparation|BPOM Regulation|Submission Management|Labeling Compliance|GCP|Audit Support',inferred_skills:'Regulatory Intelligence|Change Control',confidence_score:0.90,source_systems:'SAP+Workable+Moodle',status:'High Potential',flag_human_review:'No'},
+  {unified_id:'MN-2024005',full_name:'Wulan Mahendra',standardized_role:'Finance Officer',branch:'Palembang',verified_skills:'Accounting|Reconciliation|Tax Compliance|SAP Finance',inferred_skills:'Audit Preparation|ERP Proficiency',confidence_score:0.88,source_systems:'SAP+Workable+Moodle',status:'Active',flag_human_review:'No'},
+  {unified_id:'MN-2024006',full_name:'Made Pranoto',standardized_role:'Warehouse Staff',branch:'Palembang',verified_skills:'Safety Compliance|Barcode Scanning|FIFO Method',inferred_skills:'Team Coordination|RF Scanner|Cycle Count',confidence_score:0.97,source_systems:'SAP+Workable+Moodle',status:'Ready for Reskilling',flag_human_review:'No'},
+  {unified_id:'MN-2024007',full_name:'Citra Tambunan',standardized_role:'Pharmacy Technician',branch:'Medan',verified_skills:'N/A',inferred_skills:'Drug Interaction|Medication Safety',confidence_score:0.52,source_systems:'SAP+Workable+Moodle',status:'Active',flag_human_review:'Yes'},
+  {unified_id:'MN-2024008',full_name:'Hafiz Utomo',standardized_role:'Branch Manager',branch:'Surabaya',verified_skills:'Strategic Planning|P&L Management|Stakeholder Management|Team Leadership|Budgeting|KPI Monitoring',inferred_skills:'Change Management|Workforce Planning',confidence_score:0.81,source_systems:'SAP+Workable+Moodle',status:'High Risk',flag_human_review:'Yes'},
+  {unified_id:'MN-2024009',full_name:'Doni Mahendra',standardized_role:'HR Specialist',branch:'Yogyakarta',verified_skills:'Employee Relations|Labor Law|Payroll|HRIS',inferred_skills:'HR Analytics|Training & Development',confidence_score:0.97,source_systems:'SAP+Workable+Moodle',status:'High Potential',flag_human_review:'No'},
+  {unified_id:'MN-2024010',full_name:'Vina Yulianto',standardized_role:'Finance Officer',branch:'Balikpapan',verified_skills:'N/A',inferred_skills:'Cash Flow Management|ERP Proficiency|Forecasting',confidence_score:0.65,source_systems:'SAP+Workable',status:'High Risk',flag_human_review:'Yes'},
+  {unified_id:'MN-2024011',full_name:'Zahra Lestari',standardized_role:'Sales Representative',branch:'Jakarta',verified_skills:'Pipeline Management|Negotiation|Cold Calling|Salesforce|Territory Management|CRM',inferred_skills:'Upselling|Lead Generation|Market Analysis',confidence_score:0.96,source_systems:'SAP+Workable+Moodle',status:'Active',flag_human_review:'No'},
+  {unified_id:'MN-2024012',full_name:'Lestari Suryadi',standardized_role:'Marketing Specialist',branch:'Bandung',verified_skills:'Campaign Management|Google Analytics|Digital Marketing|SEO/SEM|Social Media',inferred_skills:'A/B Testing|Brand Strategy|Email Marketing',confidence_score:0.76,source_systems:'SAP+Workable+Moodle',status:'Active',flag_human_review:'No'},
+  {unified_id:'MN-2024013',full_name:'Umi Putra',standardized_role:'Branch Manager',branch:'Bali',verified_skills:'Strategic Planning|P&L Management|Stakeholder Management|Team Leadership|KPI Monitoring',inferred_skills:'Change Management|Coaching',confidence_score:0.76,source_systems:'SAP+Workable+Moodle',status:'Ready for Reskilling',flag_human_review:'No'},
+  {unified_id:'MN-2024014',full_name:'Panji Mulyono',standardized_role:'Marketing Specialist',branch:'Balikpapan',verified_skills:'Digital Marketing|Content Creation|Social Media',inferred_skills:'Email Marketing|A/B Testing',confidence_score:0.88,source_systems:'SAP+Workable+Moodle',status:'Active',flag_human_review:'No'},
+  {unified_id:'MN-2024015',full_name:'Fitri Junaedi',standardized_role:'Sales Representative',branch:'Surabaya',verified_skills:'Cold Calling|CRM|Account Management',inferred_skills:'Lead Generation|Customer Retention',confidence_score:0.94,source_systems:'SAP+Workable+Moodle',status:'Active',flag_human_review:'No'},
+  {unified_id:'MN-2024016',full_name:'Budi Usman',standardized_role:'Branch Manager',branch:'Makassar',verified_skills:'Strategic Planning|Stakeholder Management|Team Leadership|Budgeting|KPI Monitoring',inferred_skills:'Change Management|Workforce Planning|Crisis Management',confidence_score:0.96,source_systems:'SAP+Workable+Moodle',status:'Active',flag_human_review:'No'},
+  {unified_id:'MN-2024017',full_name:'Arif Hartono',standardized_role:'Pharmacy Technician',branch:'Jakarta',verified_skills:'SAP Pharma|Drug Dispensing|GMP Standards',inferred_skills:'Compounding|Drug Interaction|Medication Safety',confidence_score:0.84,source_systems:'SAP+Workable+Moodle',status:'Active',flag_human_review:'No'},
+  {unified_id:'MN-2024018',full_name:'Naomi Gunawan',standardized_role:'HR Specialist',branch:'Bandung',verified_skills:'Payroll|Recruitment|Onboarding|HRIS|Employee Relations',inferred_skills:'Training & Development|Culture Building',confidence_score:0.90,source_systems:'SAP+Workable+Moodle',status:'Ready for Reskilling',flag_human_review:'No'},
+  {unified_id:'MN-2024019',full_name:'Johan Yulianto',standardized_role:'Regulatory Affairs Officer',branch:'Medan',verified_skills:'Dossier Preparation|Submission Management|BPOM Regulation|Audit Support',inferred_skills:'Change Control|Risk Assessment',confidence_score:0.92,source_systems:'SAP+Workable+Moodle',status:'Ready for Reskilling',flag_human_review:'No'},
+  {unified_id:'MN-2024020',full_name:'Zulfa Setiawan',standardized_role:'Regulatory Affairs Officer',branch:'Bali',verified_skills:'N/A',inferred_skills:'Risk Assessment|Change Control',confidence_score:0.57,source_systems:'SAP+Workable+Moodle',status:'Ready for Reskilling',flag_human_review:'Yes'},
+  {unified_id:'MN-2024021',full_name:'Wahyu Haryono',standardized_role:'Medical Advisor',branch:'Bali',verified_skills:'N/A',inferred_skills:'Presentation Skills|Data Analysis|Product Launch',confidence_score:0.71,source_systems:'SAP+Workable',status:'Active',flag_human_review:'No'},
+  {unified_id:'MN-2024022',full_name:'Teguh Kurniawan',standardized_role:'Pharmacy Technician',branch:'Surabaya',verified_skills:'N/A',inferred_skills:'Compounding|Quality Control|Medication Safety',confidence_score:0.56,source_systems:'SAP+Workable+Moodle',status:'High Risk',flag_human_review:'Yes'},
+  {unified_id:'MN-2024023',full_name:'Eko Rahayu',standardized_role:'Customer Service',branch:'Medan',verified_skills:'N/A',inferred_skills:'Product Knowledge|Empathy',confidence_score:0.68,source_systems:'SAP+Workable',status:'Active',flag_human_review:'No'},
+  {unified_id:'MN-2024024',full_name:'Yuni Hakim',standardized_role:'Regulatory Affairs Officer',branch:'Bandung',verified_skills:'Dossier Preparation|BPOM Regulation|Submission Management|Labeling Compliance|GCP|Audit Support',inferred_skills:'Risk Assessment|SOP Writing',confidence_score:0.96,source_systems:'SAP+Workable+Moodle',status:'Stable',flag_human_review:'No'},
+  {unified_id:'MN-2024025',full_name:'Lestari Usman',standardized_role:'Regulatory Affairs Officer',branch:'Surabaya',verified_skills:'N/A',inferred_skills:'SOP Writing|Change Control',confidence_score:0.69,source_systems:'SAP+Workable+Moodle',status:'Stable',flag_human_review:'No'},
+  {unified_id:'MN-2024026',full_name:'Made Purnomo',standardized_role:'Warehouse Staff',branch:'Surabaya',verified_skills:'N/A',inferred_skills:'Documentation|Cycle Count',confidence_score:0.61,source_systems:'SAP+Workable',status:'Active',flag_human_review:'Yes'},
+  {unified_id:'MN-2024027',full_name:'Lukman Santoso',standardized_role:'Logistics Coordinator',branch:'Bandung',verified_skills:'Route Optimization|Procurement|SAP WM|Supply Chain|Vendor Management',inferred_skills:'3PL Management|ERP SAP|Demand Planning',confidence_score:0.91,source_systems:'SAP+Workable+Moodle',status:'Ready for Reskilling',flag_human_review:'No'},
+  {unified_id:'MN-2024028',full_name:'Vero Setiawan',standardized_role:'Warehouse Staff',branch:'Yogyakarta',verified_skills:'N/A',inferred_skills:'RF Scanner|Team Coordination|Documentation',confidence_score:0.72,source_systems:'SAP+Workable',status:'Active',flag_human_review:'No'},
+  {unified_id:'MN-2024029',full_name:'Fajar Wahyudi',standardized_role:'Customer Service',branch:'Medan',verified_skills:'Communication|Cross-selling|Ticketing|SLA Management|Complaint Handling',inferred_skills:'Retention Strategy|Empathy|Product Knowledge',confidence_score:0.88,source_systems:'SAP+Workable+Moodle',status:'Ready for Reskilling',flag_human_review:'No'},
+  {unified_id:'MN-2024030',full_name:'Niko Utomo',standardized_role:'HR Specialist',branch:'Palembang',verified_skills:'N/A',inferred_skills:'Training & Development|Culture Building',confidence_score:0.63,source_systems:'SAP+Workable+Moodle',status:'High Potential',flag_human_review:'Yes'},
+  {unified_id:'MN-2024031',full_name:'Juwita Hartono',standardized_role:'Medical Advisor',branch:'Yogyakarta',verified_skills:'N/A',inferred_skills:'Data Analysis|Scientific Communication|Product Launch',confidence_score:0.54,source_systems:'SAP+Workable+Moodle',status:'Active',flag_human_review:'Yes'},
+  {unified_id:'MN-2024032',full_name:'Sari Osman',standardized_role:'Branch Manager',branch:'Semarang',verified_skills:'Strategic Planning|P&L Management|Stakeholder Management|Team Leadership|Budgeting|KPI Monitoring',inferred_skills:'Workforce Planning|Crisis Management|Change Management',confidence_score:0.87,source_systems:'SAP+Workable+Moodle',status:'Active',flag_human_review:'No'},
+  {unified_id:'MN-2024033',full_name:'Ika Setiawan',standardized_role:'Customer Service',branch:'Makassar',verified_skills:'Communication|Cross-selling|CRM|Ticketing',inferred_skills:'Product Knowledge|Empathy',confidence_score:0.80,source_systems:'SAP+Workable',status:'Active',flag_human_review:'No'},
+  {unified_id:'MN-2024034',full_name:'Vina Cahyono',standardized_role:'Warehouse Staff',branch:'Palembang',verified_skills:'N/A',inferred_skills:'Documentation|Cycle Count|Team Coordination',confidence_score:0.68,source_systems:'SAP+Workable+Moodle',status:'Active',flag_human_review:'No'},
+  {unified_id:'MN-2024035',full_name:'Rizky Nugroho',standardized_role:'Customer Service',branch:'Bali',verified_skills:'Communication|Cross-selling|Ticketing|SLA Management|Complaint Handling|CRM',inferred_skills:'Retention Strategy|Escalation Handling',confidence_score:0.81,source_systems:'SAP+Workable',status:'Active',flag_human_review:'No'},
+  {unified_id:'MN-2024036',full_name:'Udin Kartono',standardized_role:'Warehouse Staff',branch:'Jakarta',verified_skills:'N/A',inferred_skills:'Team Coordination|Cycle Count|Documentation',confidence_score:0.70,source_systems:'SAP+Workable',status:'Ready for Reskilling',flag_human_review:'No'},
+  {unified_id:'MN-2024037',full_name:'Zahra Tambunan',standardized_role:'Regulatory Affairs Officer',branch:'Bali',verified_skills:'Dossier Preparation|BPOM Regulation|Submission Management|Labeling Compliance|GCP',inferred_skills:'Risk Assessment|SOP Writing|Regulatory Intelligence',confidence_score:0.97,source_systems:'SAP+Workable',status:'Ready for Reskilling',flag_human_review:'No'},
+  {unified_id:'MN-2024038',full_name:'Dian Perdana',standardized_role:'Pharmacy Technician',branch:'Jakarta',verified_skills:'Patient Counseling|Inventory Management|SAP Pharma',inferred_skills:'Quality Control|Medication Safety',confidence_score:0.84,source_systems:'SAP+Workable+Moodle',status:'Stable',flag_human_review:'No'},
+  {unified_id:'MN-2024039',full_name:'Shinta Firmansyah',standardized_role:'Logistics Coordinator',branch:'Yogyakarta',verified_skills:'N/A',inferred_skills:'3PL Management|ERP SAP|Cold Chain Logistics',confidence_score:0.57,source_systems:'SAP+Workable',status:'High Potential',flag_human_review:'Yes'},
+  {unified_id:'MN-2024040',full_name:'Rizky Panjaitan',standardized_role:'Sales Representative',branch:'Makassar',verified_skills:'Pipeline Management|Negotiation|Cold Calling|Territory Management|Account Management',inferred_skills:'Market Analysis|Lead Generation',confidence_score:0.78,source_systems:'SAP+Workable+Moodle',status:'Stable',flag_human_review:'No'},
+  {unified_id:'MN-2024041',full_name:'Umi Suharto',standardized_role:'Pharmacy Technician',branch:'Makassar',verified_skills:'N/A',inferred_skills:'Drug Interaction|Quality Control|Medication Safety',confidence_score:0.57,source_systems:'SAP+Workable+Moodle',status:'High Risk',flag_human_review:'Yes'},
+  {unified_id:'MN-2024042',full_name:'Nanda Santoso',standardized_role:'Pharmacy Technician',branch:'Bandung',verified_skills:'Inventory Management|SAP Pharma|GMP Standards|BPOM Compliance',inferred_skills:'Compounding|Medication Safety|Quality Control',confidence_score:0.84,source_systems:'SAP+Workable+Moodle',status:'High Potential',flag_human_review:'No'},
+  {unified_id:'MN-2024043',full_name:'Hendra Nasution',standardized_role:'Regulatory Affairs Officer',branch:'Medan',verified_skills:'N/A',inferred_skills:'SOP Writing|Risk Assessment',confidence_score:0.56,source_systems:'SAP+Workable',status:'Active',flag_human_review:'Yes'},
+  {unified_id:'MN-2024044',full_name:'Claudia Saputra',standardized_role:'Customer Service',branch:'Makassar',verified_skills:'N/A',inferred_skills:'Retention Strategy|Empathy|Escalation Handling',confidence_score:0.50,source_systems:'SAP+Workable',status:'Ready for Reskilling',flag_human_review:'Yes'},
+  {unified_id:'MN-2024045',full_name:'Haris Panjaitan',standardized_role:'Pharmacy Technician',branch:'Semarang',verified_skills:'N/A',inferred_skills:'Medication Safety|Compounding|Drug Interaction',confidence_score:0.61,source_systems:'SAP+Workable+Moodle',status:'High Potential',flag_human_review:'Yes'},
+  {unified_id:'MN-2024046',full_name:'Made Susanto',standardized_role:'Branch Manager',branch:'Medan',verified_skills:'Budgeting|P&L Management|KPI Monitoring|Team Leadership',inferred_skills:'Change Management|Workforce Planning|Coaching',confidence_score:0.87,source_systems:'SAP+Workable+Moodle',status:'High Risk',flag_human_review:'Yes'},
+  {unified_id:'MN-2024047',full_name:'Benny Bachtiar',standardized_role:'Customer Service',branch:'Jakarta',verified_skills:'Communication|Cross-selling|Ticketing|SLA Management|Complaint Handling|CRM',inferred_skills:'Product Knowledge|Empathy|Escalation Handling',confidence_score:0.94,source_systems:'SAP+Workable+Moodle',status:'Ready for Reskilling',flag_human_review:'No'},
+  {unified_id:'MN-2024048',full_name:'Kiki Firmansyah',standardized_role:'HR Specialist',branch:'Yogyakarta',verified_skills:'Onboarding|Labor Law|Payroll|Recruitment',inferred_skills:'Training & Development|Culture Building',confidence_score:0.82,source_systems:'SAP+Workable',status:'Active',flag_human_review:'No'},
+  {unified_id:'MN-2024049',full_name:'Rani Firmansyah',standardized_role:'Finance Officer',branch:'Makassar',verified_skills:'N/A',inferred_skills:'ERP Proficiency|Audit Preparation',confidence_score:0.68,source_systems:'SAP+Workable+Moodle',status:'High Potential',flag_human_review:'No'},
+  {unified_id:'MN-2024050',full_name:'Rama Nugroho',standardized_role:'Sales Representative',branch:'Semarang',verified_skills:'Pipeline Management|Cold Calling|Salesforce|Territory Management|B2B Sales|Account Management',inferred_skills:'Upselling|Lead Generation',confidence_score:0.91,source_systems:'SAP+Workable',status:'Ready for Reskilling',flag_human_review:'No'},
+  {unified_id:'MN-2024051',full_name:'Erwin Maulana',standardized_role:'Customer Service',branch:'Makassar',verified_skills:'Communication|Complaint Handling|CRM|SLA Management',inferred_skills:'Escalation Handling|Product Knowledge|Empathy',confidence_score:0.84,source_systems:'SAP+Workable+Moodle',status:'Ready for Reskilling',flag_human_review:'No'},
+  {unified_id:'MN-2024052',full_name:'Imam Riyadi',standardized_role:'Marketing Specialist',branch:'Palembang',verified_skills:'Campaign Management|SEO/SEM|Google Analytics|Social Media',inferred_skills:'Market Research|A/B Testing',confidence_score:0.84,source_systems:'SAP+Workable+Moodle',status:'Active',flag_human_review:'No'},
+  {unified_id:'MN-2024053',full_name:'Kiki Maulana',standardized_role:'Regulatory Affairs Officer',branch:'Yogyakarta',verified_skills:'Audit Support|Submission Management|GCP',inferred_skills:'SOP Writing|Risk Assessment|Regulatory Intelligence',confidence_score:0.78,source_systems:'SAP+Workable+Moodle',status:'Ready for Reskilling',flag_human_review:'No'},
+  {unified_id:'MN-2024054',full_name:'Kiki Tambunan',standardized_role:'Warehouse Staff',branch:'Semarang',verified_skills:'Inventory Control|Safety Compliance|FIFO Method|Stock Opname|Forklift Operation',inferred_skills:'Cycle Count|Team Coordination|Documentation',confidence_score:0.89,source_systems:'SAP+Workable+Moodle',status:'Ready for Reskilling',flag_human_review:'No'},
+  {unified_id:'MN-2024055',full_name:'Joko Santosa',standardized_role:'Regulatory Affairs Officer',branch:'Palembang',verified_skills:'Audit Support|BPOM Regulation|Labeling Compliance|Dossier Preparation',inferred_skills:'SOP Writing|Regulatory Intelligence',confidence_score:0.87,source_systems:'SAP+Workable',status:'High Risk',flag_human_review:'Yes'},
+  {unified_id:'MN-2024056',full_name:'Valdi Mulyono',standardized_role:'Customer Service',branch:'Medan',verified_skills:'N/A',inferred_skills:'Product Knowledge|Retention Strategy',confidence_score:0.69,source_systems:'SAP+Workable+Moodle',status:'High Risk',flag_human_review:'Yes'},
+  {unified_id:'MN-2024057',full_name:'Yoga Setiawan',standardized_role:'Warehouse Staff',branch:'Balikpapan',verified_skills:'N/A',inferred_skills:'RF Scanner|Cycle Count|Documentation',confidence_score:0.65,source_systems:'SAP+Workable+Moodle',status:'Active',flag_human_review:'No'},
+  {unified_id:'MN-2024058',full_name:'Jefri Kartono',standardized_role:'Medical Advisor',branch:'Bali',verified_skills:'N/A',inferred_skills:'Scientific Communication|Data Analysis',confidence_score:0.58,source_systems:'SAP+Workable+Moodle',status:'High Potential',flag_human_review:'Yes'},
+  {unified_id:'MN-2024059',full_name:'Sigit Pranoto',standardized_role:'Customer Service',branch:'Semarang',verified_skills:'Communication|Cross-selling|Ticketing|SLA Management|Complaint Handling',inferred_skills:'Product Knowledge|Escalation Handling|Empathy',confidence_score:0.92,source_systems:'SAP+Workable+Moodle',status:'High Potential',flag_human_review:'No'},
+  {unified_id:'MN-2024060',full_name:'Nanda Riyadi',standardized_role:'Customer Service',branch:'Medan',verified_skills:'SLA Management|Communication|CRM',inferred_skills:'Product Knowledge|Empathy|Escalation Handling',confidence_score:0.76,source_systems:'SAP+Workable',status:'Ready for Reskilling',flag_human_review:'No'},
+  {unified_id:'MN-2024067',full_name:'Yuni Effendi',standardized_role:'Customer Service',branch:'Palembang',verified_skills:'N/A',inferred_skills:'Empathy|Escalation Handling|Retention Strategy',confidence_score:0.60,source_systems:'SAP+Workable',status:'High Risk',flag_human_review:'Yes'},
+  {unified_id:'MN-2024068',full_name:'Sigit Tambunan',standardized_role:'Warehouse Staff',branch:'Bali',verified_skills:'N/A',inferred_skills:'Documentation|Cycle Count|RF Scanner',confidence_score:0.62,source_systems:'SAP+Workable+Moodle',status:'Ready for Reskilling',flag_human_review:'Yes'},
+  {unified_id:'MN-2024069',full_name:'Gita Osman',standardized_role:'Branch Manager',branch:'Semarang',verified_skills:'N/A',inferred_skills:'Coaching|Workforce Planning|Crisis Management',confidence_score:0.68,source_systems:'SAP+Workable',status:'Active',flag_human_review:'No'},
+  {unified_id:'MN-2024070',full_name:'Fajar Santoso',standardized_role:'HR Specialist',branch:'Surabaya',verified_skills:'Employee Relations|Performance Management|Labor Law|Recruitment',inferred_skills:'Talent Management|Culture Building|HR Analytics',confidence_score:0.82,source_systems:'SAP+Workable',status:'Active',flag_human_review:'No'},
+  {unified_id:'MN-2024071',full_name:'Teguh Hartono',standardized_role:'Finance Officer',branch:'Bali',verified_skills:'N/A',inferred_skills:'ERP Proficiency|Audit Preparation|Forecasting',confidence_score:0.52,source_systems:'SAP+Workable+Moodle',status:'Ready for Reskilling',flag_human_review:'Yes'},
+  {unified_id:'MN-2024072',full_name:'Budi Gunawan',standardized_role:'Branch Manager',branch:'Balikpapan',verified_skills:'N/A',inferred_skills:'Workforce Planning|Change Management|Crisis Management',confidence_score:0.61,source_systems:'SAP+Workable+Moodle',status:'Active',flag_human_review:'Yes'},
+  {unified_id:'MN-2024073',full_name:'Umi Haryono',standardized_role:'Marketing Specialist',branch:'Medan',verified_skills:'Campaign Management|Google Analytics|Digital Marketing|SEO/SEM|Social Media|Content Creation',inferred_skills:'A/B Testing|Market Research|Brand Strategy',confidence_score:0.77,source_systems:'SAP+Workable',status:'Active',flag_human_review:'No'},
+  {unified_id:'MN-2024074',full_name:'Ulfa Wibowo',standardized_role:'HR Specialist',branch:'Bali',verified_skills:'Labor Law|Payroll|Recruitment|Onboarding|Employee Relations|HRIS',inferred_skills:'HR Analytics|Culture Building|Training & Development',confidence_score:0.94,source_systems:'SAP+Workable+Moodle',status:'Ready for Reskilling',flag_human_review:'No'},
+  {unified_id:'MN-2024075',full_name:'Kevin Haryono',standardized_role:'Medical Advisor',branch:'Bandung',verified_skills:'N/A',inferred_skills:'Presentation Skills|Product Launch',confidence_score:0.68,source_systems:'SAP+Workable',status:'Ready for Reskilling',flag_human_review:'No'},
+  {unified_id:'MN-2024076',full_name:'Naomi Perdana',standardized_role:'Regulatory Affairs Officer',branch:'Jakarta',verified_skills:'Dossier Preparation|BPOM Regulation|Submission Management|Labeling Compliance|GCP|Audit Support',inferred_skills:'Risk Assessment|Change Control',confidence_score:0.79,source_systems:'SAP+Workable+Moodle',status:'Ready for Reskilling',flag_human_review:'No'},
+  {unified_id:'MN-2024077',full_name:'Monica Pranoto',standardized_role:'Customer Service',branch:'Medan',verified_skills:'N/A',inferred_skills:'Product Knowledge|Empathy|Retention Strategy',confidence_score:0.61,source_systems:'SAP+Workable+Moodle',status:'Ready for Reskilling',flag_human_review:'Yes'},
+  {unified_id:'MN-2024078',full_name:'Johan Putra',standardized_role:'Logistics Coordinator',branch:'Palembang',verified_skills:'Route Optimization|Warehouse Management|Procurement',inferred_skills:'ERP SAP|3PL Management|Demand Planning',confidence_score:0.81,source_systems:'SAP+Workable+Moodle',status:'Ready for Reskilling',flag_human_review:'No'},
+  {unified_id:'MN-2024079',full_name:'Citra Haryono',standardized_role:'HR Specialist',branch:'Medan',verified_skills:'Employee Relations|Payroll|HRIS|Recruitment',inferred_skills:'Training & Development|Talent Management|Culture Building',confidence_score:0.84,source_systems:'SAP+Workable+Moodle',status:'High Potential',flag_human_review:'No'},
+  {unified_id:'MN-2024080',full_name:'Oki Lukman',standardized_role:'Logistics Coordinator',branch:'Surabaya',verified_skills:'Route Optimization|Vendor Management|SAP WM',inferred_skills:'3PL Management|Cold Chain Logistics|ERP SAP',confidence_score:0.81,source_systems:'SAP+Workable+Moodle',status:'High Risk',flag_human_review:'Yes'},
+  {unified_id:'MN-2024081',full_name:'Gina Kusuma',standardized_role:'Finance Officer',branch:'Jakarta',verified_skills:'Financial Reporting|SAP Finance|Reconciliation|Cost Analysis|Tax Compliance|Accounting',inferred_skills:'Cash Flow Management|Forecasting',confidence_score:0.83,source_systems:'SAP+Workable+Moodle',status:'High Risk',flag_human_review:'Yes'},
+  {unified_id:'MN-2024082',full_name:'Haris Lukman',standardized_role:'Branch Manager',branch:'Yogyakarta',verified_skills:'P&L Management|Stakeholder Management|KPI Monitoring',inferred_skills:'Change Management|Workforce Planning',confidence_score:0.85,source_systems:'SAP+Workable+Moodle',status:'Active',flag_human_review:'No'},
+  {unified_id:'MN-2024083',full_name:'Chandra Effendi',standardized_role:'IT Support',branch:'Medan',verified_skills:'N/A',inferred_skills:'ITIL Framework|Scripting Basics|Cloud Support',confidence_score:0.67,source_systems:'SAP+Workable+Moodle',status:'Active',flag_human_review:'No'},
+  {unified_id:'MN-2024084',full_name:'Ferry Kartono',standardized_role:'Customer Service',branch:'Jakarta',verified_skills:'N/A',inferred_skills:'Product Knowledge|Retention Strategy|Escalation Handling',confidence_score:0.50,source_systems:'SAP+Workable+Moodle',status:'Active',flag_human_review:'Yes'},
+  {unified_id:'MN-2024085',full_name:'Nuri Saputra',standardized_role:'Pharmacy Technician',branch:'Semarang',verified_skills:'Patient Counseling|SAP Pharma|GMP Standards|Inventory Management|Drug Dispensing',inferred_skills:'Compounding|Medication Safety|Quality Control',confidence_score:0.93,source_systems:'SAP+Workable',status:'High Potential',flag_human_review:'No'},
+  {unified_id:'MN-2024086',full_name:'Zahra Iskandar',standardized_role:'Medical Advisor',branch:'Semarang',verified_skills:'Pharmacovigilance|Clinical Knowledge|KOL Management',inferred_skills:'Presentation Skills|Data Analysis|Product Launch',confidence_score:0.97,source_systems:'SAP+Workable',status:'Stable',flag_human_review:'No'},
+  {unified_id:'MN-2024087',full_name:'Sari Wibowo',standardized_role:'Customer Service',branch:'Jakarta',verified_skills:'N/A',inferred_skills:'Product Knowledge|Empathy',confidence_score:0.56,source_systems:'SAP+Workable+Moodle',status:'Active',flag_human_review:'Yes'},
+  {unified_id:'MN-2024088',full_name:'Haris Perdana',standardized_role:'Branch Manager',branch:'Jakarta',verified_skills:'Strategic Planning|Stakeholder Management|Team Leadership|Budgeting|KPI Monitoring',inferred_skills:'Workforce Planning|Coaching',confidence_score:0.81,source_systems:'SAP+Workable+Moodle',status:'Active',flag_human_review:'No'},
+  {unified_id:'MN-2024089',full_name:'Arif Iskandar',standardized_role:'Marketing Specialist',branch:'Palembang',verified_skills:'Campaign Management|Google Analytics|Digital Marketing|SEO/SEM|Social Media|Content Creation',inferred_skills:'Brand Strategy|Email Marketing',confidence_score:0.87,source_systems:'SAP+Workable+Moodle',status:'High Risk',flag_human_review:'Yes'},
+  {unified_id:'MN-2024090',full_name:'Murti Yulianto',standardized_role:'IT Support',branch:'Jakarta',verified_skills:'N/A',inferred_skills:'ITIL Framework|Scripting Basics',confidence_score:0.61,source_systems:'SAP+Workable+Moodle',status:'High Potential',flag_human_review:'Yes'},
+  {unified_id:'MN-2024091',full_name:'Claudia Susanto',standardized_role:'Sales Representative',branch:'Balikpapan',verified_skills:'N/A',inferred_skills:'Customer Retention|Market Analysis',confidence_score:0.60,source_systems:'SAP+Workable+Moodle',status:'Active',flag_human_review:'Yes'},
+  {unified_id:'MN-2024092',full_name:'Ferry Effendi',standardized_role:'Marketing Specialist',branch:'Bali',verified_skills:'N/A',inferred_skills:'A/B Testing|Email Marketing',confidence_score:0.73,source_systems:'SAP+Workable+Moodle',status:'Stable',flag_human_review:'No'},
+  {unified_id:'MN-2024093',full_name:'Triana Handoko',standardized_role:'Medical Advisor',branch:'Palembang',verified_skills:'Regulatory Affairs|Pharmacovigilance|Medical Writing|KOL Management',inferred_skills:'Data Analysis|Presentation Skills|Scientific Communication',confidence_score:0.87,source_systems:'SAP+Workable',status:'High Risk',flag_human_review:'Yes'},
+  {unified_id:'MN-2024094',full_name:'Yoga Halim',standardized_role:'Warehouse Staff',branch:'Jakarta',verified_skills:'Inventory Control|Safety Compliance|Barcode Scanning|FIFO Method|Stock Opname|Forklift Operation',inferred_skills:'RF Scanner|Team Coordination',confidence_score:0.96,source_systems:'SAP+Workable+Moodle',status:'Ready for Reskilling',flag_human_review:'No'},
+  {unified_id:'MN-2024095',full_name:'Vincent Santoso',standardized_role:'Regulatory Affairs Officer',branch:'Jakarta',verified_skills:'N/A',inferred_skills:'Risk Assessment|Change Control',confidence_score:0.54,source_systems:'SAP+Workable+Moodle',status:'Active',flag_human_review:'Yes'},
+  {unified_id:'MN-2024096',full_name:'Vero Basuki',standardized_role:'Marketing Specialist',branch:'Jakarta',verified_skills:'Digital Marketing|SEO/SEM|Google Analytics|Content Creation',inferred_skills:'Brand Strategy|A/B Testing|Email Marketing',confidence_score:0.82,source_systems:'SAP+Workable+Moodle',status:'Active',flag_human_review:'No'},
+  {unified_id:'MN-2024097',full_name:'Vero Suprapto',standardized_role:'Warehouse Staff',branch:'Bali',verified_skills:'Safety Compliance|FIFO Method|Stock Opname',inferred_skills:'Team Coordination|Documentation',confidence_score:0.77,source_systems:'SAP+Workable+Moodle',status:'Ready for Reskilling',flag_human_review:'No'},
+  {unified_id:'MN-2024098',full_name:'Dita Mahendra',standardized_role:'IT Support',branch:'Bandung',verified_skills:'N/A',inferred_skills:'Cloud Support|Scripting Basics',confidence_score:0.70,source_systems:'SAP+Workable+Moodle',status:'High Potential',flag_human_review:'No'},
+  {unified_id:'MN-2024099',full_name:'Murti Effendi',standardized_role:'Finance Officer',branch:'Bandung',verified_skills:'Reconciliation|Financial Reporting|SAP Finance',inferred_skills:'Audit Preparation|ERP Proficiency|Forecasting',confidence_score:0.91,source_systems:'SAP+Workable',status:'High Potential',flag_human_review:'No'},
+  {unified_id:'MN-2024100',full_name:'Gina Mulyono',standardized_role:'Sales Representative',branch:'Semarang',verified_skills:'Pipeline Management|Negotiation|B2B Sales|CRM|Account Management',inferred_skills:'Lead Generation|Upselling|Customer Retention',confidence_score:0.83,source_systems:'SAP+Workable+Moodle',status:'Ready for Reskilling',flag_human_review:'No'},
+  {unified_id:'MN-2024101',full_name:'Kevin Handoko',standardized_role:'Finance Officer',branch:'Palembang',verified_skills:'Tax Compliance|Financial Reporting|SAP Finance',inferred_skills:'ERP Proficiency|Audit Preparation',confidence_score:0.92,source_systems:'SAP+Workable+Moodle',status:'Active',flag_human_review:'No'},
+  {unified_id:'MN-2024102',full_name:'Hafiz Pratama',standardized_role:'Marketing Specialist',branch:'Bali',verified_skills:'Campaign Management|SEO/SEM|Content Creation',inferred_skills:'Market Research|Email Marketing|Brand Strategy',confidence_score:0.95,source_systems:'SAP+Workable+Moodle',status:'High Risk',flag_human_review:'Yes'},
+  {unified_id:'MN-2024103',full_name:'Eko Pratama',standardized_role:'HR Specialist',branch:'Bandung',verified_skills:'Labor Law|Payroll|Recruitment|Onboarding|HRIS|Performance Management',inferred_skills:'Talent Management|Culture Building',confidence_score:0.96,source_systems:'SAP+Workable',status:'Active',flag_human_review:'No'},
+  {unified_id:'MN-2024104',full_name:'Ulfa Firmansyah',standardized_role:'IT Support',branch:'Surabaya',verified_skills:'N/A',inferred_skills:'Scripting Basics|ITIL Framework',confidence_score:0.72,source_systems:'SAP+Workable+Moodle',status:'Active',flag_human_review:'No'},
+  {unified_id:'MN-2024105',full_name:'Oscar Handoko',standardized_role:'Logistics Coordinator',branch:'Medan',verified_skills:'Supply Chain|Route Optimization|Warehouse Management|SAP WM',inferred_skills:'3PL Management|Cold Chain Logistics|Demand Planning',confidence_score:0.92,source_systems:'SAP+Workable+Moodle',status:'Active',flag_human_review:'No'},
+  {unified_id:'MN-2024106',full_name:'Ika Rachman',standardized_role:'HR Specialist',branch:'Yogyakarta',verified_skills:'N/A',inferred_skills:'Training & Development|Culture Building',confidence_score:0.69,source_systems:'SAP+Workable+Moodle',status:'High Risk',flag_human_review:'Yes'},
+  {unified_id:'MN-2024107',full_name:'Galih Wahyudi',standardized_role:'Medical Advisor',branch:'Jakarta',verified_skills:'Regulatory Affairs|Pharmacovigilance|Medical Writing|Clinical Knowledge',inferred_skills:'Data Analysis|Scientific Communication|Product Launch',confidence_score:0.88,source_systems:'SAP+Workable+Moodle',status:'High Potential',flag_human_review:'No'},
+  {unified_id:'MN-2024108',full_name:'Rendi Handoko',standardized_role:'Branch Manager',branch:'Bandung',verified_skills:'P&L Management|Stakeholder Management|Team Leadership|Budgeting|KPI Monitoring',inferred_skills:'Crisis Management|Coaching|Change Management',confidence_score:0.89,source_systems:'SAP+Workable+Moodle',status:'Ready for Reskilling',flag_human_review:'No'},
+  {unified_id:'MN-2024109',full_name:'Murti Kurniawan',standardized_role:'Regulatory Affairs Officer',branch:'Jakarta',verified_skills:'N/A',inferred_skills:'Risk Assessment|Change Control',confidence_score:0.65,source_systems:'SAP+Workable+Moodle',status:'Ready for Reskilling',flag_human_review:'No'},
+  {unified_id:'MN-2024110',full_name:'Kartika Perdana',standardized_role:'Branch Manager',branch:'Medan',verified_skills:'N/A',inferred_skills:'Crisis Management|Coaching',confidence_score:0.51,source_systems:'SAP+Workable+Moodle',status:'Active',flag_human_review:'Yes'},
+  {unified_id:'MN-2024111',full_name:'Chandra Susanto',standardized_role:'Logistics Coordinator',branch:'Semarang',verified_skills:'Route Optimization|Vendor Management|Procurement|SAP WM|Supply Chain|Warehouse Management',inferred_skills:'ERP SAP|Cold Chain Logistics|3PL Management',confidence_score:0.76,source_systems:'SAP+Workable+Moodle',status:'High Risk',flag_human_review:'Yes'},
+  {unified_id:'MN-2024112',full_name:'Rani Hartono',standardized_role:'HR Specialist',branch:'Semarang',verified_skills:'Employee Relations|Labor Law|Payroll',inferred_skills:'HR Analytics|Culture Building|Talent Management',confidence_score:0.76,source_systems:'SAP+Workable+Moodle',status:'Active',flag_human_review:'No'},
+  {unified_id:'MN-2024113',full_name:'Umi Rahayu',standardized_role:'Sales Representative',branch:'Bandung',verified_skills:'Pipeline Management|Negotiation|Cold Calling|B2B Sales|CRM',inferred_skills:'Market Analysis|Customer Retention|Lead Generation',confidence_score:0.80,source_systems:'SAP+Workable',status:'High Potential',flag_human_review:'No'},
+  {unified_id:'MN-2024114',full_name:'Toni Purnomo',standardized_role:'IT Support',branch:'Medan',verified_skills:'Windows Server|Cybersecurity Basics|Troubleshooting|Helpdesk',inferred_skills:'ITIL Framework|Scripting Basics|Cloud Support',confidence_score:0.79,source_systems:'SAP+Workable',status:'Ready for Reskilling',flag_human_review:'No'},
+  {unified_id:'MN-2024115',full_name:'Made Kusuma',standardized_role:'IT Support',branch:'Semarang',verified_skills:'Networking|Windows Server|Cybersecurity Basics|Active Directory',inferred_skills:'Cloud Support|Scripting Basics',confidence_score:0.80,source_systems:'SAP+Workable',status:'High Potential',flag_human_review:'No'},
+  {unified_id:'MN-2024116',full_name:'Priya Riyadi',standardized_role:'Medical Advisor',branch:'Semarang',verified_skills:'Pharmacovigilance|KOL Management|Regulatory Affairs|Medical Writing|Clinical Trials',inferred_skills:'Data Analysis|Product Launch|Scientific Communication',confidence_score:0.89,source_systems:'SAP+Workable+Moodle',status:'High Potential',flag_human_review:'No'},
+  {unified_id:'MN-2024117',full_name:'Zulfa Suryadi',standardized_role:'Regulatory Affairs Officer',branch:'Balikpapan',verified_skills:'N/A',inferred_skills:'SOP Writing|Regulatory Intelligence|Change Control',confidence_score:0.69,source_systems:'SAP+Workable+Moodle',status:'High Potential',flag_human_review:'No'},
+  {unified_id:'MN-2024118',full_name:'Karina Cahyono',standardized_role:'Logistics Coordinator',branch:'Palembang',verified_skills:'Route Optimization|Procurement|Vendor Management|SAP WM',inferred_skills:'ERP SAP|Cold Chain Logistics|3PL Management',confidence_score:0.93,source_systems:'SAP+Workable+Moodle',status:'Ready for Reskilling',flag_human_review:'No'},
+  {unified_id:'MN-2024119',full_name:'Wahyu Nasution',standardized_role:'Medical Advisor',branch:'Yogyakarta',verified_skills:'N/A',inferred_skills:'Data Analysis|Product Launch',confidence_score:0.57,source_systems:'SAP+Workable',status:'High Potential',flag_human_review:'Yes'},
+  {unified_id:'MN-2024120',full_name:'Widi Effendi',standardized_role:'Pharmacy Technician',branch:'Bali',verified_skills:'Patient Counseling|SAP Pharma|GMP Standards|BPOM Compliance|Inventory Management|Drug Dispensing',inferred_skills:'Drug Interaction|Medication Safety',confidence_score:0.86,source_systems:'SAP+Workable+Moodle',status:'Ready for Reskilling',flag_human_review:'No'},
+  {unified_id:'MN-2024121',full_name:'Bagas Lukman',standardized_role:'Logistics Coordinator',branch:'Palembang',verified_skills:'N/A',inferred_skills:'Demand Planning|Cold Chain Logistics',confidence_score:0.52,source_systems:'SAP+Workable',status:'Ready for Reskilling',flag_human_review:'Yes'},
+  {unified_id:'MN-2024122',full_name:'Putri Purnomo',standardized_role:'Branch Manager',branch:'Surabaya',verified_skills:'N/A',inferred_skills:'Coaching|Workforce Planning',confidence_score:0.68,source_systems:'SAP+Workable+Moodle',status:'High Risk',flag_human_review:'Yes'},
+  {unified_id:'MN-2024123',full_name:'Priya Gunawan',standardized_role:'Marketing Specialist',branch:'Makassar',verified_skills:'Campaign Management|Digital Marketing|SEO/SEM|Social Media',inferred_skills:'Market Research|A/B Testing',confidence_score:0.85,source_systems:'SAP+Workable+Moodle',status:'Active',flag_human_review:'No'},
+  {unified_id:'MN-2024124',full_name:'Galih Riyadi',standardized_role:'Logistics Coordinator',branch:'Bandung',verified_skills:'Route Optimization|Procurement|SAP WM',inferred_skills:'Cold Chain Logistics|Demand Planning|ERP SAP',confidence_score:0.77,source_systems:'SAP+Workable+Moodle',status:'High Risk',flag_human_review:'Yes'},
+  {unified_id:'MN-2024125',full_name:'Nuri Halim',standardized_role:'Regulatory Affairs Officer',branch:'Bali',verified_skills:'Dossier Preparation|Submission Management|Audit Support|GCP',inferred_skills:'Regulatory Intelligence|Risk Assessment|Change Control',confidence_score:0.78,source_systems:'SAP+Workable',status:'Active',flag_human_review:'No'},
+  {unified_id:'MN-2024126',full_name:'Kiki Bachtiar',standardized_role:'Branch Manager',branch:'Semarang',verified_skills:'N/A',inferred_skills:'Crisis Management|Change Management',confidence_score:0.55,source_systems:'SAP+Workable',status:'Stable',flag_human_review:'Yes'},
+  {unified_id:'MN-2024127',full_name:'Lestari Handoko',standardized_role:'Sales Representative',branch:'Jakarta',verified_skills:'N/A',inferred_skills:'Customer Retention|Upselling',confidence_score:0.53,source_systems:'SAP+Workable+Moodle',status:'High Potential',flag_human_review:'Yes'},
+  {unified_id:'MN-2024128',full_name:'Kiki Panjaitan',standardized_role:'IT Support',branch:'Bali',verified_skills:'N/A',inferred_skills:'ITIL Framework|Scripting Basics',confidence_score:0.65,source_systems:'SAP+Workable+Moodle',status:'High Potential',flag_human_review:'No'},
+  {unified_id:'MN-2024129',full_name:'Surya Budiman',standardized_role:'HR Specialist',branch:'Yogyakarta',verified_skills:'N/A',inferred_skills:'Talent Management|Training & Development',confidence_score:0.74,source_systems:'SAP+Workable+Moodle',status:'Stable',flag_human_review:'No'},
+  {unified_id:'MN-2024130',full_name:'Gina Saputra',standardized_role:'Sales Representative',branch:'Bandung',verified_skills:'Negotiation|B2B Sales|Territory Management|Salesforce|CRM',inferred_skills:'Market Analysis|Lead Generation|Customer Retention',confidence_score:0.89,source_systems:'SAP+Workable+Moodle',status:'High Potential',flag_human_review:'No'},
+  {unified_id:'MN-2024131',full_name:'Prita Handoko',standardized_role:'Marketing Specialist',branch:'Bali',verified_skills:'Digital Marketing|SEO/SEM|Content Creation',inferred_skills:'Email Marketing|Brand Strategy|Market Research',confidence_score:0.82,source_systems:'SAP+Workable+Moodle',status:'Active',flag_human_review:'No'},
+  {unified_id:'MN-2024132',full_name:'Siti Kartono',standardized_role:'Marketing Specialist',branch:'Bali',verified_skills:'N/A',inferred_skills:'Email Marketing|Market Research',confidence_score:0.59,source_systems:'SAP+Workable+Moodle',status:'Active',flag_human_review:'Yes'},
+  {unified_id:'MN-2024133',full_name:'Oscar Kartono',standardized_role:'Regulatory Affairs Officer',branch:'Bandung',verified_skills:'Dossier Preparation|Submission Management|GCP',inferred_skills:'SOP Writing|Regulatory Intelligence|Risk Assessment',confidence_score:0.76,source_systems:'SAP+Workable',status:'Ready for Reskilling',flag_human_review:'No'},
+  {unified_id:'MN-2024134',full_name:'Shinta Usman',standardized_role:'Medical Advisor',branch:'Yogyakarta',verified_skills:'Regulatory Affairs|Clinical Knowledge|Clinical Trials',inferred_skills:'Presentation Skills|Data Analysis|Scientific Communication',confidence_score:0.95,source_systems:'SAP+Workable+Moodle',status:'Ready for Reskilling',flag_human_review:'No'},
+  {unified_id:'MN-2024135',full_name:'Fitri Osman',standardized_role:'Regulatory Affairs Officer',branch:'Bandung',verified_skills:'Dossier Preparation|BPOM Regulation|Submission Management|Labeling Compliance|GCP',inferred_skills:'Regulatory Intelligence|Risk Assessment',confidence_score:0.89,source_systems:'SAP+Workable+Moodle',status:'High Potential',flag_human_review:'No'},
+  {unified_id:'MN-2024136',full_name:'Johan Mahendra',standardized_role:'IT Support',branch:'Yogyakarta',verified_skills:'N/A',inferred_skills:'Asset Management|Scripting Basics|Cloud Support',confidence_score:0.53,source_systems:'SAP+Workable+Moodle',status:'High Potential',flag_human_review:'Yes'},
+  {unified_id:'MN-2024137',full_name:'Vero Kurniawan',standardized_role:'Marketing Specialist',branch:'Palembang',verified_skills:'Campaign Management|Google Analytics|Digital Marketing|SEO/SEM|Social Media|Content Creation',inferred_skills:'Market Research|Email Marketing',confidence_score:0.76,source_systems:'SAP+Workable+Moodle',status:'High Risk',flag_human_review:'Yes'},
+  {unified_id:'MN-2024138',full_name:'Eko Riyadi',standardized_role:'Warehouse Staff',branch:'Medan',verified_skills:'Inventory Control|Safety Compliance|Barcode Scanning|FIFO Method|Stock Opname|Forklift Operation',inferred_skills:'RF Scanner|Team Coordination|Cycle Count',confidence_score:0.89,source_systems:'SAP+Workable+Moodle',status:'High Potential',flag_human_review:'No'},
+  {unified_id:'MN-2024139',full_name:'Karina Firmansyah',standardized_role:'Warehouse Staff',branch:'Yogyakarta',verified_skills:'Inventory Control|Safety Compliance|Barcode Scanning|FIFO Method|Stock Opname|Forklift Operation',inferred_skills:'Documentation|Cycle Count|RF Scanner',confidence_score:0.90,source_systems:'SAP+Workable',status:'Ready for Reskilling',flag_human_review:'No'},
+  {unified_id:'MN-2024140',full_name:'Vina Rachman',standardized_role:'IT Support',branch:'Jakarta',verified_skills:'Cybersecurity Basics|Troubleshooting|Networking|Active Directory|Helpdesk',inferred_skills:'Scripting Basics|ITIL Framework',confidence_score:0.78,source_systems:'SAP+Workable+Moodle',status:'High Risk',flag_human_review:'Yes'},
+  {unified_id:'MN-2024141',full_name:'Agus Maulana',standardized_role:'Marketing Specialist',branch:'Yogyakarta',verified_skills:'N/A',inferred_skills:'Market Research|Brand Strategy',confidence_score:0.55,source_systems:'SAP+Workable+Moodle',status:'Active',flag_human_review:'Yes'},
+  {unified_id:'MN-2024142',full_name:'Fajar Tambunan',standardized_role:'Finance Officer',branch:'Yogyakarta',verified_skills:'N/A',inferred_skills:'ERP Proficiency|Forecasting|Cash Flow Management',confidence_score:0.52,source_systems:'SAP+Workable+Moodle',status:'Ready for Reskilling',flag_human_review:'Yes'},
+  {unified_id:'MN-2024143',full_name:'Galih Susanto',standardized_role:'Logistics Coordinator',branch:'Semarang',verified_skills:'Route Optimization|Vendor Management|Procurement|Supply Chain|Warehouse Management',inferred_skills:'3PL Management|ERP SAP',confidence_score:0.83,source_systems:'SAP+Workable',status:'Stable',flag_human_review:'No'},
+  {unified_id:'MN-2024144',full_name:'Gita Pratama',standardized_role:'Regulatory Affairs Officer',branch:'Makassar',verified_skills:'N/A',inferred_skills:'Change Control|SOP Writing|Risk Assessment',confidence_score:0.63,source_systems:'SAP+Workable',status:'High Risk',flag_human_review:'Yes'},
+  {unified_id:'MN-2024145',full_name:'Hani Suprapto',standardized_role:'Pharmacy Technician',branch:'Palembang',verified_skills:'Inventory Management|Drug Dispensing|GMP Standards',inferred_skills:'Drug Interaction|Quality Control|Medication Safety',confidence_score:0.88,source_systems:'SAP+Workable+Moodle',status:'High Risk',flag_human_review:'Yes'},
+  {unified_id:'MN-2024146',full_name:'Wahyu Lestari',standardized_role:'Customer Service',branch:'Jakarta',verified_skills:'N/A',inferred_skills:'Empathy|Product Knowledge',confidence_score:0.56,source_systems:'SAP+Workable+Moodle',status:'Active',flag_human_review:'Yes'},
+  {unified_id:'MN-2024147',full_name:'Jefri Santoso',standardized_role:'Warehouse Staff',branch:'Makassar',verified_skills:'N/A',inferred_skills:'Documentation|RF Scanner|Cycle Count',confidence_score:0.63,source_systems:'SAP+Workable+Moodle',status:'High Risk',flag_human_review:'Yes'},
+  {unified_id:'MN-2024148',full_name:'Dewi Wahyudi',standardized_role:'Branch Manager',branch:'Medan',verified_skills:'N/A',inferred_skills:'Change Management|Crisis Management|Workforce Planning',confidence_score:0.55,source_systems:'SAP+Workable',status:'Ready for Reskilling',flag_human_review:'Yes'},
+  {unified_id:'MN-2024149',full_name:'Andri Effendi',standardized_role:'Regulatory Affairs Officer',branch:'Jakarta',verified_skills:'Dossier Preparation|BPOM Regulation|Labeling Compliance',inferred_skills:'Risk Assessment|Regulatory Intelligence|SOP Writing',confidence_score:0.95,source_systems:'SAP+Workable+Moodle',status:'Active',flag_human_review:'No'},
+  {unified_id:'MN-2024150',full_name:'Ika Iskandar',standardized_role:'Branch Manager',branch:'Jakarta',verified_skills:'N/A',inferred_skills:'Change Management|Workforce Planning|Crisis Management',confidence_score:0.57,source_systems:'SAP+Workable+Moodle',status:'High Potential',flag_human_review:'Yes'},
+  {unified_id:'MN-2024151',full_name:'Gina Maulana',standardized_role:'Warehouse Staff',branch:'Makassar',verified_skills:'N/A',inferred_skills:'Team Coordination|RF Scanner',confidence_score:0.65,source_systems:'SAP+Workable+Moodle',status:'High Potential',flag_human_review:'No'},
+  {unified_id:'MN-2024152',full_name:'Vina Santoso',standardized_role:'Sales Representative',branch:'Bandung',verified_skills:'Pipeline Management|Negotiation|B2B Sales|Salesforce|CRM',inferred_skills:'Upselling|Customer Retention|Market Analysis',confidence_score:0.78,source_systems:'SAP+Workable+Moodle',status:'Ready for Reskilling',flag_human_review:'No'},
+  {unified_id:'MN-2024153',full_name:'Eko Santosa',standardized_role:'IT Support',branch:'Semarang',verified_skills:'Windows Server|Cybersecurity Basics|Troubleshooting|Networking|Active Directory',inferred_skills:'ITIL Framework|Scripting Basics',confidence_score:0.85,source_systems:'SAP+Workable',status:'Active',flag_human_review:'No'},
+  {unified_id:'MN-2024154',full_name:'Lina Suharto',standardized_role:'Finance Officer',branch:'Semarang',verified_skills:'N/A',inferred_skills:'Cash Flow Management|ERP Proficiency|Audit Preparation',confidence_score:0.65,source_systems:'SAP+Workable+Moodle',status:'High Risk',flag_human_review:'Yes'},
+  {unified_id:'MN-2024155',full_name:'Hafiz Firmansyah',standardized_role:'Sales Representative',branch:'Yogyakarta',verified_skills:'N/A',inferred_skills:'Market Analysis|Upselling',confidence_score:0.52,source_systems:'SAP+Workable+Moodle',status:'Ready for Reskilling',flag_human_review:'Yes'},
+  {unified_id:'MN-2024156',full_name:'Jefri Setiawan',standardized_role:'Warehouse Staff',branch:'Jakarta',verified_skills:'Forklift Operation|Barcode Scanning|FIFO Method',inferred_skills:'Cycle Count|Documentation',confidence_score:0.92,source_systems:'SAP+Workable+Moodle',status:'Ready for Reskilling',flag_human_review:'No'},
+  {unified_id:'MN-2024157',full_name:'Karina Hidayat',standardized_role:'Branch Manager',branch:'Bali',verified_skills:'Strategic Planning|P&L Management|Stakeholder Management|Team Leadership|Budgeting|KPI Monitoring',inferred_skills:'Coaching|Crisis Management',confidence_score:0.92,source_systems:'SAP+Workable+Moodle',status:'Ready for Reskilling',flag_human_review:'No'},
+  {unified_id:'MN-2024158',full_name:'Teguh Handoko',standardized_role:'HR Specialist',branch:'Semarang',verified_skills:'N/A',inferred_skills:'HR Analytics|Culture Building|Training & Development',confidence_score:0.65,source_systems:'SAP+Workable',status:'Active',flag_human_review:'No'},
+  {unified_id:'MN-2024159',full_name:'Ferry Basuki',standardized_role:'Regulatory Affairs Officer',branch:'Yogyakarta',verified_skills:'N/A',inferred_skills:'Regulatory Intelligence|Risk Assessment',confidence_score:0.72,source_systems:'SAP+Workable+Moodle',status:'Ready for Reskilling',flag_human_review:'No'},
+  {unified_id:'MN-2024160',full_name:'Nuri Usman',standardized_role:'HR Specialist',branch:'Yogyakarta',verified_skills:'Labor Law|Payroll|Onboarding|Employee Relations|HRIS|Performance Management',inferred_skills:'Culture Building|Training & Development',confidence_score:0.98,source_systems:'SAP+Workable+Moodle',status:'Active',flag_human_review:'No'},
+  {unified_id:'MN-2024161',full_name:'Citra Susanto',standardized_role:'Sales Representative',branch:'Yogyakarta',verified_skills:'N/A',inferred_skills:'Market Analysis|Upselling|Lead Generation',confidence_score:0.73,source_systems:'SAP+Workable+Moodle',status:'High Risk',flag_human_review:'Yes'},
+  {unified_id:'MN-2024162',full_name:'Panji Haryono',standardized_role:'Customer Service',branch:'Balikpapan',verified_skills:'N/A',inferred_skills:'Retention Strategy|Product Knowledge',confidence_score:0.65,source_systems:'SAP+Workable+Moodle',status:'High Risk',flag_human_review:'Yes'},
+  {unified_id:'MN-2024163',full_name:'Zahra Mahendra',standardized_role:'Pharmacy Technician',branch:'Jakarta',verified_skills:'Patient Counseling|SAP Pharma|GMP Standards|BPOM Compliance',inferred_skills:'Compounding|Drug Interaction|Medication Safety',confidence_score:0.95,source_systems:'SAP+Workable+Moodle',status:'Active',flag_human_review:'No'},
+  {unified_id:'MN-2024164',full_name:'Yuni Suprapto',standardized_role:'Regulatory Affairs Officer',branch:'Semarang',verified_skills:'Dossier Preparation|BPOM Regulation|Submission Management|Labeling Compliance|GCP|Audit Support',inferred_skills:'Regulatory Intelligence|Risk Assessment|SOP Writing',confidence_score:0.76,source_systems:'SAP+Workable+Moodle',status:'Ready for Reskilling',flag_human_review:'No'},
+  {unified_id:'MN-2024165',full_name:'Umi Santosa',standardized_role:'Regulatory Affairs Officer',branch:'Jakarta',verified_skills:'N/A',inferred_skills:'Risk Assessment|SOP Writing|Change Control',confidence_score:0.71,source_systems:'SAP+Workable+Moodle',status:'Stable',flag_human_review:'No'},
+  {unified_id:'MN-2024166',full_name:'Kartika Halim',standardized_role:'Finance Officer',branch:'Semarang',verified_skills:'Tax Compliance|Reconciliation|Cost Analysis',inferred_skills:'Forecasting|Cash Flow Management',confidence_score:0.97,source_systems:'SAP+Workable+Moodle',status:'High Risk',flag_human_review:'Yes'},
+  {unified_id:'MN-2024167',full_name:'Wulan Firmansyah',standardized_role:'Marketing Specialist',branch:'Medan',verified_skills:'Campaign Management|Digital Marketing|Social Media',inferred_skills:'Brand Strategy|Market Research|Email Marketing',confidence_score:0.77,source_systems:'SAP+Workable',status:'Ready for Reskilling',flag_human_review:'No'},
+  {unified_id:'MN-2024168',full_name:'Elsa Gunawan',standardized_role:'Regulatory Affairs Officer',branch:'Medan',verified_skills:'N/A',inferred_skills:'Regulatory Intelligence|Risk Assessment|SOP Writing',confidence_score:0.56,source_systems:'SAP+Workable+Moodle',status:'High Potential',flag_human_review:'Yes'},
+  {unified_id:'MN-2024169',full_name:'Juwita Mulyono',standardized_role:'Warehouse Staff',branch:'Makassar',verified_skills:'Inventory Control|Safety Compliance|Barcode Scanning|Stock Opname|Forklift Operation',inferred_skills:'RF Scanner|Documentation',confidence_score:0.95,source_systems:'SAP+Workable+Moodle',status:'Ready for Reskilling',flag_human_review:'No'},
+  {unified_id:'MN-2024170',full_name:'Bagas Nugroho',standardized_role:'Customer Service',branch:'Surabaya',verified_skills:'N/A',inferred_skills:'Retention Strategy|Empathy|Escalation Handling',confidence_score:0.63,source_systems:'SAP+Workable',status:'High Risk',flag_human_review:'Yes'},
+  {unified_id:'MN-2024171',full_name:'Dewi Kusuma',standardized_role:'IT Support',branch:'Surabaya',verified_skills:'Windows Server|Cybersecurity Basics|Networking|Active Directory|Helpdesk',inferred_skills:'ITIL Framework|Cloud Support|Asset Management',confidence_score:0.91,source_systems:'SAP+Workable+Moodle',status:'Ready for Reskilling',flag_human_review:'No'},
+  {unified_id:'MN-2024172',full_name:'Ika Mulyono',standardized_role:'Marketing Specialist',branch:'Makassar',verified_skills:'N/A',inferred_skills:'Market Research|A/B Testing',confidence_score:0.61,source_systems:'SAP+Workable',status:'Active',flag_human_review:'Yes'},
+  {unified_id:'MN-2024173',full_name:'Hendra Kurniawan',standardized_role:'Logistics Coordinator',branch:'Semarang',verified_skills:'Vendor Management|Procurement|SAP WM|Supply Chain|Warehouse Management',inferred_skills:'3PL Management|Cold Chain Logistics|ERP SAP',confidence_score:0.93,source_systems:'SAP+Workable+Moodle',status:'Stable',flag_human_review:'No'},
+  {unified_id:'MN-2024174',full_name:'Andri Junaedi',standardized_role:'Branch Manager',branch:'Jakarta',verified_skills:'Strategic Planning|P&L Management|Stakeholder Management|Team Leadership|Budgeting|KPI Monitoring',inferred_skills:'Coaching|Change Management|Workforce Planning',confidence_score:0.86,source_systems:'SAP+Workable',status:'Stable',flag_human_review:'No'},
+  {unified_id:'MN-2024175',full_name:'Juwita Santoso',standardized_role:'Customer Service',branch:'Medan',verified_skills:'Cross-selling|Ticketing|SLA Management|Complaint Handling|CRM',inferred_skills:'Retention Strategy|Product Knowledge|Escalation Handling',confidence_score:0.91,source_systems:'SAP+Workable+Moodle',status:'High Potential',flag_human_review:'No'},
+  {unified_id:'MN-2024176',full_name:'Wulan Kartono',standardized_role:'Logistics Coordinator',branch:'Bandung',verified_skills:'Route Optimization|Vendor Management|Procurement|SAP WM|Supply Chain|Warehouse Management',inferred_skills:'3PL Management|Cold Chain Logistics|Demand Planning',confidence_score:0.88,source_systems:'SAP+Workable+Moodle',status:'Active',flag_human_review:'No'},
+  {unified_id:'MN-2024177',full_name:'Arif Rahayu',standardized_role:'Sales Representative',branch:'Semarang',verified_skills:'N/A',inferred_skills:'Customer Retention|Upselling',confidence_score:0.71,source_systems:'SAP+Workable+Moodle',status:'Active',flag_human_review:'No'},
+  {unified_id:'MN-2024178',full_name:'Yanuar Riyadi',standardized_role:'Logistics Coordinator',branch:'Medan',verified_skills:'Supply Chain|Procurement|SAP WM',inferred_skills:'Cold Chain Logistics|Demand Planning|ERP SAP',confidence_score:0.85,source_systems:'SAP+Workable+Moodle',status:'Active',flag_human_review:'No'},
+  {unified_id:'MN-2024179',full_name:'Rama Gunawan',standardized_role:'Medical Advisor',branch:'Bandung',verified_skills:'Clinical Trials|Pharmacovigilance|KOL Management',inferred_skills:'Data Analysis|Scientific Communication|Product Launch',confidence_score:0.93,source_systems:'SAP+Workable+Moodle',status:'Active',flag_human_review:'No'},
+  {unified_id:'MN-2024180',full_name:'Citra Wibowo',standardized_role:'Warehouse Staff',branch:'Jakarta',verified_skills:'Inventory Control|Safety Compliance|Barcode Scanning|FIFO Method|Stock Opname|Forklift Operation',inferred_skills:'Team Coordination|RF Scanner',confidence_score:0.83,source_systems:'SAP+Workable+Moodle',status:'Stable',flag_human_review:'No'},
+  {unified_id:'MN-2024181',full_name:'Dewi Osman',standardized_role:'Medical Advisor',branch:'Jakarta',verified_skills:'N/A',inferred_skills:'Data Analysis|Presentation Skills',confidence_score:0.52,source_systems:'SAP+Workable+Moodle',status:'Stable',flag_human_review:'Yes'},
+  {unified_id:'MN-2024182',full_name:'Udin Cahyono',standardized_role:'Finance Officer',branch:'Yogyakarta',verified_skills:'N/A',inferred_skills:'Cash Flow Management|Forecasting',confidence_score:0.71,source_systems:'SAP+Workable+Moodle',status:'High Risk',flag_human_review:'Yes'},
+  {unified_id:'MN-2024183',full_name:'Claudia Wijaya',standardized_role:'Medical Advisor',branch:'Medan',verified_skills:'Regulatory Affairs|Pharmacovigilance|Clinical Knowledge|Clinical Trials',inferred_skills:'Data Analysis|Presentation Skills',confidence_score:0.90,source_systems:'SAP+Workable+Moodle',status:'Ready for Reskilling',flag_human_review:'No'},
+  {unified_id:'MN-2024184',full_name:'Surya Riyadi',standardized_role:'Warehouse Staff',branch:'Medan',verified_skills:'N/A',inferred_skills:'Documentation|RF Scanner|Team Coordination',confidence_score:0.66,source_systems:'SAP+Workable+Moodle',status:'Active',flag_human_review:'No'},
+  {unified_id:'MN-2024185',full_name:'Yoga Purnomo',standardized_role:'Branch Manager',branch:'Jakarta',verified_skills:'N/A',inferred_skills:'Change Management|Workforce Planning',confidence_score:0.64,source_systems:'SAP+Workable+Moodle',status:'High Potential',flag_human_review:'Yes'},
+  {unified_id:'MN-2024186',full_name:'Agus Wijaya',standardized_role:'Logistics Coordinator',branch:'Surabaya',verified_skills:'Route Optimization|Vendor Management|Procurement|SAP WM|Supply Chain|Warehouse Management',inferred_skills:'3PL Management|Demand Planning',confidence_score:0.76,source_systems:'SAP+Workable+Moodle',status:'Active',flag_human_review:'No'},
+  {unified_id:'MN-2024187',full_name:'Erwin Firmansyah',standardized_role:'Pharmacy Technician',branch:'Palembang',verified_skills:'N/A',inferred_skills:'Medication Safety|Quality Control',confidence_score:0.66,source_systems:'SAP+Workable+Moodle',status:'Active',flag_human_review:'No'},
+  {unified_id:'MN-2024188',full_name:'Lukman Iskandar',standardized_role:'Marketing Specialist',branch:'Balikpapan',verified_skills:'Campaign Management|Google Analytics|Digital Marketing|SEO/SEM|Social Media|Content Creation',inferred_skills:'Email Marketing|A/B Testing',confidence_score:0.95,source_systems:'SAP+Workable+Moodle',status:'Active',flag_human_review:'No'},
+  {unified_id:'MN-2024189',full_name:'Priya Santoso',standardized_role:'Finance Officer',branch:'Yogyakarta',verified_skills:'N/A',inferred_skills:'ERP Proficiency|Forecasting|Audit Preparation',confidence_score:0.68,source_systems:'SAP+Workable+Moodle',status:'Active',flag_human_review:'No'},
+  {unified_id:'MN-2024190',full_name:'Putri Kurniawan',standardized_role:'Medical Advisor',branch:'Balikpapan',verified_skills:'Pharmacovigilance|Clinical Trials|Medical Writing|KOL Management|Clinical Knowledge',inferred_skills:'Product Launch|Presentation Skills|Data Analysis',confidence_score:0.90,source_systems:'SAP+Workable',status:'High Potential',flag_human_review:'No'},
+  {unified_id:'MN-2024191',full_name:'Lestari Rachman',standardized_role:'Branch Manager',branch:'Makassar',verified_skills:'Budgeting|P&L Management|Strategic Planning|KPI Monitoring',inferred_skills:'Change Management|Crisis Management',confidence_score:0.85,source_systems:'SAP+Workable',status:'Ready for Reskilling',flag_human_review:'No'},
+  {unified_id:'MN-2024192',full_name:'Chandra Riyadi',standardized_role:'Customer Service',branch:'Yogyakarta',verified_skills:'N/A',inferred_skills:'Product Knowledge|Retention Strategy',confidence_score:0.73,source_systems:'SAP+Workable+Moodle',status:'Stable',flag_human_review:'No'},
+  {unified_id:'MN-2024193',full_name:'Priya Iskandar',standardized_role:'Branch Manager',branch:'Yogyakarta',verified_skills:'P&L Management|Strategic Planning|KPI Monitoring|Team Leadership',inferred_skills:'Change Management|Crisis Management|Coaching',confidence_score:0.96,source_systems:'SAP+Workable+Moodle',status:'Stable',flag_human_review:'No'},
+  {unified_id:'MN-2024194',full_name:'Yanuar Rahayu',standardized_role:'HR Specialist',branch:'Palembang',verified_skills:'N/A',inferred_skills:'Training & Development|Talent Management',confidence_score:0.69,source_systems:'SAP+Workable+Moodle',status:'Ready for Reskilling',flag_human_review:'No'},
+  {unified_id:'MN-2024195',full_name:'Wulan Halim',standardized_role:'Branch Manager',branch:'Semarang',verified_skills:'Budgeting|Stakeholder Management|Strategic Planning|Team Leadership',inferred_skills:'Workforce Planning|Change Management',confidence_score:0.79,source_systems:'SAP+Workable+Moodle',status:'Active',flag_human_review:'No'},
+  {unified_id:'MN-2024196',full_name:'Eko Firmansyah',standardized_role:'Regulatory Affairs Officer',branch:'Makassar',verified_skills:'N/A',inferred_skills:'Regulatory Intelligence|SOP Writing|Risk Assessment',confidence_score:0.57,source_systems:'SAP+Workable+Moodle',status:'High Potential',flag_human_review:'Yes'},
+  {unified_id:'MN-2024197',full_name:'Tika Pranoto',standardized_role:'Regulatory Affairs Officer',branch:'Jakarta',verified_skills:'N/A',inferred_skills:'SOP Writing|Risk Assessment',confidence_score:0.52,source_systems:'SAP+Workable+Moodle',status:'Active',flag_human_review:'Yes'},
+  {unified_id:'MN-2024198',full_name:'Laila Lukman',standardized_role:'Branch Manager',branch:'Medan',verified_skills:'Strategic Planning|Stakeholder Management|Team Leadership|Budgeting|KPI Monitoring',inferred_skills:'Coaching|Workforce Planning|Change Management',confidence_score:0.87,source_systems:'SAP+Workable',status:'Stable',flag_human_review:'No'},
+  {unified_id:'MN-2024199',full_name:'Lukman Halim',standardized_role:'Logistics Coordinator',branch:'Jakarta',verified_skills:'N/A',inferred_skills:'3PL Management|Cold Chain Logistics',confidence_score:0.52,source_systems:'SAP+Workable+Moodle',status:'Ready for Reskilling',flag_human_review:'Yes'},
+  {unified_id:'MN-2024200',full_name:'Kiki Kurniawan',standardized_role:'Medical Advisor',branch:'Jakarta',verified_skills:'N/A',inferred_skills:'Scientific Communication|Product Launch',confidence_score:0.55,source_systems:'SAP+Workable+Moodle',status:'Active',flag_human_review:'Yes'},
+];
+
+// ─── STATE ───────────────────────────────────────────────────────────────────
+const verifiedSet = new Set();
+let currentMode = 'messy';
+let currentView = 'dashboard';
+
+// ─── INIT DASHBOARD ──────────────────────────────────────────────────────────
+function initDashboard() {
+  const statusCounts = {};
+  const branchCounts = {};
+  const roleCounts = {};
+  CLEAN_DATA.forEach(r => {
+    statusCounts[r.status] = (statusCounts[r.status]||0)+1;
+    branchCounts[r.branch] = (branchCounts[r.branch]||0)+1;
+    roleCounts[r.standardized_role] = (roleCounts[r.standardized_role]||0)+1;
+  });
+
+  const flagged = CLEAN_DATA.filter(r=>r.flag_human_review==='Yes').length;
+  const reskill = CLEAN_DATA.filter(r=>r.status==='Ready for Reskilling').length;
+  document.getElementById('kpi-flagged').textContent = flagged;
+  document.getElementById('kpi-reskill').textContent = reskill;
+
+  const statDefs = [
+    {key:'Active',label:'Active',color:'#34d399'},
+    {key:'Ready for Reskilling',label:'Ready to Reskill',color:'#818cf8'},
+    {key:'High Risk',label:'High Risk',color:'#f87171'},
+    {key:'High Potential',label:'High Potential',color:'#60a5fa'},
+    {key:'Stable',label:'Stable',color:'#9ca3af'},
+  ];
+  document.getElementById('status-grid').innerHTML = statDefs.map(s=>`
+    <div class="text-center p-3 rounded-xl bg-slate-800/40 border border-slate-700/50">
+      <div class="text-xl font-bold" style="color:${s.color}">${statusCounts[s.key]||0}</div>
+      <div class="text-[10px] text-slate-500 mt-1 leading-tight">${s.label}</div>
+      <div class="h-1 bg-slate-700 rounded-full mt-2"><div class="h-1 rounded-full" style="width:${statusCounts[s.key]||0}%;background:${s.color}"></div></div>
+    </div>`).join('');
+
+  const topBranches = Object.entries(branchCounts).sort((a,b)=>b[1]-a[1]).slice(0,8);
+  document.getElementById('branch-grid').innerHTML = topBranches.map(([b,c])=>
+    `<div class="flex items-center justify-between text-xs"><span class="text-slate-400">${b}</span><span class="text-slate-200 font-semibold">${c}</span></div>`).join('');
+
+  const roleIcons = {'Customer Service':'headset','Regulatory Affairs Officer':'file-check','Warehouse Staff':'package','Pharmacy Technician':'pill','HR Specialist':'users','Branch Manager':'briefcase','Sales Representative':'bar-chart','Marketing Specialist':'megaphone','Logistics Coordinator':'truck','Finance Officer':'landmark','Medical Advisor':'stethoscope','IT Support':'monitor'};
+  const roleColors = {'Customer Service':'#34d399','Regulatory Affairs Officer':'#a78bfa','Warehouse Staff':'#60a5fa','Pharmacy Technician':'#fbbf24','HR Specialist':'#f472b6','Branch Manager':'#38bdf8','Sales Representative':'#fb923c','Marketing Specialist':'#e879f9','Logistics Coordinator':'#4ade80','Finance Officer':'#f87171','Medical Advisor':'#67e8f9','IT Support':'#a3e635'};
+  const topRoles = Object.entries(roleCounts).sort((a,b)=>b[1]-a[1]).slice(0,8);
+  document.getElementById('role-grid').innerHTML = topRoles.map(([role,count])=>`
+    <div class="p-4 rounded-xl bg-slate-800/30 border border-slate-700/40">
+      <div class="flex items-center gap-2 mb-2">
+        <div class="w-7 h-7 rounded-lg flex items-center justify-center" style="background:${roleColors[role]||'#818cf8'}1a">
+          <i data-lucide="${roleIcons[role]||'users'}" style="width:13px;height:13px;color:${roleColors[role]||'#818cf8'}"></i>
+        </div>
+        <span class="text-xs font-semibold text-slate-300">${role}</span>
+      </div>
+      <div class="text-2xl font-bold" style="color:${roleColors[role]||'#818cf8'}">${count}</div>
+      <div class="text-xs text-slate-500 mt-1">employees</div>
+    </div>`).join('');
+}
+
+// ─── VIEW SWITCHING ──────────────────────────────────────────────────────────
+function switchView(view) {
+  currentView = view;
+  ['dashboard','talent','roadmap'].forEach(v => {
+    document.getElementById('view-'+v).classList.add('hidden');
+    document.getElementById('nav-'+v).classList.remove('active');
+  });
+  document.getElementById('view-'+view).classList.remove('hidden');
+  document.getElementById('nav-'+view).classList.add('active');
+  const titles = {dashboard:'Workforce Intelligence Dashboard',talent:'Talent Directory',roadmap:'Reskilling Roadmap'};
+  document.getElementById('page-title').textContent = titles[view];
+  if (view==='talent') {
+    renderTable();
+    // Show conflict panel by default in messy mode
+    const cp = document.getElementById('conflict-evidence-panel');
+    if (cp) cp.style.display = currentMode==='messy' ? 'block' : 'none';
+  }
+  if (view==='roadmap') renderRoadmap();
+  lucide.createIcons();
+}
+
+// ─── TOGGLE ──────────────────────────────────────────────────────────────────
+function setMode(mode) {
+  currentMode = mode;
+  document.getElementById('btn-messy').className = 'toggle-btn'+(mode==='messy'?' active-messy':'');
+  document.getElementById('btn-clean').className = 'toggle-btn'+(mode==='clean'?' active-clean':'');
+  document.getElementById('warning-banner').style.display = mode==='messy'?'flex':'none';
+  // Show conflict evidence panel only in messy mode
+  const conflictPanel = document.getElementById('conflict-evidence-panel');
+  if (conflictPanel) conflictPanel.style.display = mode==='messy'?'block':'none';
+  renderTable();
+}
+
+function toggleConflictPanel() {
+  const body = document.getElementById('conflict-panel-body');
+  const chevron = document.getElementById('conflict-chevron');
+  body.classList.toggle('open');
+  chevron.style.transform = body.classList.contains('open') ? 'rotate(180deg)' : 'rotate(0deg)';
+  lucide.createIcons();
+}
+
+// ─── HELPERS ─────────────────────────────────────────────────────────────────
+function sourceChip(src) {
+  const map = {Workable:'#818cf8',SAP:'#34d399',Moodle:'#fbbf24','SAP+Workable+Moodle':'#6366f1','SAP+Workable':'#6366f1'};
+  const c = map[src]||'#94a3b8';
+  return `<span style="display:inline-block;padding:2px 8px;border-radius:20px;font-size:10px;font-weight:700;background:${c}1a;color:${c};border:1px solid ${c}33">${src}</span>`;
+}
+
+function statusBadge(status) {
+  const m = {'Active':'status-active','Ready for Reskilling':'status-reskilling','High Risk':'status-high-risk','High Potential':'status-high-potential','Stable':'status-stable'};
+  const i = {'Active':'circle-check','Ready for Reskilling':'graduation-cap','High Risk':'alert-triangle','High Potential':'star','Stable':'minus-circle'};
+  return `<span class="status-base ${m[status]||'status-stable'}"><i data-lucide="${i[status]||'circle'}" style="width:10px;height:10px"></i>${status}</span>`;
+}
+
+function confBar(score) {
+  const pct = Math.round(score*100);
+  const color = pct>=75?'#34d399':pct>=60?'#fbbf24':'#f87171';
+  return `<div class="flex items-center gap-2"><span class="text-xs font-semibold" style="color:${color};min-width:30px">${pct}%</span><div class="conf-bar-outer"><div class="conf-bar-inner" style="width:${pct}%;background:${color}"></div></div></div>`;
+}
+
+function skillBadge(skill, isVerified, rowId) {
+  if (isVerified || verifiedSet.has(rowId+':'+skill)) {
+    return `<span class="badge-verified"><i data-lucide="check-circle" style="width:9px;height:9px"></i>${skill}</span>`;
+  }
+  const logic = INFERENCE_LOGIC[skill] || 'Inferred via role-cluster similarity and co-occurrence analysis';
+  const safeLogic = logic.replace(/'/g,"&#39;").replace(/"/g,'&quot;');
+  return `<span class="badge-inferred" onclick="verifyBadge(event,'${rowId}','${skill.replace(/'/g,"\\'")}')">
+    <i data-lucide="cpu" style="width:9px;height:9px"></i>${skill}
+    <span class="infer-tooltip"><strong style="color:#fbbf24">🧠 Inference Logic</strong><br>${safeLogic}</span>
+  </span>`;
+}
+
+function verifyBadge(e, rowId, skill) {
+  e.stopPropagation();
+  verifiedSet.add(rowId+':'+skill);
+  const span = e.currentTarget;
+  span.className = 'badge-verified';
+  span.onclick = null;
+  span.innerHTML = `<i data-lucide="check-circle" style="width:9px;height:9px"></i>${skill}`;
+  lucide.createIcons();
+  showToast('check-circle',`<strong>${skill}</strong> verified successfully!`,'emerald');
+}
+
+function verifyRow(rowId, name) {
+  showToast('check-circle',`<strong>${name}</strong> — Submitted for human review.`,'emerald');
+}
+
+function showToast(icon, msg, color='emerald') {
+  const container = document.getElementById('toast-container');
+  const colors = {emerald:['rgba(16,185,129,0.3)','#34d399'],blue:['rgba(59,130,246,0.3)','#60a5fa'],amber:['rgba(245,158,11,0.3)','#fbbf24']};
+  const [borderColor, iconColor] = colors[color]||colors.emerald;
+  const toast = document.createElement('div');
+  toast.className = 'toast';
+  toast.style.borderColor = borderColor;
+  toast.innerHTML = `<div style="width:32px;height:32px;border-radius:50%;background:${borderColor};display:flex;align-items:center;justify-content:center;flex-shrink:0"><i data-lucide="${icon}" style="width:15px;height:15px;color:${iconColor}"></i></div><div><div class="text-sm font-semibold text-slate-200">${msg}</div><div class="text-xs text-slate-500 mt-0.5">Workforce Intelligence Platform</div></div><button onclick="this.parentElement.remove()" class="ml-auto text-slate-600 hover:text-slate-400"><i data-lucide="x" style="width:14px;height:14px"></i></button>`;
+  container.appendChild(toast);
+  lucide.createIcons();
+  setTimeout(()=>{ toast.style.transition='opacity 0.4s'; toast.style.opacity='0'; setTimeout(()=>toast.remove(),400); },4000);
+}
+
+// ─── CONFLICT MAP: ext_ids known to have date conflicts with other records ────
+// Source: cross-system identity resolution audit. Key = ext_id, value = conflicting pair info.
+const CONFLICT_EXT_IDS = new Set([
+  // Priya Santoso cluster
+  'SAP-1188','WK-5188','LMS-9146',
+  // Wahyu Haryono cluster
+  'SAP-1020','LMS-9013','WK-5020',
+  // Vincent Santoso cluster
+  'LMS-9071','WK-5094','SAP-1094',
+  // Agus Wijaya cluster
+  'WK-5185','SAP-1185',
+  // Made Pranoto cluster
+  'WK-5005','SAP-1005','LMS-9005',
+  // Kiki Maulana cluster
+  'SAP-1052','WK-5052',
+  // N.Riyadi cluster
+  'WK-5059','LMS-9045',
+  // Agus Maulana cluster
+  'WK-5140','LMS-9106',
+  // Priya Santoso (second cluster)
+  'WK-5188',
+  // K. Perdana cluster
+  'WK-5109','LMS-9082','SAP-1109',
+]);
+
+// ─── RENDER TABLE ─────────────────────────────────────────────────────────────
+function renderTable() {
+  const head = document.getElementById('table-head');
+  const body = document.getElementById('table-body');
+  const search = (document.getElementById('search-input').value||'').toLowerCase();
+  const branch = (document.getElementById('branch-filter').value||'').toLowerCase();
+
+  if (currentMode==='messy') {
+    head.innerHTML = `<tr>
+      <th>Ext ID</th><th>Source</th><th>Name</th><th>Role (Raw)</th><th>Branch</th><th>Skills</th>
+      <th title="Some records have 3+ years of scores; Moodle records show none">Perf. Score</th>
+      <th title="304+ records have conflicting join dates across systems — same person, different date in HRIS vs ATS">Join Date ⚡</th>
+    </tr>`;
+    const filtered = MESSY_DATA.filter(r=>{
+      if (search && !r.name.toLowerCase().includes(search) && !r.ext_id.toLowerCase().includes(search)) return false;
+      if (branch && !r.branch.toLowerCase().includes(branch)) return false;
+      return true;
+    });
+    body.innerHTML = filtered.map(r=>{
+      const isAmerican = /^\d{2}-\d{2}-\d{4}$/.test(r.join_date);
+      const isIDN = /^\d{2}\/\d{2}\/\d{4}$/.test(r.join_date);
+      const isConflict = CONFLICT_EXT_IDS.has(r.ext_id);
+      // Format pill: amber = format mismatch, rose = actual value conflict
+      let datePill = '';
+      if (isConflict) {
+        datePill = `<span class="conflict-date-pill"><svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg> DATE CONFLICT</span>`;
+      } else if (isAmerican) {
+        datePill = `<span class="conflict-pill">⚠ MM-DD-YYYY</span>`;
+      } else if (isIDN) {
+        datePill = `<span class="conflict-pill">⚠ DD/MM/YYYY</span>`;
+      }
+      const dateColorClass = isConflict ? 'conflict-date' : (isAmerican||isIDN) ? '' : '';
+      const dateInlineStyle = isConflict ? 'color:#f87171;font-size:11px' : (isAmerican||isIDN) ? 'color:#fbbf24;font-size:11px' : 'color:#94a3b8;font-size:11px';
+      const rowClass = isConflict ? 'data-row conflict-row-marker' : 'data-row';
+      const perf = r.perf_score!==''
+        ? `<span class="perf-ok">${r.perf_score}</span>`
+        : `<span class="perf-na">N/A</span>`;
+      return `<tr class="${rowClass}">
+        <td>
+          <span style="font-family:monospace;font-size:12px;color:${isConflict?'#f87171':'#818cf8'};background:${isConflict?'rgba(239,68,68,0.08)':'rgba(99,102,241,0.08)'};padding:2px 7px;border-radius:5px">${r.ext_id}</span>
+          ${isConflict?'<span title="This record has conflicting join dates with another system" style="cursor:help;margin-left:4px;font-size:10px;color:#f87171">⚡</span>':''}
+        </td>
+        <td>${sourceChip(r.source)}</td>
+        <td class="${isConflict?'text-rose-300':'text-slate-300'} font-medium">${r.name}</td>
+        <td class="text-slate-400 text-xs">${r.job_title}</td>
+        <td class="text-slate-500 text-xs">${r.branch}</td>
+        <td>${r.skills?`<span class="text-xs text-slate-400">${r.skills.split('|').join(', ')}</span>`:'<span class="text-rose-500/70 text-xs font-mono">---</span>'}</td>
+        <td>${perf}</td>
+        <td style="${dateInlineStyle}">${r.join_date}&nbsp;${datePill}</td>
+      </tr>`;
+    }).join('');
+    const conflictCount = filtered.filter(r=>CONFLICT_EXT_IDS.has(r.ext_id)).length;
+    document.getElementById('row-count').innerHTML = `Showing ${filtered.length} of ${MESSY_DATA.length} raw records &nbsp;·&nbsp; <span style="color:#f87171;font-weight:600">${conflictCount} records with date conflicts highlighted in red</span>`;
+  } else {
+    head.innerHTML = `<tr>
+      <th>Unified ID</th><th>Full Name</th><th>Standardized Role</th><th>Branch</th>
+      <th>Verified Skills</th><th title="Hover badge for inference logic">AI Inferred Skills ⓘ</th>
+      <th>Confidence</th><th>Sources</th><th>Status</th><th>Actions</th>
+    </tr>`;
+    const filtered = CLEAN_DATA.filter(r=>{
+      if (search && !r.full_name.toLowerCase().includes(search) && !r.unified_id.toLowerCase().includes(search)) return false;
+      if (branch && !r.branch.toLowerCase().includes(branch)) return false;
+      return true;
+    });
+    body.innerHTML = filtered.map(r=>{
+      const pct = Math.round(r.confidence_score*100);
+      const verSkills = r.verified_skills==='N/A'?''
+        : r.verified_skills.split('|').map(s=>skillBadge(s,true,r.unified_id)).join(' ');
+      const infSkills = r.inferred_skills.split('|').map(s=>skillBadge(s,false,r.unified_id)).join(' ');
+      let action = pct>=75
+        ? `<button class="btn-reskill" onclick="showToast('graduation-cap','Reskilling assigned to <strong>${r.full_name}</strong>!','blue')"><i data-lucide="graduation-cap" style="width:11px;height:11px"></i>Reskill</button>`
+        : `<button class="btn-verify" onclick="verifyRow('${r.unified_id}','${r.full_name}')"><i data-lucide="flag" style="width:11px;height:11px"></i>Verify</button>`;
+      return `<tr class="data-row">
+        <td><span style="font-family:monospace;font-size:11px;color:#818cf8;background:rgba(99,102,241,0.08);padding:2px 7px;border-radius:5px">${r.unified_id}</span></td>
+        <td>
+          <div class="font-semibold text-slate-200 text-sm">${r.full_name}</div>
+          ${r.flag_human_review==='Yes'?'<span style="font-size:10px;color:#fbbf24;display:flex;align-items:center;gap:3px;margin-top:2px"><i data-lucide="flag" style="width:9px;height:9px;color:#fbbf24"></i>Review required</span>':''}
+        </td>
+        <td class="text-slate-400 text-xs whitespace-nowrap">${r.standardized_role}</td>
+        <td class="text-slate-400 text-xs">${r.branch}</td>
+        <td><div class="flex flex-wrap gap-1">${verSkills||'<span class="text-slate-600 text-xs">—</span>'}</div></td>
+        <td><div class="flex flex-wrap gap-1">${infSkills}</div></td>
+        <td style="min-width:100px">${confBar(r.confidence_score)}</td>
+        <td>${sourceChip(r.source_systems)}</td>
+        <td>${statusBadge(r.status)}</td>
+        <td>${action}</td>
+      </tr>`;
+    }).join('');
+    document.getElementById('row-count').textContent = `Showing ${filtered.length} of ${CLEAN_DATA.length} unified records`;
+  }
+  lucide.createIcons();
+}
+
+function filterTable() { renderTable(); }
+
+// ─── RENDER ROADMAP ──────────────────────────────────────────────────────────
+function getTrack(r) {
+  const role = r.standardized_role;
+  if (role==='Customer Service'||role==='Sales Representative') return {code:'C',label:'Track C · Customer Excellence',color:'#fbbf24'};
+  if (role==='Regulatory Affairs Officer'||role==='Pharmacy Technician'||role==='Medical Advisor') return {code:'B',label:'Track B · Regulatory Mastery',color:'#34d399'};
+  return {code:'A',label:'Track A · Digital Transformation',color:'#818cf8'};
+}
+
+function renderRoadmap() {
+  const ready = CLEAN_DATA.filter(r=>r.status==='Ready for Reskilling');
+  const tA = ready.filter(r=>getTrack(r).code==='A').length;
+  const tB = ready.filter(r=>getTrack(r).code==='B').length;
+  const tC = ready.filter(r=>getTrack(r).code==='C').length;
+  document.getElementById('track-a-count').innerHTML = `<span class="text-[10px] bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 px-2 py-0.5 rounded-full font-semibold">${tA} employees</span>`;
+  document.getElementById('track-b-count').innerHTML = `<span class="text-[10px] bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 px-2 py-0.5 rounded-full font-semibold">${tB} employees</span>`;
+  document.getElementById('track-c-count').innerHTML = `<span class="text-[10px] bg-amber-500/10 text-amber-400 border border-amber-500/20 px-2 py-0.5 rounded-full font-semibold">${tC} employees</span>`;
+  document.getElementById('roadmap-count-badge').textContent = `${ready.length} ready`;
+
+  const container = document.getElementById('roadmap-list');
+  container.innerHTML = ready.map(r=>{
+    const pct = Math.round(r.confidence_score*100);
+    const track = getTrack(r);
+    return `<div class="flex items-center gap-4 px-5 py-3.5 hover:bg-slate-800/30 transition-colors">
+      <div class="w-9 h-9 rounded-full bg-gradient-to-br from-indigo-600 to-violet-700 flex items-center justify-center text-xs font-bold text-white flex-shrink-0">${r.full_name.split(' ').map(n=>n[0]).slice(0,2).join('')}</div>
+      <div class="flex-1 min-w-0">
+        <div class="flex items-center gap-2 flex-wrap">
+          <span class="text-sm font-semibold text-slate-200">${r.full_name}</span>
+          <span class="text-[10px] font-semibold" style="color:${track.color};background:${track.color}1a;border:1px solid ${track.color}33;padding:1px 7px;border-radius:20px">${track.label}</span>
+          ${r.flag_human_review==='Yes'?'<span class="text-[10px] text-amber-400 bg-amber-400/10 border border-amber-400/20 px-2 py-0.5 rounded-full">🚩 Review</span>':''}
+        </div>
+        <div class="text-xs text-slate-500 mt-0.5">${r.standardized_role} · ${r.branch}</div>
+      </div>
+      <div class="flex flex-col items-center gap-1 w-16">
+        <span class="text-xs font-bold text-slate-300">${pct}%</span>
+        <div class="h-1.5 w-full bg-slate-800 rounded-full"><div class="h-1.5 rounded-full" style="width:${pct}%;background:${pct>=75?'#818cf8':'#fbbf24'}"></div></div>
+      </div>
+      <button class="btn-reskill" onclick="showToast('graduation-cap','<strong>${r.full_name}</strong> enrolled in ${track.label.split(' · ')[1]}!','blue')">
+        <i data-lucide="graduation-cap" style="width:11px;height:11px"></i>Assign
+      </button>
+    </div>`;
+  }).join('');
+  lucide.createIcons();
+}
+
+// ─── BOOT ────────────────────────────────────────────────────────────────────
+document.addEventListener('DOMContentLoaded', ()=>{
+  initDashboard();
+  lucide.createIcons();
+});
+</script>
+</body>
+</html>
